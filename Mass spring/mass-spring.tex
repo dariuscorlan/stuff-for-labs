@@ -6,11 +6,13 @@
 \usepackage{amsmath}
 \usepackage{tabularx}
 \usepackage{csvsimple}
+\usepackage{ragged2e}
 \usepackage{subcaption}
 \newcommand{\inv}{^{\raisebox{.2ex}{$\scriptscriptstyle-1$}}}
+\newcommand{\unit}[1]{~\mathrm{#1}}
 
 \begin{document}
-\begin{flushleft}
+\begin{justify}
 \section{Introduction}
 The aim of this lab is to measure the spring constant of a helical spring and to
 compare it to the theoretical value. Afterwards, the period of vibration will also be
@@ -99,13 +101,14 @@ measured using a chronometer. Figure 1 shows the experimental setup.
 \newpage
 \subsection{Measuring instruments}
 \begin{itemize}
-    \item Vertical meter ruler with 1mm increment ($\pm 0.5~\mathrm{mm}$ uncertainty)
-    \item Digital scale ($\pm 0.01~\mathrm{g}$ uncertainty)
+    \item Vertical meter ruler with 1mm increment ($\pm 0.5\unit{mm}$ uncertainty)
+    \item Digital scale ($\pm 0.01\unit{g}$ uncertainty)
     \item Helical spring
-    \item Smartphone used as chronometer ($\pm  0.01~\mathrm{s} $)
+    \item Smartphone used as chronometer ($\pm  0.01\unit{s} $)
     \item Spring stand
 \end{itemize}
 \subsection{Method}
+\justifying
 For the first experiment, the spring is attached to the vertical stand with a ruler by its side. Weights
 with known mass are added to the spring, measuring the elongation which are used
 to calculate the spring constant $k$.
@@ -169,11 +172,13 @@ is shown in Figures 2 and 3.
     \centering
     \includegraphics[width = 0.7\linewidth]{constant_short_spring.png}
     \caption{Weight as a function of elongation for the short spring}
+    \label{fig:2}
 \end{figure}
 \begin{figure}[!h]
     \centering
     \includegraphics[width = 0.7\linewidth]{constant_long_spring.png}
     \caption{Weight as a function of elongation for the long spring}
+    \label{fig:3}
 \end{figure}
 \subsection{Calculations}
 Using the measured values, the spring constants can be determined. To determine
@@ -188,23 +193,127 @@ used:
 \end{equation}
 By using equation \ref{eq:2} the spring constant can be therefore calculated.
 \subsubsection{Example calucaltion}
-By using the first data point of table \ref{tab:1}, the following calculations
+By using the fifth data point of table \ref{tab:1}, the following calculations
 are made to determine the spring constant.
 \begin{gather*}
 \intertext{Firstly, the weight of the discs and hook are calculated:} \\
- W = m \cdot g = 31.1~\mathrm{g} \cdot 0.001~\mathrm{\frac{g}{kg}} \cdot 9.81~\mathrm{\frac{kg}{N}} = 0.305091~\mathrm{N} \approx 0.31~\mathrm{N}\\
+ W = m \cdot g = 110.46\unit{g} \cdot 0.001\unit{\frac{g}{kg}} \cdot 9.81\unit{\frac{kg}{N}} = 1.0836\unit{N} \approx 1.08\unit{N}\\
 \intertext{Afterwards, the elongation is calculated:} \\
- x_e = l_1 - l_0 = 13.1~\mathrm{cm} - 4.7~\mathrm{cm} = 8.4~\mathrm{cm} \approx 0.08~\mathrm{m}\\
+ x_e = l_1 - l_0 = 35.4\unit{cm} - 4.7\unit{cm} = 30.7\unit{cm} \approx 0.31\unit{m}\\
 \intertext{Finally, the spring constant can be calculated using equation \ref{eq:2}:} \\
-k x_e = W \Rightarrow k = \frac{W}{x_e} = \frac{0.305 ~\mathrm{N}}{0.084~\mathrm{m}} = 3.6309~\mathrm{Nm\inv} \approx 3.63~\mathrm{Nm\inv} 
+k x_e = W \Rightarrow k = \frac{W}{x_e} = \frac{1.0836 \unit{N}}{0.31\unit{m}} = 3.5296\unit{Nm\inv} \approx 3.53\unit{Nm\inv} 
 \end{gather*}
 \subsubsection{Error calculations}
 As the mass was calculated using a digital scale, the uncertainty is the sum of
 the smallest division(unc).
-\[ \Delta m = 0.01~\mathrm{g} = 0.01~\mathrm{g} \cdot 10^{-3}~\mathrm{kg}\]
+\[ \Delta m = 0.01\unit{g} = 0.01\unit{g} \cdot 10^{-3}\unit{kg}\]
 Since both $l_0$ and $l_1$ were measured using two markers on a ruler, the
 uncertainty in the measurement is equal to half of the smallest division(unc).
-\[ \Delta l_0 = \Delta l_1 = \frac{0.05~\mathrm{cm}}{2} = 0.025~\mathrm{cm} =
-0.025 \cdot 10^{-2}~\mathrm{m} \]
-\end{flushleft}
+\[ \Delta l_0 = \Delta l_1 = \frac{0.05\unit{cm}}{2} = 0.025\unit{cm} =
+0.025 \cdot 10^{-2}\unit{m} \]
+The error of the extension is calculated by propagating the error of the
+measurements (unc):
+\[ \Delta x_e = \sqrt{\Delta l_0 ^{\,2} + \Delta l_1 ^{\,2}} =
+\sqrt{(0.025\unit{cm})^2 + (0.025\unit{cm})^2} = 0.03535\unit{cm}
+\approx 0.04 \cdot 10^{-2}\unit{m}\]
+For the weight, the error is calculated by multiplying the error of the mass
+with the constant, $g$:
+\[\Delta W = \Delta m |g| = (0.01 \cdot 10^{-3}\unit{kg})|9.81~
+\mathrm{kg \cdot N\inv}| = 9.81 \cdot 10^{-5}\unit{N}\]
+To calculate the error of the spring constant, the following equation is used (unc):
+\begin{equation}
+    \Delta k = |k|\sqrt{\left(\frac{\Delta W}{|W|}\right)^2 + \left( \frac{\Delta x_e}{|x_e|}\right) ^2}
+\end{equation}
+By using the fifth data point of table \ref{tab:1}, we get the error for the
+spring constant:
+\[ \Delta k = \left| k \right| = \sqrt{\left(\frac{9.81 \cdot 10
+^{-5}\unit{N}}{1.083}\right) ^ 2 + \left(\frac{0.04 \cdot 10^
+{-2}\unit{m}}{0.314\unit{m}}\right) ^ 2 } = 0.04065 \unit{N m\inv}
+\approx 0.05\unit{N m\inv}\]
+\newpage
+\textbf{Calculating the spring error and constant:}
+\par
+The average spring constant is calculated using the arithmetic mean:
+\begin{equation}
+    k_{avg} = \frac{1}{n} \sum_{i=1}^{n} k_i
+\end{equation}
+The example calculation for the short spring is:
+\[k_{avg}  = \frac{1}{5}\left(3.63\unit{N m\inv}+ 3.70\unit{N m\inv} +
+3.52\unit{N m\inv} + 3.57\unit{N m\inv} + 3.52\unit{N m\inv} \right)  =
+3.5\unit{N m\inv}\]
+The error of the average spring constant is calculated using the standard
+deviation of the mean (unc):
+\begin{equation}
+s_m = \frac{s}{\sqrt{n}}
+\end{equation}
+Where n is the number of samples and s is the standard deviation, defined
+as(unc):
+\begin{equation}
+s = \sqrt{\frac{\sum_{i=1}^{n}(k_i-k_{avg})^2}{n-1}}
+\end{equation}
+To obtain $\Delta k_{avr}$, $s_m$ is multiplied by a constant, $t$, which in
+this case is 3 (unc):
+\begin{equation}
+    \Delta k_{avg} = 3s_m
+\end{equation}
+When substituting values for the short spring, the results are:
+\begin{gather*}
+    s = 0.077\unit{N m\inv}\\
+    s_m = 0.035\unit{N m\inv}\\
+    \Delta k_{avr} = 0.105\unit{N m\inv}
+\end{gather*}
+The results for the long spring:
+\begin{gather*}
+    s = 0.8814\unit{N m\inv}\\
+    s_m = 0.3945\unit{N m\inv}\\
+    \Delta k_{avr} = 1.1835\unit{Nm\inv}
+\end{gather*}
+Therefore,
+\[ k_{s_{avg}} = (3.5 \pm 0.2)\unit{Nm\inv}\]
+\[k_{l_{avg}} = (21.38 \pm 1.19)\unit{Nm\inv}\]
+\par
+\textbf{From the graphs}
+\par
+The value of the spring constant can also be determined from the trendline of
+the graphs in figures \ref{fig:2} and \ref{fig:3}.
+\par
+Therefore, figure \ref{fig:2} and \ref{fig:3} can be interpreted so that the
+average spring constants can be found.
+\begin{gather*}
+ k_{s_{avg}} = 3.741\unit{Nm\inv}\\
+ k_{l_{avg}} = 19.64\unit{Nm\inv}
+\end{gather*}
+\newpage
+\section{Discussion spring constant}
+\justifying
+The purpose of this experiment was to evaluate the accuracy and precision of the measurements as well as the link between the physical quantities involved, such as force and extension in the context of Hooke's Law. The project accomplished its goal, albeit with certain restrictions, according to the data gathered and analyzed.
+\par
+The method used to take measurements using the ruler was one of the primary causes of inaccuracy. The readings might have been impacted by parallax inaccuracies if the spring wasn't vertical or the ruler wasn't precisely positioned at eye level. There was also some variance because the spring wasn't always perfectly still when measurements were made. The greatest measurement uncertainty was introduced by using a manual ruler as opposed to instruments such as a digital displacement sensor. The slight variations between the expected and observed outcomes can be explained by these problems.
+\par
+Despite minor departures from the theoretical predictions, the final results fell within the allowable error range. The spring constant (k), for example, was represented by the force-extension graph, whose slope was near the expected value but had variations just outside the anticipated error ranges. The previously noted measurement inaccuracies are probably the cause of these variances.
+\par
+Although there were a few minor differences, there was generally agreement when comparing the results with those of other organizations carrying out the same experiment. The observed changes were marginally more noticeable than values from earlier research, suggesting that the techniques employed could be improved.
+\par
+It was discovered that the force-extension connection was linear, in accordance
+with Hooke's Law. The spring constant (k), represented by the graph's slope, was
+determined to be (value), falling within (percentage)\% of the theoretical
+value. As anticipated for minor deformations, this validated the
+force-displacement proportionality.
+\par
+A few adjustments could be made to future studies to increase accuracy. Precision would be increased and parallax errors would be eliminated with the use of a digital measurement equipment. Inconsistencies would also be decreased by stabilizing the spring prior to collecting measurements. The effect of random errors would be reduced by doing measurements several times and averaging them. More dependable results could also be obtained by fixing the ruler so that it is exactly perpendicular to the spring.
+\subsection{Specific questions}
+Does the spring comply with Hooke's law? Explain!
+\par
+In the context of this experiment, the spring does, in fact, adhere to Hooke's law. The spring's extension is proportionate to the applied force, as indicated by the force-extension graph's obvious linear relationship. Hooke's law predicts just this. The notion that no force implies no expansion is further supported by the line's proximity to the origin. Although we didn't push the spring that far in this experiment, deviations may occur if we used considerably greater forces since the spring could approach its elastic limit.
+\par
+What is your best value of k?
+\par
+The graph's slope was used to determine the ideal value of k, the spring constant. The data showed that (value with units) was the result. This number, which represents the spring's stiffness, remained largely constant across the many measurements we made.
+\par
+Does the average value from the table correspond to the value from the graph
+within the measurement error?
+\par
+Indeed, within the anticipated measurement error, the average value of k from the table and the value we obtained from the graph agree. Any slight discrepancies are probably the result of small problems, such as a tiny parallax mistake in the ruler's reading or tiny spring movements prior to the measurements. Overall, there is good agreement between the two values.
+
+\end{justify}
 \end{document}
