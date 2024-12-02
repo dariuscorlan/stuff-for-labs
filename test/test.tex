@@ -1,7 +1,16 @@
 \documentclass{article}
 \usepackage{lipsum}
+\usepackage{pgfplots}
+\pgfplotsset{width=10cm,compat=1.9}
 \begin{document}
 \begin{flushleft}
 Finally i got this to work how i want it to work this is fucking incredible yippie yap yap yap yap yap yap yap yap yap
+\par
+\begin{tikzpicture}
+\begin{axis}[axis lines = middle, xmin = 0]
+  %  \addplot[color = blue, samples = 50]{exp(x)};
+    \addplot[color = red, samples = 50]{x*5}
+\end{axis}
+\end{tikzpicture}
 \end{flushleft}
 \end{document}
