@@ -7,11 +7,14 @@
 \usepackage{tabularx}
 \usepackage{csvsimple}
 \usepackage{ragged2e}
+\usepackage{cite}
+\usepackage{pdfpages}
 \usepackage{subcaption}
 \newcommand{\inv}{^{\raisebox{.2ex}{$\scriptscriptstyle-1$}}}
 \newcommand{\unit}[1]{~\mathrm{#1}}
 
 \begin{document}
+\includepdf[pages = {1}]{template.pdf}
 \begin{justify}
 \section{Introduction}
 The aim of this lab is to measure the spring constant of a helical spring and to
@@ -20,13 +23,13 @@ measured, while also measuring the effect of spring mass on this value.
 \section{Theory}
 Hooke's law, as defined by the 17th century physicist Robert Hooke, states that
 the force exerted by a spring is directly proportional to the elongation or
-compression of the spring.
+compression of the spring\cite{williams_what_nodate}.
 \par
 A helical spring is a part of wire coiled or wound in the shape of a helix. When
 a spring with the spring constant $k$ and the unstretched length $l_0$ is
 stretched or compressed to the length $l_e$, the force exerted by the spring
 will be a relation between $k$ and $\Delta l$. For small deflections Hooke's law
-is formulated in Equation 1.
+is formulated in Equation 1\cite{williams_what_nodate}.
 %refr
 \par
 \begin{equation}
@@ -80,7 +83,7 @@ The time period is given by Equation~\ref{eq:6}:
 However, since the impact of the spring's weight cannot be ignored, the formulas
 have to be modified to include the moment of inertia, which affects k. To
 account for this, the corrected formula is used:
-\begin{equation}
+\begin{equation} \label{eq:7}
     T_{cor} = 2 \pi \sqrt{\frac{m+\frac{m_S}{3}}{k}}
 \end{equation}
 These formulas are used to validate Hooke's law and determine the spring
@@ -96,7 +99,7 @@ measured using a chronometer. Figure 1 shows the experimental setup.
 \begin{figure}[!h]
     \centering
     \includegraphics[width = 0.5\linewidth]{13.png}
-    \caption{Drawing of the experiment setup(reft)}
+    \caption{Drawing of the experiment setup\cite{noauthor_b5-2_nodate}}
 \end{figure}
 \newpage
 \subsection{Measuring instruments}
@@ -205,14 +208,14 @@ k x_e = W \Rightarrow k = \frac{W}{x_e} = \frac{1.0836 \unit{N}}{0.31\unit{m}} =
 \end{gather*}
 \subsubsection{Error calculations}
 As the mass was calculated using a digital scale, the uncertainty is the sum of
-the smallest division(unc).
+the smallest division\cite{profcomp}.
 \[ \Delta m = 0.01\unit{g} = 0.01\unit{g} \cdot 10^{-3}\unit{kg}\]
 Since both $l_0$ and $l_1$ were measured using two markers on a ruler, the
-uncertainty in the measurement is equal to half of the smallest division(unc).
+uncertainty in the measurement is equal to half of the smallest division\cite{profcomp}.
 \[ \Delta l_0 = \Delta l_1 = \frac{0.05\unit{cm}}{2} = 0.025\unit{cm} =
 0.025 \cdot 10^{-2}\unit{m} \]
 The error of the extension is calculated by propagating the error of the
-measurements (unc):
+measurements \cite{profcomp}:
 \[ \Delta x_e = \sqrt{\Delta l_0 ^{\,2} + \Delta l_1 ^{\,2}} =
 \sqrt{(0.025\unit{cm})^2 + (0.025\unit{cm})^2} = 0.03535\unit{cm}
 \approx 0.04 \cdot 10^{-2}\unit{m}\]
@@ -220,8 +223,8 @@ For the weight, the error is calculated by multiplying the error of the mass
 with the constant, $g$:
 \[\Delta W = \Delta m |g| = (0.01 \cdot 10^{-3}\unit{kg})|9.81~
 \mathrm{kg \cdot N\inv}| = 9.81 \cdot 10^{-5}\unit{N}\]
-To calculate the error of the spring constant, the following equation is used (unc):
-\begin{equation}
+To calculate the error of the spring constant, the following equation is used \cite{profcomp}:
+\begin{equation}\label{eq:10}
     \Delta k = |k|\sqrt{\left(\frac{\Delta W}{|W|}\right)^2 + \left( \frac{\Delta x_e}{|x_e|}\right) ^2}
 \end{equation}
 By using the fifth data point of table \ref{tab:1}, we get the error for the
@@ -242,18 +245,18 @@ The example calculation for the short spring is:
 3.52\unit{N m\inv} + 3.57\unit{N m\inv} + 3.52\unit{N m\inv} \right)  =
 3.5\unit{N m\inv}\]
 The error of the average spring constant is calculated using the standard
-deviation of the mean (unc):
-\begin{equation}
+deviation of the mean \cite{profcomp}:
+\begin{equation}\label{eq:12}
 s_m = \frac{s}{\sqrt{n}}
 \end{equation}
 Where n is the number of samples and s is the standard deviation, defined
-as(unc):
-\begin{equation}
+as \cite{profcomp}:
+\begin{equation}\label{eq:13}
 s = \sqrt{\frac{\sum_{i=1}^{n}(k_i-k_{avg})^2}{n-1}}
 \end{equation}
 To obtain $\Delta k_{avr}$, $s_m$ is multiplied by a constant, $t$, which in
-this case is 3 (unc):
-\begin{equation}
+this case is 3 \cite{profcomp}:
+\begin{equation}\label{eq:14}
     \Delta k_{avg} = 3s_m
 \end{equation}
 When substituting values for the short spring, the results are:
@@ -314,6 +317,202 @@ Does the average value from the table correspond to the value from the graph
 within the measurement error?
 \par
 Indeed, within the anticipated measurement error, the average value of k from the table and the value we obtained from the graph agree. Any slight discrepancies are probably the result of small problems, such as a tiny parallax mistake in the ruler's reading or tiny spring movements prior to the measurements. Overall, there is good agreement between the two values.
-
+\section{Results period experiment}
+\subsection{Measurements}
+The measurements of the period, by counting 30 oscillations of mass $m$, are
+presented in table 3 and 4. Included in these tables are also the values for the
+average period of oscillation of each mass, $T_{ex}$, the ideal period, $T_{id}$,
+and the theoretical period using the corrected mass $T_{cor}$. The percent
+deviation between the ideal and experimental values of both $T_{id}$ and
+$T_{cor}$ are included. For the long spring, as it was not possible to stop the
+spring from behaving like a pendulum, a smaller number of oscillations had to be
+measured, marked in table 4.
+\begin{table}[!h]
+    \centering
+    \caption{Measurement results for the second experiment when using the short spring}
+    \label{tab:3}
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|} 
+    \hline
+     $m~[10^{-3} \unit{kg}]$ & $30 T_1$  & $30 T_2$  & $30 T_3$  & $T_{ex}~[\mathrm{s}]$    & $T_{id} \unit{[s]}$     & $T_{cor} \unit{[s]}$    & $PD_{id} \unit{[\%]}$ & $PD_{cor} \unit{[\%]}$  \\ 
+    \hline
+    31.14            & 18.78 & 19.09 & 18.9  & 0.63 & 0.58 & 0.68 & 7.32  & 7.01    \\ 
+    \hline
+    52.14            & 23.57 & 23.59 & 23.72 & 0.79 & 0.76 & 0.87 & 3.95  & 10.91    \\ 
+    \hline
+    70.8             & 27.51 & 27.34 & 27.19 & 0.91 & 0.88 & 1.02 & 3.30  & 11.66    \\ 
+    \hline
+    91.9             & 30.82 & 30.92 & 30.7  & 1.03 & 1.01 & 1.16 & 2.23 & 12.90    \\
+    \hline
+    \end{tabular}
+\end{table}
+\begin{table}[!h]
+    \centering
+    \caption{Measurement results for the second experiment using the long spring}
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|} 
+        \hline
+        $m~[10^{-3}\unit{kg}]$ & $30 T_1$ & $30 T_2$  & $30 T_3$  & $T_{ex} \unit{[s]}$    & $T_{id} \unit{[s]}$     & $T_{cor} \unit{[s]}$    & $PE_{id}\unit{[\%]}$     & $PE_{cor}\unit{[\%]}$     \\ 
+        \hline
+        52.14     & 9.7   & 9.76  & 9.78  & 0.324 & 0.310 & 0.358 & 4.547 & 10.220  \\ 
+        \hline
+        91.9      & 13.14 & 13.06 & 13.49 & 0.441      & 0.411 & 0.4754 & 6.641 & 7.802  \\ 
+        \hline
+        131.46    & 15.61 & 15.4  & 15.55 & 0.517 & 0.492 & 0.569 & 4.816 & 9.909  \\ 
+        \hline
+                  & $10 T_1$  & $10 T_2$  & $10 T_3$  &            &             &             &          &           \\ 
+        \hline
+        171.12    & 5.88  & 5.74  & 5.78  & 0.58       & 0.562 & 0.649 & 3.136 & 11.849  \\ 
+        \hline
+        202.64    & 6.22  & 6.19  & 6.23  & 0.621     & 0.611  & 0.706   & 1.472
+        & 13.770   \\
+        \hline
+    \end{tabular}
+\end{table}
+\newpage
+\subsection{Graphs}
+To compare the experimental values to the theoretical ones, both the period of
+the oscillations, $T_{ex}, T_{id}, T_{cor}$, and the percent deviation,
+$PD_{id}, PD_{cor}$, will be plotted for both springs. Figures 4 and 5 will
+include the results for the short spring. Figures 6 and 7 will include the
+results for the long spring.
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width = 0.9\textwidth]{Shortspring_period.png}
+    \caption{$T_{ex}, T_{id}, T_{cor}$ in terms of mass for the short spring}
+\end{figure}
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width = 0.9\textwidth]{Shortspring_deviation.png}
+    \caption{$PD_{id}, PD_{cor}$ in terms of mass for the short spring}
+\end{figure}
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width = 0.9\textwidth]{Longspring_period.png}
+    \caption{$T_{ex}, T_{id}, T_{cor}$ in terms of mass for the long spring}
+\end{figure}
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width = 0.9\textwidth]{Longspring_deviation.png}
+    \caption{$PD_{id}, PD_{cor}$ in terms of mass for the long spring}
+\end{figure}
+\newpage
+\subsection{Calculations}
+Using the forth data point of table \ref{tab:3} these calculations are done for
+the short spring.
+\par
+\textbf{Calculating the experimental period:}
+\\
+From the data, $T_{ex}$ is
+\[T_{ex} = \frac{1}{30} \cdot \frac{30.82 + 30.92 + 30.7}{3} = 1.03\unit{s}\]
+\par
+\textbf{Ideal period of oscillation:}
+\\
+From equation \ref{eq:6} the ideal oscillation period is
+\[ T_{id} = 2 \pi \sqrt{\frac{91.9 \cdot 10^{-3}\unit{kg}}{3.53 \unit{kg
+s^{-2}}}} = 1.01\unit{s}\]
+\par
+\textbf{Corrected period of oscillation:}
+\\
+From equation \ref{eq:7} the period of one oscillation with the corrected weight
+is 
+\[ T_{cor} = 2 \pi \sqrt{\frac{91.9 \cdot 10^{-3}\unit{kg} + \frac{91.9\cdot
+10^{-3}\unit{kg}}{3}}{3.53 \unit{kgs^{-2}}}} = 1.16\unit{s}\]
+\par
+\textbf{Ideal and corrected percent deviation:}\\
+The deviation in both cases is calculated using the following formula
+\begin{equation}
+    PD = \frac{T_{ex} - T}{T}
+\end{equation}
+where T is either the ideal or corrected period.\\
+Therefore, 
+\begin{gather*}
+    PD_{id} = \frac{1.03\unit{s} - 1.01\unit{s}}{1.01\unit{s}}\cdot100\unit{\%} = 2.23\unit{\%}\\
+    PD_{cor} = \frac{1.03\unit{s} - 1.16\unit{s}}{1.16\unit{s}}~100\unit{\%} = 12.9\unit{\%}
+\end{gather*}
+\subsubsection{Error calculations}
+\textbf{Error in the period of one theoretical oscillation:}\\
+Using equation \ref{eq:10} the error in the theoretical period is 
+\begin{gather*}
+    \Delta T_{id} = \left| 1.01\unit{s} \right| \cdot \sqrt{\left(\frac{0.01 \cdot 10^{-3}\unit{kg}}{91.9 \cdot 10^{-3}\unit{kg}}\right)^2 + \left(\frac{0.04 \unit{kg s^{-2}}}{3.52\unit{kg s^{-2}}}\right)^2} \approx 0.075\unit{s}\\
+    \Delta T_{cor} \approx 0.086\unit{s}
+\end{gather*}
+\par
+\textbf{Error in the experimental period value:}\\
+Using equations \ref{eq:12}, \ref{eq:13}, \ref{eq:14} the error for the
+experimental value is calculated using the standard deviation of the mean. The
+values gathered from the forth mass in table \ref{tab:3} are
+\begin{gather*}
+    s = \pm0.0037\unit{s}\\
+    s_m = \pm0.0022\unit{s}\\
+    \Delta T_{ex} = \pm 0.0064\unit{s}
+\end{gather*}
+\par
+Tables 5 and 6 contain all the error values for the second experiment.
+\begin{table}[!h]
+    \centering
+    \caption{Error values for the short spring measurements}
+    \begin{tabular}{|c|c|c|c|c|c|} 
+    \hline
+    $m~[10^{-3}\unit{kg}]$ & standard deviation of T [s] & $s_m$ [s] & $\Delta T_{ex}\unit{[s]}$ & $\Delta T_{id}\unit{[s]}$ &
+    $\Delta T_{cor}\unit{[s]}$  \\ 
+    \hline
+    31.14            & 0.0052                     & 0.003                           & 0.009 & 0.043 & 0.050   \\ 
+    \hline
+    52.14            & 0.003                    & 0.002                           & 0.005 & 0.056 & 0.064   \\ 
+    \hline
+    70.8             & 0.005                    & 0.003                           & 0.009 & 0.065 & 0.075   \\ 
+    \hline
+    91.9             & 0.004                    & 0.002                            & 0.006  & 0.074 & 0.085   \\
+    \hline
+    \end{tabular}
+    \end{table}
+    \begin{table}[!h]
+        \centering
+        \caption{Error values for the long spring measurements}
+        \begin{tabular}{|c|c|c|c|c|c|} 
+        \hline
+        $m~[10^{-3}\unit{kg}]$ & standard deviation of T [s]& $s_m\unit{[s]}$ &
+        $\Delta T_{ex}\unit{[s]}$     & $\Delta T_{id}\unit{[s]}$     & $\Delta
+        T_{cor}\unit{[s]}$     \\ 
+        \hline
+        52.14     & 0.001                & 0.0008                       & 0.0024 & 0.0228 & 0.0264  \\ 
+        \hline
+        91.9      & 0.0076                & 0.0044                       & 0.0132 & 0.0304 & 0.0351  \\ 
+        \hline
+        131.46    & 0.0036                & 0.0021                       & 0.0062 & 0.0363   & 0.0419  \\ 
+        \hline
+        171.12    & 0.0072                & 0.0042                       & 0.0125  & 0.0414 & 0.0478  \\ 
+        \hline
+        202.64    & 0.0021                & 0.0012                       & 0.0036 & 0.0451 & 0.0520  \\
+        \hline
+        \end{tabular}
+        \end{table}
+\section{Discussion period}
+The ideal period $T_{id}$ depends on the mass according to the formula where k is the spring constant. This indicates that rather than increasing linearly, the period rises with the square root of the mass. Plotting Tid against m results in a curve that flattens off as mass increases.
+\par
+The square root relationship predicted the shape of the curves we saw during the experiment. Small variations from the anticipated shape were probably caused by friction, a small amount of air resistance, or minor spring flaws. Although these problems are difficult to eliminate in real-world research, they don't significantly affect the general patterns.
+\par
+The mass determines the difference between $T_{cor}$ and Tid. The adjustment has a greater effect when the mass is smaller since the mass of the spring makes up a larger portion of the entire system. The spring's contribution decreases with increasing mass, and the difference between $T_{cor}$ and Tid narrows. This indicates that while working with lighter loads, the adjustment is more important.
+\par
+The percentage gap between the experimental data and the theoretical values decreases with increasing mass. At larger masses, measurement errors, random errors, and other little problems have less of an impact on the overall behavior of the system. Consequently, a larger mass leads to a higher agreement between the theoretical and experimental values.
+\par
+We could use instruments like a digital caliper to measure the spring's
+displacement under various forces, which would decrease measurement errors and
+provide a more precise estimate for k. We could use more accurate timing
+devices, make sure the spring doesn't move sideways, and perform repeated
+measurements to average out any random changes in order to determine the
+vibration period more accurately. These enhancements would increase the accuracy
+of our findings and bring them closer to the theoretical forecasts. 
+\section{Conclusion}
+In conclusion, the experiment shows that the square root dependency indicated by
+Hooke's rule is followed in the relationship between mass and period.
+Specifically, when dealing with smaller masses, the corrected period $T_{cor}$
+matched the experimental data far better than the ideal period $T_{id}$. Differences
+between theoretical and practical data were minor which are within the
+anticipated error range. Also, outcomes of the experiment were parallel with
+predictions and similar studies. 
+\section{Bibliography}
+\bibliographystyle{IEEEtran}
+\bibliography{refrences.bib}
 \end{justify}
+\includepdf[pages = {10}]{template.pdf}
 \end{document}

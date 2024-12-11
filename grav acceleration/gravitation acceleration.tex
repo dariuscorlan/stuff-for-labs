@@ -1,0 +1,105 @@
+\documentclass[a4paper]{article}
+\usepackage{graphicx}
+\usepackage[margin = 1in]{geometry}
+\usepackage{ragged2e}
+\usepackage{parskip}
+\usepackage{amsmath}
+\newcommand{\unit}[1]{~\mathrm{#1}}
+
+\begin{document}
+\begin{justify}
+
+\section{Introduction}
+\subsection{Research Question/ Problem Statement}
+The objective of this lab is to analyze the effect of gravity during free fall
+of a slat. The slat is dropped between an optical transmitter and receiver. This
+is done to determine the position of the slat in terms of time in order to
+calculate the gravitational acceleration.
+
+\subsection{Background/ Theory}
+Free fall refers to a situation when an object is only acted on by gravitational
+force. In this experiment, air resistance is negligible.
+
+\noindent
+A rectilinear uniform motion can be used to describe free fall, relating the
+position in terms time. Uniform motion paths can be described using the
+following equation:
+\begin{equation}
+    x(t) = x_0 + v_x(t-t_0)
+\end{equation} 
+Where $v_x$ is defined as:
+\begin{equation}
+    v_x = \frac{x_2 - x_1}{t_2 - t_1}
+\end{equation}
+However, it is important to note that in free fall, the speed is not constant,
+therefore the equation for speed becomes:
+\begin{equation}
+    v_x = \frac{dx}{dt}
+\end{equation}
+The instantaneous acceleration is defined by:
+\begin{equation}
+    a_x = \frac{dv_x}{dt}
+\end{equation}
+Considering air resistance as negligible, using equation 3 the following
+equation is found:
+\begin{gather}
+    dx = v_x \cdot dt \\
+    dx = (v_0 +a_x t) \cdot dt \nonumber
+\end{gather}
+By integrating, we get:
+\begin{equation}
+    x(t) = v_0 t + \frac{a_x t^2}{2}
+\end{equation}
+The gravitational acceleration varies based on where on the planet it is
+measured. For example, it is smaller at the equator than the poles.
+
+\noindent
+When the position of the object is measured, the difference in time must be as
+small as possible to get the most accurate results for the instantaneous
+acceleration. Therefore, multiple points of measurement need to be used.
+
+\noindent
+In this experiment, the point in time is registered when the object has fallen a
+certain distance, $50\unit{mm}$. Thus, we can calculate the instantaneous
+acceleration and velocity. Notably, when calculating the instantaneous speed,
+the difference in time, $\Delta t$, should approach 0.
+\begin{equation}
+    v_x = \lim_{\Delta t \rightarrow 0}\frac{\Delta x}{\Delta t}
+\end{equation}
+To increase precision when measuring speed, the velocity also needs to be
+calculated for intermediate points in time. Having two successive measurement
+points, the speed is considered accurate when taken exactly at the half way
+point between the two measurements.
+\begin{equation}
+    t_{i+\frac{1}{2}} = \frac{t_{i+1} + t_i}{2}
+\end{equation}
+Therefore we calculate:
+\begin{equation}
+    v_{i+\frac{1}{2}} \approx \frac{\Delta x}{t_{i+1} - t_i}
+\end{equation}
+\section{Method \& Materials}
+\subsection{Experimental Set-up}
+Figure 1 shows the set-up for the experiment. The sensor gate, the alternating
+stripes and the wire are shown. All the data collected by the software is
+captured using PASCO's Capstone program.
+
+ADD PICTURE
+\subsection{Measuring instruments}
+In this experiment, the PASCO smart gate, model PS-3225,  was used to measure the difference in
+time, having a resolution of 2 ms (refr to the gate manual). PASCO's Capstone
+software was used to collect the data, and a slate with 7 black strips 50 mm
+apart was used as the free fall object.
+\subsection{Method}
+A slat with alternating stripes is dropped through the light sensor. The
+resulting measurements are then used to create a table displaying time and
+position. 
+
+\noindent
+This procedure is repeated twelve times, ensuring the data falls in the expected
+range. All runs with erroneous data points are remeasured, to improve accuracy. 
+
+\noindent
+Due to the small mass and surface area of the slat, all external forces can be
+ignored, and the resulting acceleration can be considered the gravitational acceleration.
+\end{justify}
+\end{document}
