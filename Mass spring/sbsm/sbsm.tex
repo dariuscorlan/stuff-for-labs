@@ -1,0 +1,31 @@
+
+\documentclass[a4paper]{article}
+\usepackage{graphicx}
+\usepackage[margin = 1in]{geometry}
+\usepackage{ragged2e}
+\usepackage{parskip}
+\usepackage{amsmath}
+\newcommand{\unit}[1]{~\mathrm{#1}}
+\begin {document}
+\begin{equation*}
+    V = l_1 \cdot l_2 \cdot l_3 = 0.96 \cdot 0.99 \cdot 0.95 = 0.903\unit{cm^3}
+\end{equation*}
+\[ \rho = \frac{V}{m} = \frac{0.903\unit{cm^3}}{8.81\unit{g}} = 9.743 \unit{g
+\cdot cm^{-3}} \]
+
+\begin{gather*}
+    \frac{\Delta V}{|V|} =\sqrt{\left (\frac{\Delta l_1}{|l_1|}\right ) ^ 2 + \left (\frac{\Delta l_2}{|l_2|}\right ) ^ 2 + \left (\frac{\Delta l_3}{|l_3|}\right ) ^ 2} \\ 
+    \Delta V = |V| \sqrt{\left (\frac{\Delta l_1}{|l_1|}\right ) ^ 2 + \left (\frac{\Delta l_2}{|l_2|}\right ) ^ 2 + \left (\frac{\Delta l_3}{|l_3|}\right ) ^ 2}\\
+    \Delta V = 0.903 \cdot \sqrt{\left (\frac{0.01}{0.96}\right ) ^ 2 + \left (\frac{0.01}{0.99}\right ) ^ 2 + \left (\frac{0.01}{0.95}\right ) ^ 2} =  0.016\unit{cm}
+\end{gather*}
+\begin{gather*}
+    \frac{\Delta \rho}{|\rho|} = \sqrt{\left( \frac{\Delta V}{|V|}\right) ^2 + \left(\frac{\Delta m}{|m|}\right) ^2}\\
+    \Delta \rho = \rho \cdot \sqrt{\left( \frac{\Delta V}{|V|}\right) ^2 + \left(\frac{\Delta m}{|m|}\right) ^2}\\
+    \Delta \rho = 9.4731 \cdot \sqrt{\left( \frac{0.016}{0.903}\right) ^2 + \left(\frac{0.01}{8.81}\right) ^2}\\
+    \Delta \rho =  0.1682 \approx 0.2\unit{g \cdot cm^{-3}}
+\end{gather*}
+\begin{gather*}
+    V = (0.90 \pm 0.02) \unit{cm^3}\\
+    \rho = (9.8 \pm 0.2) \unit{g \cdot cm^{-3}}
+\end{gather*}
+\end{document}
