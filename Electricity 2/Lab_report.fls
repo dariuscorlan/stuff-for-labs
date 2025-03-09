@@ -384,6 +384,7 @@ INPUT .\potterminals.png
 INPUT .\potterminals.png
 INPUT C:\Users\darius\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\darius\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\darius\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\darius\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\darius\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT .\Unloaded pot circuit.png
@@ -401,7 +402,6 @@ INPUT .\unloaded pot picture.png
 INPUT .\unloaded pot picture.png
 INPUT .\unloaded pot picture.png
 INPUT .\unloaded pot picture.png
-INPUT C:\Users\darius\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT .\loaded pot fixed circuit.png
 INPUT .\loaded pot fixed circuit.png
 INPUT .\loaded pot fixed circuit.png
@@ -416,6 +416,20 @@ INPUT .\loaded pot fixed pic.png
 INPUT .\loaded pot fixed pic.png
 INPUT .\loaded pot fixed pic.png
 INPUT .\loaded pot fixed pic.png
+INPUT .\fixed current circuit.png
+INPUT .\fixed current circuit.png
+INPUT .\fixed current circuit.png
+INPUT .\fixed current circuit.png
+INPUT .\fixed current circuit.png
+INPUT .\fixed current circuit.png
+INPUT .\fixed current circuit.png
+INPUT .\fixed currrent picture.png
+INPUT .\fixed currrent picture.png
+INPUT .\fixed currrent picture.png
+INPUT .\fixed currrent picture.png
+INPUT .\fixed currrent picture.png
+INPUT .\fixed currrent picture.png
+INPUT .\fixed currrent picture.png
 INPUT Lab_report.aux
 INPUT .\Lab_report.out
 INPUT .\Lab_report.out

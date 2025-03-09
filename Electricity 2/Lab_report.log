@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.14)  9 MAR 2025 17:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.14)  9 MAR 2025 17:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -771,45 +771,58 @@ File: potterminals.png Graphic file (type png)
 <use potterminals.png>
 Package pdftex.def Info: potterminals.png  used on input line 45.
 (pdftex.def)             Requested size: 181.18439pt x 161.85658pt.
-<Unloaded pot circuit.png, id=64, 427.5975pt x 174.6525pt>
-File: Unloaded pot circuit.png Graphic file (type png)
-<use Unloaded pot circuit.png>
-Package pdftex.def Info: Unloaded pot circuit.png  used on input line 87.
-(pdftex.def)             Requested size: 181.18784pt x 74.00645pt.
-
-Underfull \hbox (badness 1184) in paragraph at lines 89--89
-[]\OT1/cmr/m/n/9 (a) |Cir-cuit di-a-gram of un-loaded po-ten-tiome-ter cir-
- []
-
-<unloaded pot picture.png, id=65, 265.9536pt x 150.3216pt>
-File: unloaded pot picture.png Graphic file (type png)
-<use unloaded pot picture.png>
-Package pdftex.def Info: unloaded pot picture.png  used on input line 93.
-(pdftex.def)             Requested size: 181.18784pt x 102.41458pt.
 
 
 [1
 
 {C:/Users/darius/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./potterminals.png>]
+<Unloaded pot circuit.png, id=80, 427.5975pt x 174.6525pt>
+File: Unloaded pot circuit.png Graphic file (type png)
+<use Unloaded pot circuit.png>
+Package pdftex.def Info: Unloaded pot circuit.png  used on input line 89.
+(pdftex.def)             Requested size: 181.18784pt x 74.00645pt.
+
+Underfull \hbox (badness 1184) in paragraph at lines 91--91
+[]\OT1/cmr/m/n/9 (a) |Cir-cuit di-a-gram of un-loaded po-ten-tiome-ter cir-
+ []
+
+<unloaded pot picture.png, id=81, 265.9536pt x 150.3216pt>
+File: unloaded pot picture.png Graphic file (type png)
+<use unloaded pot picture.png>
+Package pdftex.def Info: unloaded pot picture.png  used on input line 95.
+(pdftex.def)             Requested size: 181.18784pt x 102.41458pt.
 <loaded pot fixed circuit.png, id=82, 465.23813pt x 158.09062pt>
 File: loaded pot fixed circuit.png Graphic file (type png)
 <use loaded pot fixed circuit.png>
-Package pdftex.def Info: loaded pot fixed circuit.png  used on input line 110.
+Package pdftex.def Info: loaded pot fixed circuit.png  used on input line 112.
 (pdftex.def)             Requested size: 226.48395pt x 76.9609pt.
 <loaded pot fixed pic.png, id=83, 444.15938pt x 332.74312pt>
 File: loaded pot fixed pic.png Graphic file (type png)
 <use loaded pot fixed pic.png>
-Package pdftex.def Info: loaded pot fixed pic.png  used on input line 116.
+Package pdftex.def Info: loaded pot fixed pic.png  used on input line 118.
 (pdftex.def)             Requested size: 181.18784pt x 135.73505pt.
 
 
 [2 <./Unloaded pot circuit.png> <./unloaded pot picture.png> <./loaded pot fixed circuit.png> <./loaded pot fixed pic.png>]
+<fixed current circuit.png, id=95, 441.14813pt x 171.64125pt>
+File: fixed current circuit.png Graphic file (type png)
+<use fixed current circuit.png>
+Package pdftex.def Info: fixed current circuit.png  used on input line 141.
+(pdftex.def)             Requested size: 181.18784pt x 70.49644pt.
+<fixed currrent picture.png, id=96, 226.9278pt x 186.4566pt>
+File: fixed currrent picture.png Graphic file (type png)
+<use fixed currrent picture.png>
+Package pdftex.def Info: fixed currrent picture.png  used on input line 148.
+(pdftex.def)             Requested size: 181.18784pt x 148.87527pt.
 
-[3]
+
+[3 <./fixed current circuit.png> <./fixed currrent picture.png>]
 
 [4]
 
-[5] (Lab_report.aux)
+[5]
+
+[6] (Lab_report.aux)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
@@ -818,17 +831,17 @@ Package rerunfilecheck Info: File `Lab_report.out' has not changed.
 (rerunfilecheck)             Checksum: E85D020E22149139C97BAB5609D24506;2342.
  ) 
 Here is how much of TeX's memory you used:
- 36869 strings out of 473682
- 878766 string characters out of 5718739
- 1547881 words of memory out of 5000000
- 59340 multiletter control sequences out of 15000+600000
+ 36888 strings out of 473682
+ 879241 string characters out of 5718739
+ 1537407 words of memory out of 5000000
+ 59357 multiletter control sequences out of 15000+600000
  560032 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  103i,20n,107p,790b,2224s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Lab_report.pdf (5 pages, 899884 bytes).
+Output written on Lab_report.pdf (6 pages, 1308660 bytes).
 PDF statistics:
- 155 PDF objects out of 1000 (max. 8388607)
- 31 named destinations out of 1000 (max. 500000)
- 150 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 164 PDF objects out of 1000 (max. 8388607)
+ 33 named destinations out of 1000 (max. 500000)
+ 160 words of extra memory for PDF output out of 10000 (max. 10000000)
 
