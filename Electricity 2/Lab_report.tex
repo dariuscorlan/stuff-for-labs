@@ -5,6 +5,8 @@
 \usepackage[hidelinks, colorlinks = true, citecolor = black, linkcolor = blue]{hyperref}
 \usepackage{parskip}
 \usepackage{cite}
+\usepackage{caption}
+\usepackage{subcaption}
 \usepackage{cellspace}
 \usepackage{makecell}
 \usepackage{mwe}
@@ -61,13 +63,33 @@ potential difference between terminals 1 and 3 will be determined by:
 
 When adding a load resistor in parallel to terminals 1 and 3, the voltage across
 them becomes:
+%refr
 \begin{equation}
     V_{13} = \frac{kR_{13}}{R_{13}+k(1-k)R_p} V
 \end{equation}
 \section{Methods \& Materials}
-
+All of the circuits in the experiments are built using the provided connection
+boards. Measurements are done using the AM-520 HVAC multimeter.
 \subsection{Experimental Set-Up unloaded potentiometer}
-
+The unloaded potentiometer circuit consists of a voltage source and a
+potentiometer. Both the voltage of the power source and the potential difference
+between terminals 1 and 3 are measured. The measurements are taken
+incrementally, going from k = 1 to k = 0.1. Figures 2(a) and 2(b) display both
+the electrical diagram, and a picture of the physical set-up of the circuit.
+\begin{figure}
+    \centering
+    \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width=0.8\linewidth]{Unloaded pot circuit.png}
+        \caption{Circuit diagram of unloaded potentiometer circuit(refr)}   
+    \end{subfigure}%
+    \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[width = 0.8\linewidth]{unloaded pot picture.png}
+        \caption{Picture of the unloaded potentiometer circuit}
+    \end{subfigure}
+    \caption{Experimental set-up of the unloaded potentiometer circuit}
+\end{figure}
 \subsection{Experimental Set-Up with fixed resistor}
 
 \subsection{Experimental Set-Up with fixed load current}
