@@ -7,6 +7,7 @@
 \usepackage{cite}
 \usepackage{cellspace}
 \usepackage{makecell}
+\usepackage{mwe}
 \setlength\cellspacetoplimit{4pt}
 \setlength\cellspacebottomlimit{4pt}
 \usepackage{caption} 
@@ -30,9 +31,39 @@
 \usepackage{pgf}
 \begin{document}
 \section{Introduction}
-
+A potentiometer is an electrical component that can be used both as a variable
+resistor, and as a voltage divider. The aim of the experiments described in this
+report is to analyze the behaviour of the potentiometer.
 \section{Background/Theory}
+A potentiometer is a resistor that has three terminals. Two of the terminals
+constitute the full resistance value, while the third one is a sliding contact.
+Figure 1 displays the different contacts of the potentiometer.
+\begin{figure}[!ht]
+    \begin{minipage}{0.4\textwidth}
+        \includegraphics[width = \textwidth]{potterminals.png}
+       \label{fig:1}
+        \caption{Drawing of a potentiometer with labeled terminals}    
+    \end{minipage}
+\end{figure}
 
+The resistance between terminals 1 and 2 is constant, while the resistance
+between 1 and 3 is determined by the following equation:
+\begin{equation}
+    R_{13} = kR
+\end{equation}
+%ref
+
+Since the potentiometer can be used as a voltage divider, the value of the
+potential difference between terminals 1 and 3 will be determined by:
+\begin{equation}
+    V_{13} = k V_{tot}
+\end{equation} 
+
+When adding a load resistor in parallel to terminals 1 and 3, the voltage across
+them becomes:
+\begin{equation}
+    V_{13} = \frac{kR_{13}}{R_{13}+k(1-k)R_p} V
+\end{equation}
 \section{Methods \& Materials}
 
 \subsection{Experimental Set-Up unloaded potentiometer}
@@ -50,7 +81,7 @@ theoretical voltage.
     \caption{Measured and expected voltage in terms of K}
     \begin{tabular}{|c|c|c|c|} 
     \hline
-    $K$ & \makecell{$Measured~V$ \\ V} & \makecell{$\Delta V$ \\ V} &
+    $k$ & \makecell{$Measured~V$ \\ V} & \makecell{$\Delta V$ \\ V} &
     \makecell{$Expected~V$ \\ V}  \\ 
     \hline
     0.1                                       & 0.302      &  0.009          & 0.296      \\
@@ -71,7 +102,7 @@ Figure 4 displays the measured voltage in terms of K.
 \begin{figure}[!ht]
     \centering
     \begin{tikzpicture}
-        \begin{axis}[legend pos = north west, legend style={nodes={scale=0.7}}, ymajorgrids = true, domain = 0.1:1, xmin = 0, xlabel = K, xtick = {0, 0.2, 0.4, 0.6, 0.8, 1.0, 1.2}, ymin = 0, ymax = 3.5, ytick = {0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5}, ylabel = Measured V$ \unit{(V)}$, ignore zero = y]
+        \begin{axis}[legend pos = north west, legend style={nodes={scale=0.7}}, ymajorgrids = true, domain = 0.1:1, xmin = 0, xlabel = k, xtick = {0, 0.2, 0.4, 0.6, 0.8, 1.0, 1.2}, ymin = 0, ymax = 3.5, ytick = {0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5}, ylabel = Measured V$ \unit{(V)}$, ignore zero = y]
         
         \addplot[blue, samples = 100, dashed]{2.953*x};
         \addplot  [only marks, color = blue] coordinates {
@@ -114,7 +145,7 @@ theoretical values, and percent deviations.
     \caption{Measured and theoretical load values in terms of K}
     \begin{tabular}{|c|c|c|c|c|c|c|c|} 
     \hline
-    $K$ & \makecell{$Unloaded~ V$\\ V} & \makecell{$Load~1$\\ V} & \makecell{$Load~1~
+    $k$ & \makecell{$Unloaded~ V$\\ V} & \makecell{$Load~1$\\ V} & \makecell{$Load~1~
       theoretical$\\ V} & \makecell{$PD~1$\\ \%}  & \makecell{$Load~2$\\ V} &
       \makecell{$Load~2~theoretical$\\ V}
        & \makecell{$PD~2$ \\ \%}   \\ 
@@ -139,7 +170,7 @@ voltage drop on the unloaded potentiometer.
 \begin{figure}[!ht]
     \centering
     \begin{tikzpicture}
-        \begin{axis}[width = 0.8\textwidth, legend pos = south east, legend style={nodes={scale=0.7}}, ymajorgrids = true, domain = 0.1:1, xmin = 0, xlabel = K, xtick = {0, 0.2, 0.4, 0.6, 0.8, 1.0, 1.2}, ymin = 0, ymax = 3.5, ytick = {0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5}, ylabel = Load$ \unit{(V)}$, ignore zero = y, ]
+        \begin{axis}[width = 0.8\textwidth, legend pos = south east, legend style={nodes={scale=0.7}}, ymajorgrids = true, domain = 0.1:1, xmin = 0, xlabel = k, xtick = {0, 0.2, 0.4, 0.6, 0.8, 1.0, 1.2}, ymin = 0, ymax = 3.5, ytick = {0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5}, ylabel = Load$ \unit{(V)}$, ignore zero = y, ]
         
         \addplot[black!10!yellow, thick, samples = 100]{1.52*(x^2) + 1.157*x +0.2};
         \addplot  [only marks, color = black!10!yellow, forget plot] coordinates {
@@ -181,16 +212,16 @@ voltage drop on the unloaded potentiometer.
         \end{axis}
     \end{tikzpicture}
     \label{fig:5}
-    \caption{Loads in terms of K}
+    \caption{Loads in terms of k}
 \end{figure}
 \par 
 Figure 6 displays the relationship between percent deviation and K.
 \begin{figure}
     \centering
     \begin{tikzpicture}
-        \begin{axis}[width = 0.8\textwidth, legend pos = north east, legend style={nodes={scale=0.7}},
+        \begin{axis}[width = 0.8\textwidth, legend pos = north east, legend style={nodes={scale=1}},
         ymajorgrids = true, domain = 0.1:1, xmin = 0, xmax = 1, ymin = 0, ymax =
-        80, xlabel = K, xtick = {0, 0.2, 0.4, 0.8, 1}, ytick = {0, 10, 20, 30,
+        80, xlabel = k, xtick = {0, 0.2, 0.4, 0.8, 1}, ytick = {0, 10, 20, 30,
         40, 50, 60, 70, 80}, ylabel = Percent Deviation(K)]
         \addplot[red!30!pink, thick, samples = 100]{107.36*(x^2) - 198.65*x +92.75};
         \addplot[only marks, color = pink, forget plot] 
@@ -224,5 +255,8 @@ Figure 6 displays the relationship between percent deviation and K.
         \legend{$PD_ 1(K)$,$PD_2(K)$}
         \end{axis}
     \end{tikzpicture}
+    \label{fig:6}
+    \caption{Percent deviation in terms of k}
 \end{figure}
+\subsection{Discussion}
 \end{document}
