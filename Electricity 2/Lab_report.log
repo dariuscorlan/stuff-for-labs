@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  10 MAR 2025 13:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  10 MAR 2025 14:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -766,67 +766,63 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
-
-[1
-
-{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<potterminals.png, id=76, 931.98187pt x 832.61063pt>
+<potterminals.png, id=67, 931.98187pt x 832.61063pt>
 File: potterminals.png Graphic file (type png)
 <use potterminals.png>
-Package pdftex.def Info: potterminals.png  used on input line 93.
+Package pdftex.def Info: potterminals.png  used on input line 48.
 (pdftex.def)             Requested size: 181.18439pt x 161.85658pt.
 
 
-[2 <./potterminals.png>]
-<Unloaded pot circuit.png, id=91, 427.5975pt x 174.6525pt>
+[1
+
+{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./potterminals.png>]
+<Unloaded pot circuit.png, id=85, 427.5975pt x 174.6525pt>
 File: Unloaded pot circuit.png Graphic file (type png)
 <use Unloaded pot circuit.png>
-Package pdftex.def Info: Unloaded pot circuit.png  used on input line 146.
+Package pdftex.def Info: Unloaded pot circuit.png  used on input line 101.
 (pdftex.def)             Requested size: 181.18784pt x 74.00645pt.
 
-Underfull \hbox (badness 1184) in paragraph at lines 148--148
+Underfull \hbox (badness 1184) in paragraph at lines 103--103
 []\OT1/cmr/m/n/9 (a) |Cir-cuit di-a-gram of un-loaded po-ten-tiome-ter cir-
  []
 
-<unloaded pot picture.png, id=92, 265.9536pt x 150.3216pt>
+<unloaded pot picture.png, id=86, 265.9536pt x 150.3216pt>
 File: unloaded pot picture.png Graphic file (type png)
 <use unloaded pot picture.png>
-Package pdftex.def Info: unloaded pot picture.png  used on input line 152.
+Package pdftex.def Info: unloaded pot picture.png  used on input line 107.
 (pdftex.def)             Requested size: 181.18784pt x 102.41458pt.
-<loaded pot fixed circuit.png, id=93, 465.23813pt x 158.09062pt>
+<loaded pot fixed circuit.png, id=87, 465.23813pt x 158.09062pt>
 File: loaded pot fixed circuit.png Graphic file (type png)
 <use loaded pot fixed circuit.png>
-Package pdftex.def Info: loaded pot fixed circuit.png  used on input line 169.
+Package pdftex.def Info: loaded pot fixed circuit.png  used on input line 124.
 (pdftex.def)             Requested size: 226.48395pt x 76.9609pt.
-<loaded pot fixed pic.png, id=94, 444.15938pt x 332.74312pt>
+<loaded pot fixed pic.png, id=88, 444.15938pt x 332.74312pt>
 File: loaded pot fixed pic.png Graphic file (type png)
 <use loaded pot fixed pic.png>
-Package pdftex.def Info: loaded pot fixed pic.png  used on input line 175.
+Package pdftex.def Info: loaded pot fixed pic.png  used on input line 130.
 (pdftex.def)             Requested size: 181.18784pt x 135.73505pt.
 
 
-[3 <./Unloaded pot circuit.png> <./unloaded pot picture.png> <./loaded pot fixed circuit.png> <./loaded pot fixed pic.png>]
-<fixed current circuit.png, id=106, 441.14813pt x 171.64125pt>
+[2 <./Unloaded pot circuit.png> <./unloaded pot picture.png> <./loaded pot fixed circuit.png> <./loaded pot fixed pic.png>]
+<fixed current circuit.png, id=100, 441.14813pt x 171.64125pt>
 File: fixed current circuit.png Graphic file (type png)
 <use fixed current circuit.png>
-Package pdftex.def Info: fixed current circuit.png  used on input line 198.
+Package pdftex.def Info: fixed current circuit.png  used on input line 153.
 (pdftex.def)             Requested size: 181.18784pt x 70.49644pt.
-<fixed currrent picture.png, id=107, 226.9278pt x 186.4566pt>
+<fixed currrent picture.png, id=101, 226.9278pt x 186.4566pt>
 File: fixed currrent picture.png Graphic file (type png)
 <use fixed currrent picture.png>
-Package pdftex.def Info: fixed currrent picture.png  used on input line 205.
+Package pdftex.def Info: fixed currrent picture.png  used on input line 160.
 (pdftex.def)             Requested size: 181.18784pt x 148.87527pt.
 
 
-[4 <./fixed current circuit.png> <./fixed currrent picture.png>]
+[3 <./fixed current circuit.png> <./fixed currrent picture.png>]
+
+[4]
 
 [5]
 
-[6]
-
-[7]
-
-[8] (./Lab_report.aux)
+[6] (./Lab_report.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -835,18 +831,18 @@ Package rerunfilecheck Info: File `Lab_report.out' has not changed.
 (rerunfilecheck)             Checksum: F64FA1A02CA259B9637D24054D912C5A;2460.
  ) 
 Here is how much of TeX's memory you used:
- 36916 strings out of 473190
- 874170 string characters out of 5715801
- 1526745 words of memory out of 5000000
- 59552 multiletter control sequences out of 15000+600000
- 562926 words of font info for 50 fonts, out of 8000000 for 9000
+ 36899 strings out of 473190
+ 873846 string characters out of 5715801
+ 1539399 words of memory out of 5000000
+ 59539 multiletter control sequences out of 15000+600000
+ 560800 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 103i,20n,107p,797b,2224s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Lab_report.pdf (8 pages, 1324721 bytes).
+ 103i,20n,107p,797b,2228s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on Lab_report.pdf (6 pages, 1294130 bytes).
 PDF statistics:
- 191 PDF objects out of 1000 (max. 8388607)
- 145 compressed objects within 2 object streams
- 36 named destinations out of 1000 (max. 500000)
+ 171 PDF objects out of 1000 (max. 8388607)
+ 131 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
  168 words of extra memory for PDF output out of 10000 (max. 10000000)
 
