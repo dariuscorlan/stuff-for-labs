@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1741560628.30096 "/Users/valeriajacksonsandoval/Developer/stuff-for-labs/Electricity 2/Lab_report.tex" "Lab_report.pdf" "Lab_report" 1741560629.68452 0
-  "/Users/valeriajacksonsandoval/Developer/stuff-for-labs/Electricity 2/Lab_report.tex" 1741560629.42284 15067 ddbc0c0b23ed7f0f447ad6fd56051b99 ""
+["pdflatex"] 1741609675.5089 "/Users/valeriajacksonsandoval/Developer/stuff-for-labs/Electricity 2/Lab_report.tex" "Lab_report.pdf" "Lab_report" 1741609676.92803 0
+  "/Users/valeriajacksonsandoval/Developer/stuff-for-labs/Electricity 2/Lab_report.tex" 1741609674.97929 17177 b37e1b25a73fd5904fa11d22c483432a ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -224,9 +224,9 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1741557640 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "Lab_report.aux" 1741560629.6245 5331 b32778020296da0e8c384d8576e6654a "pdflatex"
-  "Lab_report.out" 1741560629.62513 2460 f64fa1a02ca259b9637d24054d912c5a "pdflatex"
-  "Lab_report.tex" 1741560629.42284 15067 ddbc0c0b23ed7f0f447ad6fd56051b99 ""
+  "Lab_report.aux" 1741609676.85649 5541 83abdb2b079ae2984b44bdb1b2389e47 "pdflatex"
+  "Lab_report.out" 1741609676.85712 2460 f64fa1a02ca259b9637d24054d912c5a "pdflatex"
+  "Lab_report.tex" 1741609674.97929 17177 b37e1b25a73fd5904fa11d22c483432a ""
   "Unloaded pot circuit.png" 1741557366.73872 10317 b8c9ae0fa6cd0d49d0f79416b3616cb9 ""
   "fixed current circuit.png" 1741557366.73899 12804 5a396db500d4fe1bed6b97e0b4c8f295 ""
   "fixed currrent picture.png" 1741557366.73927 426452 c6e879455058ad96eaadc09936ceec2e ""
