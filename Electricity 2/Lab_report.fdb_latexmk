@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1741612203.85407 "/Users/valeriajacksonsandoval/Developer/stuff-for-labs/Electricity 2/Lab_report.tex" "Lab_report.pdf" "Lab_report" 1741612205.36518 0
-  "/Users/valeriajacksonsandoval/Developer/stuff-for-labs/Electricity 2/Lab_report.tex" 1741612203.77307 15766 40d52df48663273db62f871196b12096 ""
+["pdflatex"] 1741616724.3716 "/Users/valeriajacksonsandoval/Developer/stuff-for-labs/Electricity 2/Lab_report.tex" "Lab_report.pdf" "Lab_report" 1741616728.63111 0
+  "/Users/valeriajacksonsandoval/Developer/stuff-for-labs/Electricity 2/Lab_report.tex" 1741616724.06314 16012 4444246235cbe9ee30e7c698fda34b1d ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -8,7 +8,6 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr9.tfm" 1136768653 1292 6b21b9c2c7bebb38aa2273f7ca0fb3af ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
-  "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb" 1248133631 37912 77d683123f92148345f3fc36a38d9ab1 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1248133631 36281 c355509802a035cadc5f15869451dcee ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
@@ -220,9 +219,9 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1741557640 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "Lab_report.aux" 1741612205.30071 5484 32b5d74ca0fb8e51492ef44bb32a66e0 "pdflatex"
-  "Lab_report.out" 1741612205.30141 2460 f64fa1a02ca259b9637d24054d912c5a "pdflatex"
-  "Lab_report.tex" 1741612203.77307 15766 40d52df48663273db62f871196b12096 ""
+  "Lab_report.aux" 1741616728.46764 5678 04bc6dbedfa3ea2d6e52243ba7fe1555 "pdflatex"
+  "Lab_report.out" 1741616728.46974 2460 f64fa1a02ca259b9637d24054d912c5a "pdflatex"
+  "Lab_report.tex" 1741616724.06314 16012 4444246235cbe9ee30e7c698fda34b1d ""
   "Unloaded pot circuit.png" 1741557366.73872 10317 b8c9ae0fa6cd0d49d0f79416b3616cb9 ""
   "fixed current circuit.png" 1741557366.73899 12804 5a396db500d4fe1bed6b97e0b4c8f295 ""
   "fixed currrent picture.png" 1741557366.73927 426452 c6e879455058ad96eaadc09936ceec2e ""
