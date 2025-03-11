@@ -52,20 +52,21 @@ Figure 1 displays the different contacts of the potentiometer.
 \end{figure}
 
 The resistance between terminals 1 and 2 is constant, while the resistance
-between 1 and 3 is determined by equation 1:
+between 1 and 3 is determined by equation 1 \cite{report}:
 \begin{equation}
     R_{13} = kR
 \end{equation}
 %ref
 
 Since the potentiometer can be used as a voltage divider, the value of the
-potential difference between terminals 1 and 3 will be determined using equation 2:
+potential difference between terminals 1 and 3 will be determined using equation
+2\cite{report}:
 \begin{equation}
     V_{13} = k V_{tot}
 \end{equation} 
 
 When adding a load resistor in parallel to terminals 1 and 3, the voltage across
-them can be calculated using equation:
+them can be calculated using equation\cite{report}:
 %refr
 \begin{equation}
     V_{13} = \frac{kR_{L}}{R_{L}+k(1-k)R_P} V
@@ -100,7 +101,7 @@ the electrical diagram, and a picture of the physical set-up of the circuit.
         \centering
         \includegraphics[width=0.8\linewidth]{Unloaded pot circuit.png}
         \label{fig:2a}
-        \caption{Circuit diagram of unloaded potentiometer circuit(refr)}   
+        \caption{Circuit diagram of unloaded potentiometer circuit\cite{report}}   
     \end{subfigure}%
     \begin{subfigure}{.5\textwidth}
         \centering
@@ -123,7 +124,7 @@ physical set-up of the circuit.
         \centering
         \includegraphics[width = \linewidth]{loaded pot fixed circuit.png}
         \label{fig:3a}
-        \caption{Circuit diagram of the loaded \\potentiometer circuit}
+        \caption{Circuit diagram of the loaded \\potentiometer circuit \cite{report}}
     \end{subfigure}%
     \begin{subfigure}{0.5\textwidth}
         \centering
@@ -152,7 +153,7 @@ experiment.
         \centering
         \includegraphics[width = 0.8\linewidth]{fixed current circuit.png}
         \label{fig:4a}
-        \caption{Circuit diagram of the constant current load circuit(refr)}
+        \caption{Circuit diagram of the constant current load circuit\cite{report}}
         
     \end{subfigure}%
     \begin{subfigure}{.5\textwidth}
@@ -397,7 +398,7 @@ To calculate the theoretical load, equation 3 is used. Using k = 0.5 and $R_L =
     V_{13} = \frac{kR_L}{R_L + k(1-k) R_P} \cdot V = \frac{0.5 \cdot 543}{543 + 0.5(1-0.5)1001} \cdot 2.959 = 0.77\unit{V}
 \end{gather*}
 Using the user manual of the multimeter, $\Delta V, ~\Delta R_L, ~\Delta R_P$ can
-be determined:
+be determined\cite{noauthor_am-500_2019}:
 \begin{gather}
     \Delta R = \frac{R}{100} + 2LSD\\
     \Delta V = \frac{0.8 V}{100} + 1LSD\\
@@ -405,7 +406,7 @@ be determined:
     \Delta R_P = \frac{1001}{100} + 2LSD = 10.02\unit{\Omega} \nonumber \\
     \Delta V_P = \frac{0.8 \cdot 2.959}{100} + LSD = 0.00616\unit{V} \nonumber
 \end{gather} 
-To calculate the error values of $V_{th}$, the following formula is used (refr):
+To calculate the error values of $V_{th}$, the following formula is used \cite{unc}:
 \begin{equation}
     \frac{\Delta V_{th}}{V_{th}} = \sqrt{\left( \frac{\Delta V_P}{V_P}\right) ^2 + \left( \frac{\Delta R_P}{R_P} \right) ^ 2 + \left( \frac{\Delta R_L}{R_L} \right) ^2}
 \end{equation}
@@ -417,8 +418,8 @@ The error for the measured voltage will be calculated using equation 5:
 \[ \Delta V = \frac{0.8 \cdot 0.993}{100} + LSD = 0.0109\unit{V} \]
 Therefore, in standard notation the results for $V_{th}$ and $V_L$ are:
 \begin{gather*}
-    V_{th} = 0.77 \pm 0.02 \unit{V}\\
-    V_L = 0.993 \pm 0.02 \unit{V}
+    V_{th} = (0.77 \pm 0.02) \unit{V}\\
+    V_L = (0.993 \pm 0.02) \unit{V}
 \end{gather*}
 
 \subsection{Discussion}
@@ -563,7 +564,7 @@ Due to the variable resistance of the decade resistor, $R_L$ at $ k = 0.5$ will
 be $480\unit{\Omega}$.
 
 Firstly, using equation 3, the theoretical load can be calculated:
-\[ V_L = \frac{0.5 \cdot 480}{480 + 0.5(1-0.5)1001} * 3 = 0.979\unit{V}\]
+\[ V_L = \frac{0.5 \cdot 480}{480 + 0.5(1-0.5)1001} \cdot 3 = 0.979\unit{V}\]
 Using the values highlighted in table 3, the sample error calculations can be made.
 
 Using equations 4 and 5, the calculations for $\Delta R$, and $\Delta V$ are:
@@ -579,7 +580,27 @@ Using equation 6, the error for the theoretical value can be found:
 
 Therefore the load values in standard notation are:
 \begin{gather*}
-    V_{th} = 0.979 \pm 0.021\unit{V}\\
-    V_L = 0.968 \pm 0.016\unit{V}
+    V_{th} = (0.979 \pm 0.021)\unit{V}\\
+    V_L = (0.968 \pm 0.016)\unit{V}
 \end{gather*}
+\subsection{Discussion}
+Firstly, the values for the fixed 4 mA current did not coincide with the
+theoretical values. This is likely due to the effect the internal resistance of
+the batteries has on the rest of the circuit. Typical batteries have an internal
+resistance of around $0.2\unit{\Omega}$ at room temperature\cite{ir}. Thus, when
+decreasing both the potentiometer's k-value and the decade resistor, the
+internal resistance caused more of an effect, since the external resistances
+were smaller. 
+
+Internal resistance is also likely the cause of the discrepancy in the first
+current load. However, since the external resistances were bigger, this has less
+of an overall effect.
+
+The percent deviation discrepancies could be attributed to the interference
+of the circuit building method. Since the connections are more exposed than
+on a traditional circuit, interference can skew the results. 
+\section{Conclusion}
+\section{Bibliography}
+\bibliographystyle{IEEEtran}
+\bibliography{ELECTRICITY_2}
 \end{document}

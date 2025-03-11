@@ -431,6 +431,9 @@ INPUT .\fixed currrent picture.png
 INPUT .\fixed currrent picture.png
 INPUT .\fixed currrent picture.png
 INPUT C:\Users\darius\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
+INPUT .\Lab_report.bbl
+INPUT .\Lab_report.bbl
+INPUT Lab_report.bbl
 INPUT Lab_report.aux
 INPUT .\Lab_report.out
 INPUT .\Lab_report.out
