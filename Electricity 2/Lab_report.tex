@@ -68,16 +68,16 @@ When adding a load resistor in parallel to terminals 1 and 3, the voltage across
 them can be calculated using equation:
 %refr
 \begin{equation}
-    V_{13} = \frac{kR_{13}}{R_{13}+k(1-k)R_p} V
+    V_{13} = \frac{kR_{L}}{R_{L}+k(1-k)R_P} V
 \end{equation}
 \section{Methods \& Materials}
 All circuits in the experiments were assembled using the provided connection boards. 
 The electrical measurements, including voltage and current, were performed using the AM-520 
 HVAC multimeter for precision. 
-A 10-turn potentiometer with a total resistance of $1 k~\Omega$ and a resolution of $\Delta k = 0.001$ 
+A 10-turn potentiometer with a total resistance of $1 \unit{k\Omega}$ and a resolution of $\Delta k = 0.001$ 
 was used to vary resistance and control output voltage. 
 The power supply consisted of two 1.5V batteries connected in series. 
-Fixed resistors of $1 ~k\Omega$  and $510 ~k\Omega$  were utilized as load resistors, 
+Fixed resistors of $1 \unit{k\Omega}$  and $510 \unit{k\Omega}$  were utilized as load resistors, 
 along with a decade resistor to provide 
 adjustable resistance for certain measurements.
 
@@ -172,7 +172,7 @@ the associated measurement error for the unloaded potentiometer circuit.
     \centering
     \label{tab:1}
     \caption{Measured and expected voltage in terms of the parameter k of the potentiometer}
-    \begin{tabular}{|c c c c|} 
+    \begin{tabular}{|c| c| c| c|} 
     \hline
     $k$ & \makecell{$V_{unloaded}$ \\ (V)} & \makecell{$\Delta V_{unloaded}$ \\ (V)} &
     \makecell{$V_{expected}$ \\ (V)}  \\ 
@@ -257,9 +257,9 @@ along with the calculated percent deviations $PD_1$ and $PD_2$.
 \begin{table}[!ht]
     \centering
     \label{tab:2}
-    \caption{Measured and theoretical voltage for $1 k\Omega$ and $510\Omega$
+    \caption{Measured and theoretical voltage for $1 \unit{k\Omega}$ and $510\unit{\Omega}$
     load values in terms of k}
-    \begin{tabular}{|c c c c c c c c|} 
+    \begin{tabular}{|c|c|c|c|c|c|c|c|} 
     \hline
     $k$ & \makecell{$V_{unloaded}$\\ (V)} & \makecell{$V_{L1}$\\ (V)} & 
     \makecell{$V_{L1t}$\\ (V)} & \makecell{$PD_{1}$\\ (\%)}  & \makecell{$V_{L2}$\\ (V)} &
@@ -290,8 +290,8 @@ Additionally, it presents the voltage drop across the unloaded potentiometer for
     \begin{tikzpicture}
         \begin{axis}[legend pos = south east, legend style={nodes={scale=0.7}}, ymajorgrids = true, domain = 0.1:1, xmin = 0, xlabel = k, xtick = {0, 0.2, 0.4, 0.6, 0.8, 1.0, 1.2}, ymin = 0, ymax = 3.5, ytick = {0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5}, ylabel = Load$ \unit{(V)}$, ignore zero = y, ]
         
-        \addplot[black!10!green, thick, samples = 100]{1.52*(x^2) + 1.157*x +0.2};
-        \addplot  [only marks, color = black!10!green, forget plot] coordinates {
+        %\addplot[black!10!yellow, thick, samples = 100]{1.52*(x^2) + 1.157*x +0.2};
+        \addplot  [mark = *, color = black!10!yellow] coordinates {
             (0.1,	0.274)
             (0.2,	0.514)
             (0.3,	0.739)
@@ -306,10 +306,10 @@ Additionally, it presents the voltage drop across the unloaded potentiometer for
             
         };
          
-        \addplot[black!10!green, thin, samples = 100, dashed]{2.15*(x^2) + 0.67 * x +
+        \addplot[black!10!yellow, thin, samples = 100, dashed]{2.15*(x^2) + 0.67 * x +
         0.102};
-        \addplot[blue, thick, samples=100]{2.49*(x^2) + 0.39};
-        \addplot  [only marks, color = blue, forget plot] coordinates {
+        %\addplot[blue, thick, samples=100]{2.49*(x^2) + 0.39};
+        \addplot  [mark = *,  color = blue] coordinates {
             (0.1,	0.253)
             (0.2,	0.451)
             (0.3,	0.628)
@@ -325,17 +325,30 @@ Additionally, it presents the voltage drop across the unloaded potentiometer for
             
         };
         \addplot[blue, thin, samples=100, dashed]{3.19*(x^2) - 0.54 * x + 0.21};
-        \addplot[red, thick, samples = 100]{3};
+        \addplot[red, samples = 100, thick]{2.9596*x};
+        
+        \addplot[only marks, color = red] coordinates {
+            (0.1, 0.302)
+            (0.2, 0.594)
+            (0.3, 0.89)
+            (0.4, 1.184)
+            (0.5, 1.481)
+            (0.6, 1.776)
+            (0.7, 2.076)
+            (0.8, 2.365)
+            (0.9, 2.663)
+            (1.0, 2.957)
+        };
         \legend{$V_{L1}(k)$, $V_{L1t}(k)$,$V_{L2}(k)$, $V_{L2t}(k)$,$V_{un}(k)$ }
         \end{axis}
     \end{tikzpicture}
     \label{fig:5}
     \caption{Loads in terms of k}
 \end{figure}
-\par 
-Furthermore, figure 7 displays the relationship between percent deviation
+\newpage
+Furthermore, Figure 7 displays the relationship between percent deviation
 and the k parameter
-\begin{figure}
+\begin{figure}[!ht]
     \centering
     \begin{tikzpicture}
         \begin{axis}[legend pos = north east, legend style={nodes={scale=1}},
@@ -378,5 +391,195 @@ and the k parameter
     \caption{Percent deviation in terms of k}
 \end{figure}
 \subsection{Calculations}
+To calculate the theoretical load, equation 3 is used. Using k = 0.5 and $R_L =
+543\unit{\Omega}$ the following calculation is made:
+\begin{gather*}
+    V_{13} = \frac{kR_L}{R_L + k(1-k) R_P} \cdot V = \frac{0.5 \cdot 543}{543 + 0.5(1-0.5)1001} \cdot 2.959 = 0.77\unit{V}
+\end{gather*}
+Using the user manual of the multimeter, $\Delta V, ~\Delta R_L, ~\Delta R_P$ can
+be determined:
+\begin{gather}
+    \Delta R = \frac{R}{100} + 2LSD\\
+    \Delta V = \frac{0.8 V}{100} + 1LSD\\
+    \Delta R_L = \frac{543}{100} + 2LSD = 5.46\unit{\Omega} \nonumber \\
+    \Delta R_P = \frac{1001}{100} + 2LSD = 10.02\unit{\Omega} \nonumber \\
+    \Delta V_P = \frac{0.8 \cdot 2.959}{100} + LSD = 0.00616\unit{V} \nonumber
+\end{gather} 
+To calculate the error values of $V_{th}$, the following formula is used (refr):
+\begin{equation}
+    \frac{\Delta V_{th}}{V_{th}} = \sqrt{\left( \frac{\Delta V_P}{V_P}\right) ^2 + \left( \frac{\Delta R_P}{R_P} \right) ^ 2 + \left( \frac{\Delta R_L}{R_L} \right) ^2}
+\end{equation}
+Calculating this value for $k = 0.5$, $R_L = 543\unit{\Omega}$:
+\[ \Delta V_{th} = 0.77 \sqrt{\left( \frac{0.00616}{2.959} \right) ^ 2 + \left(
+\frac{10.02}{1001} \right) ^2 + \left(\frac{5.46}{543} \right) ^2 } = 0.011
+\unit{V} \]
+The error for the measured voltage will be calculated using equation 5:
+\[ \Delta V = \frac{0.8 \cdot 0.993}{100} + LSD = 0.0109\unit{V} \]
+Therefore, in standard notation the results for $V_{th}$ and $V_L$ are:
+\begin{gather*}
+    V_{th} = 0.77 \pm 0.02 \unit{V}\\
+    V_L = 0.993 \pm 0.02 \unit{V}
+\end{gather*}
+
 \subsection{Discussion}
+
+\section{Potentiometer with fixed load current}
+\subsection{Measurement results}
+Table 3 displays the values for $V_{th}$, $V_{L}$, $PD_1$, $PD_2$, and
+$V_{unloaded}$:
+\begin{table}[!ht]
+    \centering
+    \label{tab:3}
+    \caption{Measured and calculated values for the third experiment}
+    \begin{tabular}{|c|c|c|c|c|c|c|c|} 
+    \hline
+    $K$ & \makecell{$V_{unloaded}$ \\ $\unit{V}$} & \makecell{$V_{L_1}$ \\
+    $\unit{V}$} & \makecell{$V_{th_1}$ \\ $\unit{V}$} &
+    \makecell{$PD_1$\\$\unit{\%}$}      & \makecell{$V_{L_2}$ \\ $\unit{V}$} &
+    \makecell{$V_{th_2}$ \\ $\unit{V}$} & \makecell{$PD_1$ \\ $\unit{\%}$}         \\ 
+    \hline
+    0.1     & 0.302      & 0.108  & 0.12            & 6.53 & N/A    & N/A                & N/A          \\
+    0.2     & 0.594      & 0.257  & 0.271            & 5.22 & N/A    & N/A                & N/A          \\
+    0.3     & 0.89       & 0.431  & 0.467            & 7.681 & 0.029  & 0.431            & 93.281  \\
+    0.4     & 1.184      & 0.654  & 0.703            & 6.922 & 0.194  & 0.662            & 70.709  \\
+    \textbf{0.5}     & \textbf{1.481}      & \textbf{0.968}  & \textbf{0.979}             & \textbf{1.073} & 0.43   & 0.937             & 54.084  \\
+    0.6     & 1.776      & 1.214  & 1.294            & 6.214  & 0.755  & 1.254            & 39.798  \\
+    0.7     & 2.076      & 1.554  & 1.650            & 5.844 & 1.156  & 1.615            & 28.429  \\
+    0.8     & 2.365      & 1.925  & 2.047            & 5.940 & 1.639  & 2.020            & 18.849  \\
+    0.9     & 2.663      & 2.34   & 2.482            & 5.749 & 2.192  & 2.468            & 11.169  \\
+    1       & 2.957      & 2.786  & 2.959              & 5.847  & 2.838  & 2.959              & 4.089  \\
+    \hline
+    \end{tabular}
+    \end{table}
+\subsection{Graphs}
+Figure 8 represents the load voltages, both theoretical and measured, in terms
+of the k-value:
+\begin{figure}[!ht]
+    \centering
+    \begin{tikzpicture}
+        \begin{axis}[legend pos = north west, legend style={nodes={scale=0.7}}, ymajorgrids = true, domain = 0.1:1, xmin = 0, xlabel = k, xtick = {0, 0.2, 0.4, 0.6, 0.8, 1.0, 1.2}, ymin = 0, ymax = 3.5, ytick = {0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5}, ylabel = Load$ \unit{(V)}$, ignore zero = y, ]
+        
+        %\addplot[black!10!yellow, thick, samples = 100]{1.52*(x^2) + 1.157*x +0.2};
+        \addplot  [mark = *, color = black!30!white] coordinates {
+            (0.1,	0.108)
+            (0.2,	0.257)
+            (0.3,	0.431)
+            (0.4,	0.654)
+            (0.5,	0.968)
+            (0.6,	1.214)
+            (0.7,	1.554)
+            (0.8,	1.925)
+            (0.9,	2.34)
+            (1,	2.786)
+            
+
+            
+        };
+         
+        \addplot[black!30!white, thin, samples = 100, dashed]{2.004*(x^2) + 0.955 * x +
+        0.102};
+        %\addplot[blue, thick, samples=100]{2.49*(x^2) + 0.39};
+        \addplot  [mark = *,  color = green] coordinates {
+            (0.3,	0.029)
+            (0.4,	0.194)
+            (0.5,	0.43)
+            (0.6,	0.755)
+            (0.7,	1.156)
+            (0.8,	1.639)
+            (0.9,	2.192)
+            (1,	2.838)
+            
+            
+
+            
+        };
+        \addplot[green, thin, samples=100, dashed]{2.172*(x^2) + 0.787 * x};
+        \addplot[red, samples = 100, thick]{2.9596*x};
+        
+        \addplot[only marks, color = red, forget plot] coordinates {
+            (0.1, 0.302)
+            (0.2, 0.594)
+            (0.3, 0.89)
+            (0.4, 1.184)
+            (0.5, 1.481)
+            (0.6, 1.776)
+            (0.7, 2.076)
+            (0.8, 2.365)
+            (0.9, 2.663)
+            (1.0, 2.957)
+        };
+        \legend{$V_{L1}(k)$, $V_{L1t}(k)$,$V_{L2}(k)$, $V_{L2t}(k)$,$V_{un}(k)$ }
+        \end{axis}
+    \end{tikzpicture}
+    \label{fig:8}
+    \caption{Loads in terms of k}
+\end{figure}
+\newpage
+Figure 9 represents the two percent deviations in terms of the k-value.
+\begin{figure}[!ht]
+    \centering
+    \begin{tikzpicture}
+        \begin{axis}[legend pos = north east, legend style={nodes={scale=1}},
+        ymajorgrids = true, domain = 0.1:1, xmin = 0, xmax = 1, ymin = 0, ymax =
+        100, xlabel = k, xtick = {0, 0.2, 0.4, 0.8, 1}, ytick = {0, 10, 20, 30,
+        40, 50, 60, 70, 80,90,100}, ylabel = Percent Deviation(K)]
+        %\addplot[red!30!pink, thick, samples = 100]{107.36*(x^2) - 198.65*x +92.75};
+        \addplot[mark = *, color = blue] 
+        coordinates {
+            (0.1,	6.525878484)
+            (0.2,	5.222009146)
+            (0.3,	7.681103543)
+            (0.4,	6.922463851)
+            (0.5,	1.073071027)
+            (0.6,	6.214270264)
+            (0.7,	5.844431249)
+            (0.8,	5.939723243)
+            (0.9,	5.74929312)
+            (1,	5.846569787)
+            
+             
+        };
+        %\addplot[white!60!blue, thick, samples = 100]{45.56*(x^2) - 114.72*x + 67.98};
+        \addplot[mark = *, color = black!20!yellow] 
+        coordinates{    
+            (0.3,	93.28050419)
+            (0.4,	70.70902283)
+            (0.5,	54.08435665)
+            (0.6,	39.79842439)
+            (0.7,	28.42902958)
+            (0.8,	18.84853046)
+            (0.9,	11.16946694)
+            (1,	4.089219331)
+            
+        };
+        \legend{$PD_ 1(K)$,$PD_2(K)$}
+        \end{axis}
+    \end{tikzpicture}
+    \label{fig:9}
+    \caption{Percent deviation in terms of k}
+\end{figure}
+\subsection{Calculations}
+Due to the variable resistance of the decade resistor, $R_L$ at $ k = 0.5$ will
+be $480\unit{\Omega}$.
+
+Firstly, using equation 3, the theoretical load can be calculated:
+\[ V_L = \frac{0.5 \cdot 480}{480 + 0.5(1-0.5)1001} * 3 = 0.979\unit{V}\]
+Using the values highlighted in table 3, the sample error calculations can be made.
+
+Using equations 4 and 5, the calculations for $\Delta R$, and $\Delta V$ are:
+\begin{gather*}
+    \Delta R_L = \frac{480}{100} + 2LSD = 4.8\unit{\Omega}\\
+    \Delta R_P = 10.02\unit{\Omega}\\
+    \Delta V_L = \frac{0.08 \cdot 0.968}{100} + 0.008 = 0.01557\unit{V}
+\end{gather*}
+Using equation 6, the error for the theoretical value can be found:
+\[ \Delta V_{th} = 0.979 \sqrt{\left( \frac{0.01557}{0.968} \right) ^2 + \left(
+\frac{10.02}{1001} \right) ^2 + \left( \frac{4.8}{480} \right) ^2} = 0.021
+\unit{V}\]
+
+Therefore the load values in standard notation are:
+\begin{gather*}
+    V_{th} = 0.979 \pm 0.021\unit{V}\\
+    V_L = 0.968 \pm 0.016\unit{V}
+\end{gather*}
 \end{document}
