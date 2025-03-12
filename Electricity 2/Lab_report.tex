@@ -166,34 +166,34 @@ experiment.
 \end{figure}
 \section{The Unloaded Potentiometer}
 \subsection{Measurement Results}
-Table 1 presents the measured voltage values corresponding to different values of 
-the parameter k, alongside the theoretical voltage values and 
-the associated measurement error for the unloaded potentiometer circuit.
+Table 1 presents the measured voltage values $(V_{unloaded})$ corresponding to the different values of 
+the parameter k, alongside the theoretical voltage values $(V_{expected})$ and 
+the associated measurement error $(\Delta V_{unloaded})$ for the unloaded potentiometer circuit.
 \begin{table}[!ht]
     \centering
     \label{tab:1}
     \caption{Measured and expected voltage in terms of the parameter k of the potentiometer}
-    \begin{tabular}{|c| c| c| c|} 
+    \begin{tabular}{|c c c c|} 
     \hline
     $k$ & \makecell{$V_{unloaded}$ \\ (V)} & \makecell{$\Delta V_{unloaded}$ \\ (V)} &
     \makecell{$V_{expected}$ \\ (V)}  \\ 
     \hline
-    0.1                                       & 0.302      &  0.009          & 0.296      \\
-    0.2                                       & 0.594      &   0.009         & 0.592      \\
-    0.3                                       & 0.89       &   0.017         & 0.888      \\
-    0.4                                       & 1.184      &  0.014          & 1.184      \\
+    0.1                                       & 0.302      &  0.006          & 0.296      \\
+    0.2                                       & 0.594      &  0.006          & 0.592      \\
+    0.3                                       & 0.890      &  0.009          & 0.888      \\
+    0.4                                       & 1.184      &  0.011          & 1.184      \\
     0.5                                       & 1.481      &  0.013          & 1.480      \\
-    0.6                                       & 1.776      &  0.021          & 1.775      \\
-    0.7                                       & 2.076      &  0.023          & 2.071      \\
-    0.8                                       & 2.365      &  0.024          & 2.367      \\
-    0.9                                       & 2.663      &  0.025          & 2.663      \\
-    1.0                                       & 2.957      &  0.031          & 2.959      \\
+    0.6                                       & 1.776      &  0.015          & 1.775      \\
+    0.7                                       & 2.076      &  0.018          & 2.071      \\
+    0.8                                       & 2.365      &  0.020          & 2.367      \\
+    0.9                                       & 2.663      &  0.024          & 2.663      \\
+    1.0                                       & 2.957      &  0.025          & 2.959      \\
     \hline
     \end{tabular}
     \end{table}
 \newpage
 \subsection{Graphs}
-Figure 5 illustrates the relationship between the measured voltage and the parameter 
+Figure 5 illustrates the relationship between the measured voltage as a function of the parameter 
 k in the unloaded potentiometer circuit.
 \begin{figure}[!ht]
     \centering
@@ -260,23 +260,23 @@ along with the calculated percent deviations $PD_1$ and $PD_2$.
     \label{tab:2}
     \caption{Measured and theoretical voltage for $1 \unit{k\Omega}$ and $510\unit{\Omega}$
     load values in terms of k}
-    \begin{tabular}{|c|c|c|c|c|c|c|c|} 
+    \begin{tabular}{|c c c c c c c c|} 
     \hline
     $k$ & \makecell{$V_{unloaded}$\\ (V)} & \makecell{$V_{L1}$\\ (V)} & 
     \makecell{$V_{L1t}$\\ (V)} & \makecell{$PD_{1}$\\ (\%)}  & \makecell{$V_{L2}$\\ (V)} &
     \makecell{$V_{L2t}$\\ (V)}
     & \makecell{$PD_2$ \\ (\%)}   \\ 
     \hline
-    0.1     & 2.959    & 0.274  & 0.156                & 75.85 & 0.253  & 0.111                & 56.02  \\
-    0.2     & 2.959    & 0.514  & 0.329                & 56.27 & 0.451  & 0.239                & 46.98  \\
-    0.3     & 2.959    & 0.739  & 0.522                & 41.46 & 0.628  & 0.388                & 38.28  \\
-    0.4     & 2.959    & 0.957  & 0.740                & 29.32 & 0.809  & 0.562                & 30.53  \\
-    0.5     & 2.959    & 1.184  & 0.987                & 20.00 & 0.993  & 0.770                & 22.47  \\
-    0.6     & 2.959    & 1.433  & 1.269                & 12.97 & 1.21   & 1.022                & 15.55  \\
-    0.7     & 2.959    & 1.717  & 1.594                & 7.74  & 1.47   & 1.334                & 9.27   \\
-    0.8     & 2.959    & 2.039  & 1.973                & 3.35  & 1.801  & 1.730                & 3.97   \\
-    0.9     & 2.959    & 2.448  & 2.421                & 1.11  & 2.268  & 2.249                & 0.86   \\
-    1.0       & 2.959    & 2.952  & 2.959                & 0.24  & 2.948  & 2.959                & 0.37   \\
+    0.1     & 0.302    & 0.274  & 0.271                & 9.27   & 0.253  & 0.254               & 16.23  \\
+    0.2     & 0.594    & 0.514  & 0.510                & 13.47  & 0.451  & 0.457               & 24.07  \\
+    0.3     & 0.890    & 0.739  & 0.734                & 16.97  & 0.628  & 0.640               & 29.44  \\
+    0.4     & 1.184    & 0.957  & 0.954                & 19.17  & 0.809  & 0.820               & 31.67  \\
+    0.5     & 1.481    & 1.184  & 1.183                & 20.05  & 0.993  & 1.012               & 32.95  \\
+    0.6     & 1.776    & 1.433  & 1.431                & 19.31  & 1.210  & 1.230               & 31.87  \\
+    0.7     & 2.076    & 1.717  & 1.712                & 17.29  & 1.470  & 1.493               & 29.19  \\
+    0.8     & 2.365    & 2.039  & 2.040                & 13.78  & 1.801  & 1.828               & 23.85  \\
+    0.9     & 2.663    & 2.448  & 2.443                & 8.07   & 2.268  & 2.284               & 14.83  \\
+    1.0     & 2.957    & 2.952  & 2.959                & 0.17   & 2.948  & 2.959               & 0.30   \\
     \hline
     \end{tabular}
     \end{table}
@@ -289,7 +289,13 @@ Additionally, it presents the voltage drop across the unloaded potentiometer for
 \begin{figure}[!ht]
     \centering
     \begin{tikzpicture}
-        \begin{axis}[legend pos = south east, legend style={nodes={scale=0.7}}, ymajorgrids = true, domain = 0.1:1, xmin = 0, xlabel = k, xtick = {0, 0.2, 0.4, 0.6, 0.8, 1.0, 1.2}, ymin = 0, ymax = 3.5, ytick = {0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5}, ylabel = Load$ \unit{(V)}$, ignore zero = y, ]
+        \begin{axis}[
+            title = {Measured experimental and theoretical voltages as function of k}, 
+            legend pos = south east, 
+            legend style={nodes={scale=0.7}}, 
+            ymajorgrids = true, 
+            domain = 0.1:1, 
+            xmin = 0, xlabel = k, xtick = {0, 0.2, 0.4, 0.6, 0.8, 1.0, 1.2}, ymin = 0, ymax = 3.5, ytick = {0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5}, ylabel = Load$ \unit{(V)}$, ignore zero = y, ]
         
         %\addplot[black!10!yellow, thick, samples = 100]{1.52*(x^2) + 1.157*x +0.2};
         \addplot  [mark = *, color = black!10!yellow] coordinates {
@@ -343,8 +349,9 @@ Additionally, it presents the voltage drop across the unloaded potentiometer for
         \legend{$V_{L1}(k)$, $V_{L1t}(k)$,$V_{L2}(k)$, $V_{L2t}(k)$,$V_{un}(k)$ }
         \end{axis}
     \end{tikzpicture}
+    \caption{\centering Measured experimental and theoretical voltages in fixed resistor circuit for 
+            load 1 and load 2 as a function of k}
     \label{fig:5}
-    \caption{Loads in terms of k}
 \end{figure}
 \newpage
 Furthermore, Figure 7 displays the relationship between percent deviation
@@ -395,7 +402,7 @@ and the k parameter
 To calculate the theoretical load, equation 3 is used. Using k = 0.5 and $R_L =
 543\unit{\Omega}$ the following calculation is made:
 \begin{gather*}
-    V_{13} = \frac{kR_L}{R_L + k(1-k) R_P} \cdot V = \frac{0.5 \cdot 543}{543 + 0.5(1-0.5)1001} \cdot 2.959 = 0.77\unit{V}
+    V_{13} = \frac{kR_L}{R_L + k(1-k) R_P} \cdot V = \frac{0.5 \cdot 543}{543 + 0.5(1-0.5)1001} \cdot 2.959 = 1.012\unit{V}
 \end{gather*}
 Using the user manual of the multimeter, $\Delta V, ~\Delta R_L, ~\Delta R_P$ can
 be determined\cite{noauthor_am-500_2019}:
@@ -418,7 +425,7 @@ The error for the measured voltage will be calculated using equation 5:
 \[ \Delta V = \frac{0.8 \cdot 0.993}{100} + LSD = 0.0109\unit{V} \]
 Therefore, in standard notation the results for $V_{th}$ and $V_L$ are:
 \begin{gather*}
-    V_{th} = (0.77 \pm 0.02) \unit{V}\\
+    V_{th} = (1.012 \pm 0.02) \unit{V}\\
     V_L = (0.993 \pm 0.02) \unit{V}
 \end{gather*}
 
@@ -439,16 +446,16 @@ $V_{unloaded}$:
     \makecell{$PD_1$\\$\unit{\%}$}      & \makecell{$V_{L_2}$ \\ $\unit{V}$} &
     \makecell{$V_{th_2}$ \\ $\unit{V}$} & \makecell{$PD_1$ \\ $\unit{\%}$}         \\ 
     \hline
-    0.1     & 0.302      & 0.108  & 0.12            & 6.53 & N/A    & N/A                & N/A          \\
-    0.2     & 0.594      & 0.257  & 0.271            & 5.22 & N/A    & N/A                & N/A          \\
-    0.3     & 0.89       & 0.431  & 0.467            & 7.681 & 0.029  & 0.431            & 93.281  \\
-    0.4     & 1.184      & 0.654  & 0.703            & 6.922 & 0.194  & 0.662            & 70.709  \\
-    \textbf{0.5}     & \textbf{1.481}      & \textbf{0.968}  & \textbf{0.979}             & \textbf{1.073} & 0.43   & 0.937             & 54.084  \\
-    0.6     & 1.776      & 1.214  & 1.294            & 6.214  & 0.755  & 1.254            & 39.798  \\
-    0.7     & 2.076      & 1.554  & 1.650            & 5.844 & 1.156  & 1.615            & 28.429  \\
-    0.8     & 2.365      & 1.925  & 2.047            & 5.940 & 1.639  & 2.020            & 18.849  \\
-    0.9     & 2.663      & 2.34   & 2.482            & 5.749 & 2.192  & 2.468            & 11.169  \\
-    1       & 2.957      & 2.786  & 2.959              & 5.847  & 2.838  & 2.959              & 4.089  \\
+    0.1     & 0.302      & 0.108  & 0.116            & 64.24    & N/A    & N/A             & N/A    \\
+    0.2     & 0.594      & 0.257  & 0.271            & 56.73    & N/A    & N/A             & N/A    \\
+    0.3     & 0.890      & 0.431  & 0.467            & 51.57    & 0.029  & 0.046           & 96.74  \\
+    0.4     & 1.184      & 0.654  & 0.703            & 44.76    & 0.194  & 0.222           & 83.61  \\
+    \textbf{0.5}     & \textbf{1.481}      & \textbf{0.968}  & \textbf{0.979}             & \textbf{34.64} & 0.430   & 0.478             & 70.97  \\
+    0.6     & 1.776      & 1.214  & 1.294            & 31.64    & 0.755  & 0.813           & 57.49  \\
+    0.7     & 2.076      & 1.554  & 1.650            & 25.14    & 1.156  & 1.230           & 44.32  \\
+    0.8     & 2.365      & 1.925  & 2.047            & 18.60    & 1.639  & 1.726           & 30.70  \\
+    0.9     & 2.663      & 2.340  & 2.482            & 12.13    & 2.192  & 2.302           & 17.69  \\
+    1       & 2.957      & 2.786  & 2.959            & 5.78     & 2.838  & 2.959           & 4.02   \\
     \hline
     \end{tabular}
     \end{table}
@@ -550,7 +557,7 @@ Figure 9 represents the two percent deviations in terms of the k-value.
             (0.7,	28.42902958)
             (0.8,	18.84853046)
             (0.9,	11.16946694)
-            (1,	4.089219331)
+            (1.0,	4.089219331)
             
         };
         \legend{$PD_ 1(K)$,$PD_2(K)$}
