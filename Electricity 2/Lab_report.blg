@@ -1,12 +1,14 @@
-This is BibTeX, Version 0.99d (TeX Live 2025)
+This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Lab_report.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: IEEEtran.bst
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocating 'name_of_file' (item size: 1) to 14 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: ELECTRICITY_2.bib
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
@@ -15,15 +17,15 @@ Database file #1: ELECTRICITY_2.bib
 Done.
 You've used 4 entries,
             4087 wiz_defined-function locations,
-            839 strings with 7611 characters,
-and the built_in function-call counts, 1422 in all, are:
-= -- 87
+            840 strings with 7656 characters,
+and the built_in function-call counts, 1461 in all, are:
+= -- 93
 > -- 18
 < -- 0
 + -- 9
 - -- 4
-* -- 73
-:= -- 244
+* -- 78
+:= -- 258
 add.period$ -- 8
 call.type$ -- 4
 change.case$ -- 4
@@ -32,20 +34,20 @@ cite$ -- 4
 duplicate$ -- 121
 empty$ -- 145
 format.name$ -- 5
-if$ -- 294
+if$ -- 300
 int.to.chr$ -- 0
 int.to.str$ -- 4
 missing$ -- 28
-newline$ -- 37
+newline$ -- 39
 num.names$ -- 3
-pop$ -- 87
+pop$ -- 88
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 102
+skip$ -- 103
 stack$ -- 0
 substring$ -- 4
-swap$ -- 66
+swap$ -- 67
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 5
@@ -53,4 +55,4 @@ type$ -- 4
 warning$ -- 0
 while$ -- 3
 width$ -- 5
-write$ -- 51
+write$ -- 54

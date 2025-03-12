@@ -309,12 +309,22 @@ Additionally, it presents the voltage drop across the unloaded potentiometer for
             (0.8,	2.039)
             (0.9,	2.448)
             (1.0,	2.952)
-
-            
+               
         };
          
-        \addplot[black!10!yellow, thin, samples = 100, dashed]{2.15*(x^2) + 0.67 * x +
-        0.102};
+        \addplot[color = black!40!yellow, thin,  dashed] coordinates {
+            (0.1,	0.271445499)
+            (0.2,	0.510102125)
+            (0.3,	0.733509188)
+            (0.4,	0.954331604)
+            (0.5,	1.183363564)
+            (0.6,	1.431497406)
+            (0.7,	1.711521438)
+            (0.8,	2.040408501)
+            (0.9,	2.443009494)
+            (1.0,	2.959)
+                        
+        };
         %\addplot[blue, thick, samples=100]{2.49*(x^2) + 0.39};
         \addplot  [mark = *,  color = blue] coordinates {
             (0.1,	0.253)
@@ -331,7 +341,19 @@ Additionally, it presents the voltage drop across the unloaded potentiometer for
 
             
         };
-        \addplot[blue, thin, samples=100, dashed]{3.19*(x^2) - 0.54 * x + 0.21};
+        \addplot[color = white!10!blue, thin, dashed] coordinates {
+            (0.1,	0.253756752)
+            (0.2,	0.4569007)
+            (0.3,	0.639777415)
+            (0.4,	0.820307857)
+            (0.5,	1.012436673)
+            (0.6,	1.230461786)
+            (0.7,	1.492813968)
+            (0.8,	1.827602798)
+            (0.9,	2.283810765)
+            (1.0,	2.959)
+            
+        };
         \addplot[red, samples = 100, thick]{2.9596*x};
         
         \addplot[only marks, color = red] coordinates {
@@ -355,7 +377,7 @@ Additionally, it presents the voltage drop across the unloaded potentiometer for
 \end{figure}
 \newpage
 Furthermore, Figure 7 displays the relationship between percent deviation
-and the k parameter
+and the k parameter 
 \begin{figure}[!ht]
     \centering
     \begin{tikzpicture}
@@ -363,34 +385,34 @@ and the k parameter
         ymajorgrids = true, domain = 0.1:1, xmin = 0, xmax = 1, ymin = 0, ymax =
         80, xlabel = k, xtick = {0, 0.2, 0.4, 0.8, 1}, ytick = {0, 10, 20, 30,
         40, 50, 60, 70, 80}, ylabel = Percent Deviation(K)]
-        \addplot[red!30!pink, thick, samples = 100]{107.36*(x^2) - 198.65*x +92.75};
-        \addplot[only marks, color = pink, forget plot] 
+        \addplot[color = red!30!pink, mark = *, thick] 
         coordinates {
-            (0.1,	75.85)
-            (0.2,	56.27)
-            (0.3,	41.46)
-            (0.4,	29.32)
-            (0.5,	20.00)
-            (0.6,	12.97)
-            (0.7,	7.74)
-            (0.8,	3.35)
-            (0.9,	1.11)
-            (1.0,	0.24)
+            (0.1,	9.271523179)
+            (0.2,	13.46801347)
+            (0.3,	16.96629213)
+            (0.4,	19.1722973)
+            (0.5,	20.05401756)
+            (0.6,	19.31306306)
+            (0.7,	17.29287091)
+            (0.8,	13.78435518)
+            (0.9,	8.073601202)
+            (1,	0.169090294)
+            
              
         };
-        \addplot[white!60!blue, thick, samples = 100]{45.56*(x^2) - 114.72*x + 67.98};
-        \addplot[only marks, color = white!60!blue, forget plot] 
+        \addplot[color = white!60!blue, mark = *, thick] 
         coordinates{    
-        (0.1,	56.02)
-        (0.2,	46.98)
-        (0.3,	38.28)
-        (0.4,	30.53)
-        (0.5,	22.47)
-        (0.6,	15.55)
-        (0.7,	9.27)
-        (0.8,	3.97)
-        (0.9,	0.86)
-        (1.0,	0.37)
+            (0.1,	16.22516556)
+            (0.2,	24.07407407)
+            (0.3,	29.43820225)
+            (0.4,	31.6722973)
+            (0.5,	32.95070898)
+            (0.6,	31.86936937)
+            (0.7,	29.19075145)
+            (0.8,	23.84778013)
+            (0.9,	14.83289523)
+            (1,	0.30436253)
+            
         };
         \legend{$PD_ 1(K)$,$PD_2(K)$}
         \end{axis}
@@ -435,27 +457,29 @@ Therefore, in standard notation the results for $V_{th}$ and $V_L$ are:
 \subsection{Measurement results}
 Table 3 displays the values for $V_{th}$, $V_{L}$, $PD_1$, $PD_2$, and
 $V_{unloaded}$:
+
 \begin{table}[!ht]
     \centering
     \label{tab:3}
     \caption{Measured and calculated values for the third experiment}
-    \begin{tabular}{|c|c|c|c|c|c|c|c|} 
+    \begin{tabular}{|cccccccc|} 
     \hline
-    $K$ & \makecell{$V_{unloaded}$ \\ $\unit{V}$} & \makecell{$V_{L_1}$ \\
-    $\unit{V}$} & \makecell{$V_{th_1}$ \\ $\unit{V}$} &
-    \makecell{$PD_1$\\$\unit{\%}$}      & \makecell{$V_{L_2}$ \\ $\unit{V}$} &
-    \makecell{$V_{th_2}$ \\ $\unit{V}$} & \makecell{$PD_1$ \\ $\unit{\%}$}         \\ 
+    $k$ & \makecell{$V_{unloaded}$ \\ $\unit{V}$} & \makecell{$V_{L_1}$ \\
+    $\unit{V}$} & \makecell{$V_{th_1}$ \\ $\unit{V}$}  & \makecell{$PD_1$ \\
+    $\unit{\%}$}      &\makecell{$V_{L_2}$ \\ $\unit{V}$}  &
+    \makecell{$V_{th_2}$ \\ $\unit{V}$}  & \makecell{$PD_2$ \\ $\unit{\%}$}
+    \\ 
     \hline
-    0.1     & 0.302      & 0.108  & 0.116            & 64.24    & N/A    & N/A             & N/A    \\
-    0.2     & 0.594      & 0.257  & 0.271            & 56.73    & N/A    & N/A             & N/A    \\
-    0.3     & 0.890      & 0.431  & 0.467            & 51.57    & 0.029  & 0.046           & 96.74  \\
-    0.4     & 1.184      & 0.654  & 0.703            & 44.76    & 0.194  & 0.222           & 83.61  \\
-    \textbf{0.5}     & \textbf{1.481}      & \textbf{0.968}  & \textbf{0.979}             & \textbf{34.64} & 0.430   & 0.478             & 70.97  \\
-    0.6     & 1.776      & 1.214  & 1.294            & 31.64    & 0.755  & 0.813           & 57.49  \\
-    0.7     & 2.076      & 1.554  & 1.650            & 25.14    & 1.156  & 1.230           & 44.32  \\
-    0.8     & 2.365      & 1.925  & 2.047            & 18.60    & 1.639  & 1.726           & 30.70  \\
-    0.9     & 2.663      & 2.340  & 2.482            & 12.13    & 2.192  & 2.302           & 17.69  \\
-    1       & 2.957      & 2.786  & 2.959            & 5.78     & 2.838  & 2.959           & 4.02   \\
+    0.1     & 0.302    & 0.108 & 0.116 & 64.238 & N/A   & N/A     & N/A       \\
+    0.2     & 0.594    & 0.257 & 0.271 & 56.734 & N/A   & N/A     & N/A       \\
+    0.3     & 0.89     & 0.431 & 0.467 & 51.573 & 0.029 & 0.046 & 96.741  \\
+    0.4     & 1.184    & 0.654 & 0.702 & 44.764 & 0.194 & 0.221 & 83.615  \\
+    \textbf{0.5}     & \textbf{1.481}    & \textbf{0.968} & \textbf{0.979}  & \textbf{34.639} & 0.43  & 0.478  & 70.966  \\
+    0.6     & 1.776    & 1.214 & 1.294 & 31.644 & 0.755 & 0.813 & 57.489  \\
+    0.7     & 2.076    & 1.554 & 1.650 & 25.145 & 1.156 & 1.230 & 44.316  \\
+    0.8     & 2.365    & 1.925 & 2.047 & 18.605 & 1.639 & 1.726 & 30.698  \\
+    0.9     & 2.663    & 2.34  & 2.483 & 12.129 & 2.192 & 2.302 & 17.689  \\
+    1       & 2.957    & 2.786 & 2.959   & 5.783 & 2.838 & 2.959   & 4.024  \\
     \hline
     \end{tabular}
     \end{table}
@@ -480,12 +504,22 @@ of the k-value:
             (0.9,	2.34)
             (1,	2.786)
             
-
             
         };
          
-        \addplot[black!30!white, thin, samples = 100, dashed]{2.004*(x^2) + 0.955 * x +
-        0.102};
+        \addplot[color = black!30!white, thin, dashed] coordinates {
+            (0.1,	0.11554)
+            (0.2,	0.27116)
+            (0.3,	0.46686)
+            (0.4,	0.70264)
+            (0.5,	0.9785)
+            (0.6,	1.29444)
+            (0.7,	1.65046)
+            (0.8,	2.04656)
+            (0.9,	2.48274)
+            (1,	2.959)
+            
+        };
         %\addplot[blue, thick, samples=100]{2.49*(x^2) + 0.39};
         \addplot  [mark = *,  color = green] coordinates {
             (0.3,	0.029)
@@ -498,10 +532,18 @@ of the k-value:
             (1,	2.838)
             
             
-
-            
         };
-        \addplot[green, thin, samples=100, dashed]{2.172*(x^2) + 0.787 * x};
+        \addplot[color = green, thin, dashed] coordinates {
+            (0.3,	0.04602)
+            (0.4,	0.22168)
+            (0.5,	0.4775)
+            (0.6,	0.81348)
+            (0.7,	1.22962)
+            (0.8,	1.72592)
+            (0.9,	2.30238)
+            (1,	2.959)
+                       
+        };
         \addplot[red, samples = 100, thick]{2.9596*x};
         
         \addplot[only marks, color = red, forget plot] coordinates {
@@ -534,30 +576,31 @@ Figure 9 represents the two percent deviations in terms of the k-value.
         %\addplot[red!30!pink, thick, samples = 100]{107.36*(x^2) - 198.65*x +92.75};
         \addplot[mark = *, color = blue] 
         coordinates {
-            (0.1,	6.525878484)
-            (0.2,	5.222009146)
-            (0.3,	7.681103543)
-            (0.4,	6.922463851)
-            (0.5,	1.073071027)
-            (0.6,	6.214270264)
-            (0.7,	5.844431249)
-            (0.8,	5.939723243)
-            (0.9,	5.74929312)
-            (1,	5.846569787)
-            
-             
+            (0.1,	64.2384106)
+            (0.2,	56.73400673)            
+            (0.3,	51.57303371)
+            (0.4,	44.76351351)
+            (0.5,	34.6387576)
+            (0.6,	31.64414414)
+            (0.7,	25.14450867)
+            (0.8,	18.60465116)
+            (0.9,	12.12917762)
+            (1,	5.782888062)
+
+                         
         };
         %\addplot[white!60!blue, thick, samples = 100]{45.56*(x^2) - 114.72*x + 67.98};
         \addplot[mark = *, color = black!20!yellow] 
         coordinates{    
-            (0.3,	93.28050419)
-            (0.4,	70.70902283)
-            (0.5,	54.08435665)
-            (0.6,	39.79842439)
-            (0.7,	28.42902958)
-            (0.8,	18.84853046)
-            (0.9,	11.16946694)
-            (1.0,	4.089219331)
+            (0.3,	96.74157303)
+            (0.4,	83.61486486)
+            (0.5,	70.96556381)
+            (0.6,	57.48873874)
+            (0.7,	44.31599229)
+            (0.8,	30.69767442)
+            (0.9,	17.68681938)
+            (1,	4.024349002)
+                        
             
         };
         \legend{$PD_ 1(K)$,$PD_2(K)$}
