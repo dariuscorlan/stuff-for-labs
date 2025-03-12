@@ -7,7 +7,8 @@
 \providecommand{\BIBentrySTDinterwordspacing}{\spaceskip=0pt\relax}
 \providecommand{\BIBentryALTinterwordstretchfactor}{4}
 \providecommand{\BIBentryALTinterwordspacing}{\spaceskip=\fontdimen2\font plus
-\BIBentryALTinterwordstretchfactor\fontdimen3\font minus \fontdimen4\font\relax}
+\BIBentryALTinterwordstretchfactor\fontdimen3\font minus
+  \fontdimen4\font\relax}
 \providecommand{\BIBforeignlanguage}[2]{{%
 \expandafter\ifx\csname l@#1\endcsname\relax
 \typeout{** WARNING: IEEEtran.bst: No hyphenation pattern has been}%
@@ -25,13 +26,19 @@ J.~Loeckx, ``\BIBforeignlanguage{en-us}{2 potentiometer 21-22}.''
 
 \bibitem{noauthor_am-500_2019}
 \BIBentryALTinterwordspacing
-``\BIBforeignlanguage{en-US}{{AM}-500 {Multimeter}},'' Dec. 2019. [Online]. Available: \url{https://www.amprobe.com/wp-content/uploads/2019/12/AM-500_DIY-PRO_Digital-Multimeter_Manual.pdf}
+``\BIBforeignlanguage{en-US}{{AM}-500 {Multimeter}},'' Dec. 2019. [Online].
+  Available:
+  \url{https://www.amprobe.com/wp-content/uploads/2019/12/AM-500_DIY-PRO_Digital-Multimeter_Manual.pdf}
 \BIBentrySTDinterwordspacing
 
 \bibitem{unc}
-L.~Deneyer and J.~Loeckx, ``\BIBforeignlanguage{en-US}{Uncertanty analysis(2024, 1st semester)},'' 2024.
+L.~Deneyer and J.~Loeckx, ``\BIBforeignlanguage{en-US}{Uncertanty
+  analysis(2024, 1st semester)},'' 2024.
 
 \bibitem{ir}
+\BIBentryALTinterwordspacing
 E.~LLC, ``\BIBforeignlanguage{en-US}{Battery internal resistance},'' 2005.
+  [Online]. Available: \url{https://data.energizer.com/pdfs/batteryir.pdf}
+\BIBentrySTDinterwordspacing
 
 \end{thebibliography}
