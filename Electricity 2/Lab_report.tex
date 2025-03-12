@@ -47,7 +47,7 @@ Figure 1 displays the different contacts of the potentiometer \cite{report}.
     \begin{minipage}{0.4\textwidth}
         \includegraphics[width = \textwidth]{potterminals.png}
        \label{fig:1}
-        \caption{\centering Drawing of a potentiometer with labeled terminals}    
+        \caption{\centering Drawing of a potentiometer with labeled terminals.}    
     \end{minipage}
 \end{figure}
 
@@ -100,15 +100,15 @@ the electrical diagram, and a picture of the physical set-up of the circuit.
         \centering
         \includegraphics[width=0.8\linewidth]{Unloaded pot circuit.png}
         \label{fig:2a}
-        \caption{Circuit diagram of unloaded potentiometer circuit\cite{report}}   
+        \caption{Circuit diagram of unloaded potentiometer circuit\cite{report}.}   
     \end{subfigure}%
     \begin{subfigure}{.5\textwidth}
         \centering
         \includegraphics[width = 0.8\linewidth]{unloaded pot picture.png}
         \label{fig2:b}
-        \caption{Picture of the unloaded potentiometer circuit}
+        \caption{Picture of the unloaded potentiometer circuit.}
     \end{subfigure}
-    \caption{Electrical schema and physical set-up of the unloaded potentiometer circuit}
+    \caption{Electrical schema and physical set-up of the unloaded potentiometer circuit.}
 \end{figure}
 \subsection{Experimental Set-Up with fixed resistor}
 The experimental set-up for the second experiment mirrors that of the first, 
@@ -129,19 +129,19 @@ physical set-up of the circuit.
         \centering
         \includegraphics[width = 0.8\linewidth]{loaded pot fixed pic.png}
         \label{fig:3b}
-        \caption{Picture of the loaded potentiometer circuit with fixed resistance}        
+        \caption{Picture of the loaded potentiometer circuit with fixed resistance.}        
     \end{subfigure}
-    \caption{Electrical schema and physical set-up of the loaded potentiometer with fixed resistance}
+    \caption{Electrical schema and physical set-up of the loaded potentiometer with fixed resistance.}
 \end{figure}
 \newpage
 \subsection{Experimental Set-Up with fixed load current}
-The set-up for the third experiment omits the voltmeter measuring the power
-source, replacing it with an ammeter in line with the load resistor. The load
-resistor being used becomes a decade resistor.
-
-The experimental flow is also changed, as now with a change in the k-value, the
-decade resistor is adjusted in order for the current load to remain the same,
-then the resistance of the decade resistor, and the voltage drop is measured.
+In the third experimental setup, the voltmeter previously used to measure the power source is replaced
+by an ammeter connected in series with the load resistor. 
+The load resistor is configured as a decade resistor. 
+The experimental process is modified such that, for each change in the k-value, the decade resistor
+is adjusted to ensure that the current load remains constant.
+Two specific currents, 2mA and 4mA, are studied in this experiment.
+For each current, the resistance of the decade resistor and the corresponding voltage drop are measured.
 
 Figures 4(a), and 4(b) display the circuit diagram and picture of this
 experiment.
@@ -159,9 +159,9 @@ experiment.
         \centering
         \includegraphics[width = 0.8\linewidth]{fixed currrent picture.png}
         \label{fig:4b}
-        \caption{Picture of the constant current load circuit}
+        \caption{Picture of the constant current load circuit.}
     \end{subfigure}
-    \caption{Electrical diagram and physical set-up of the constant current load circuit}
+    \caption{Electrical diagram and physical set-up of the constant current load circuit.}
 \end{figure}
 \section{The Unloaded Potentiometer}
 \subsection{Measurement Results}
@@ -173,7 +173,7 @@ The calculated error is based on the multimeter's error of reading \cite{noautho
 \begin{table}[!ht]
     \centering
     \label{tab:1}
-    \caption{Measured and expected voltage in terms of the parameter k of the potentiometer}
+    \caption{Measured and expected voltage in terms of the parameter k of the potentiometer.}
     \begin{tabular}{|c c c c|} 
     \hline
     $k$ & \makecell{$V_{unloaded}$ \\ (V)} & \makecell{$\Delta V_{unloaded}$ \\ (V)} &
@@ -195,7 +195,7 @@ The calculated error is based on the multimeter's error of reading \cite{noautho
 \newpage
 \subsection{Graphs}
 Figure 5 illustrates the relationship between the measured voltage as a function of the parameter 
-k in the unloaded potentiometer circuit.
+k in the unloaded potentiometer circuit, along with a linear best-fit line to further demonstrate the behavior of the data.
 \begin{figure}[!ht]
     \centering
     \begin{tikzpicture}
@@ -234,7 +234,7 @@ k in the unloaded potentiometer circuit.
         
         \end{axis}
     \end{tikzpicture}
-    \caption{Measured voltage (V) drop in terms of the k parameter}
+    \caption{\centering Measured voltage (V) in terms of the potentiometer's k parameter in the unloaded potentiometer circuit.}
     \label{fig:3}
 \end{figure}
 
@@ -248,6 +248,9 @@ The slope of the linear relationship, approximately 2.9596, corresponds
 to the total voltage supplied by the circuit (approximately 2.960V),
 reinforcing the expectation that voltage is directly proportional to the
 k-value in an unloaded potentiometer configuration.
+The linearity is expected because no current is drawn from the potentiometer's output in the unloaded circuit. 
+This means there is no voltage drop across internal resistances, allowing the simple linear relationship.
+
 Analyzing the difference between measured and expected voltage, 
 the results show strong agreement,
 with discrepancies falling within the calculated measurement error. 
@@ -267,8 +270,8 @@ along with the calculated percent deviations $PD_1$ and $PD_2$.
 \begin{table}[!ht]
     \centering
     \label{tab:2}
-    \caption{Measured and theoretical voltage for $1 \unit{k\Omega}$ and $510\unit{\Omega}$
-    load values in terms of k}
+    \caption{Measured and theoretical voltage for load 1 ($1 \unit{k\Omega}$) and load 2 ($510\unit{\Omega}$.)
+    values in terms of k}
     \begin{tabular}{|c c c c c c c c|} 
     \hline
     $k$ & \makecell{$V_{unloaded}$\\ (V)} & \makecell{$V_{L1}$\\ (V)} & 
@@ -295,6 +298,8 @@ and the parameter
 k, comparing the experimental results with the 
 corresponding theoretical values. 
 Additionally, it presents the voltage drop across the unloaded potentiometer for reference.
+Furthermore, Figure 7 displays the relationship between percentage deviation
+and the k parameter for both load resistors.
 \begin{figure}[!ht]
     \centering
     \begin{tikzpicture}
@@ -381,19 +386,19 @@ Additionally, it presents the voltage drop across the unloaded potentiometer for
         \end{axis}
     \end{tikzpicture}
     \caption{\centering Measured experimental and theoretical voltages in fixed resistor circuit for 
-            load 1 and load 2 as a function of k}
+            load 1 ($V_{L1}$) and load 2 ($V_{L2}$) as a function of parameter k, including the voltage of unloaded potentiometer ($V_{un}$).}
     \label{fig:5}
 \end{figure}
 \newpage
-Furthermore, Figure 7 displays the relationship between percent deviation
-and the k parameter 
+
 \begin{figure}[!ht]
     \centering
     \begin{tikzpicture}
-        \begin{axis}[legend pos = north east, legend style={nodes={scale=1}},
+        \begin{axis}[title={Percentage deviation as a function of k for load 1 ($PD_1$)} and load 2 ($PD_2$), 
+        legend pos = north east, legend style={nodes={scale=1}},
         ymajorgrids = true, domain = 0.1:1, xmin = 0, xmax = 1, ymin = 0, ymax =
         80, xlabel = k, xtick = {0, 0.2, 0.4, 0.8, 1}, ytick = {0, 10, 20, 30,
-        40, 50, 60, 70, 80}, ylabel = Percent Deviation(K)]
+        40, 50, 60, 70, 80}, ylabel = Percentage Deviation(\%)]
         \addplot[color = red!30!pink, mark = *, thick] 
         coordinates {
             (0.1,	9.271523179)
@@ -406,7 +411,6 @@ and the k parameter
             (0.8,	13.78435518)
             (0.9,	8.073601202)
             (1,	0.169090294)
-            
              
         };
         \addplot[color = white!60!blue, mark = *, thick] 
@@ -427,16 +431,24 @@ and the k parameter
         \end{axis}
     \end{tikzpicture}
     \label{fig:6}
-    \caption{Percent deviation in terms of k}
+    \caption{\centering Percentage deviation of the measured voltage for load 1 and load 2 with respect to the unloaded voltage
+    as a function of the parameter k.}
 \end{figure}
 \subsection{Calculations}
 To calculate the theoretical load, equation 3 is used. Using k = 0.5 and $R_L =
-543\unit{\Omega}$ the following calculation is made:
+543\unit{\Omega}$, the theoretical voltage across the load resistor is calculated as follows:
 \begin{gather*}
     V_{13} = \frac{kR_L}{R_L + k(1-k) R_P} \cdot V = \frac{0.5 \cdot 543}{543 + 0.5(1-0.5)1001} \cdot 2.959 = 1.012\unit{V}
 \end{gather*}
-Using the user manual of the multimeter, $\Delta V, ~\Delta R_L, ~\Delta R_P$ can
-be determined\cite{noauthor_am-500_2019}:
+
+The error for the voltage across the potentiometer, the load resistor, 
+and the potentiometer itself
+$\Delta V, ~\Delta R_L, ~\Delta R_P$ can
+be determined using the multimeter's user manual \cite{noauthor_am-500_2019}. 
+Equation 4 is used to calculate the error of the resistance, 
+while equation 5 is used to calculate the error of the measured voltage.
+Example calculation for the error of the load resistors ($R_L$), the potentiometer resistance ($R_p$),
+and the voltage across the potentiometer ($V_{P}$) is shown subsequently.
 \begin{gather}
     \Delta R = \frac{R}{100} + 2LSD\\
     \Delta V = \frac{0.8 V}{100} + 1LSD\\
@@ -444,20 +456,20 @@ be determined\cite{noauthor_am-500_2019}:
     \Delta R_P = \frac{1001}{100} + 2LSD = 10.02\unit{\Omega} \nonumber \\
     \Delta V_P = \frac{0.8 \cdot 2.959}{100} + LSD = 0.00616\unit{V} \nonumber
 \end{gather} 
-To calculate the error values of $V_{th}$, the following formula is used \cite{unc}:
+To calculate the error values of the theoretical values $V_{t}$, the formula presented in equation 6 is utilized\cite{unc}:
 \begin{equation}
-    \frac{\Delta V_{th}}{V_{th}} = \sqrt{\left( \frac{\Delta V_P}{V_P}\right) ^2 + \left( \frac{\Delta R_P}{R_P} \right) ^ 2 + \left( \frac{\Delta R_L}{R_L} \right) ^2}
+    \frac{\Delta V_{t}}{V_{t}} = \sqrt{\left( \frac{\Delta V_P}{V_P}\right) ^2 + \left( \frac{\Delta R_P}{R_P} \right) ^ 2 + \left( \frac{\Delta R_L}{R_L} \right) ^2}
 \end{equation}
-Calculating this value for $k = 0.5$, $R_L = 543\unit{\Omega}$:
+The example calculation for equation 6 is performed using $k = 0.5$, $R_L = 543\unit{\Omega}$ as example:
 \[ \Delta V_{th} = 0.77 \sqrt{\left( \frac{0.00616}{2.959} \right) ^ 2 + \left(
 \frac{10.02}{1001} \right) ^2 + \left(\frac{5.46}{543} \right) ^2 } = 0.011
 \unit{V} \]
-The error for the measured voltage will be calculated using equation 5:
+The error for the measured voltage is calculated using equation 5 as follows:
 \[ \Delta V = \frac{0.8 \cdot 0.993}{100} + LSD = 0.0109\unit{V} \]
-Therefore, in standard notation the results for $V_{th}$ and $V_L$ are:
+Therefore, in standard notation the results for the theoretical voltage ($V_{T}$) and the measured voltage ($V_L$) are listed below:
 \begin{gather*}
-    V_{th} = (1.012 \pm 0.02) \unit{V}\\
-    V_L = (0.993 \pm 0.02) \unit{V}
+    V_{T} = (1.01 \pm 0.02) \unit{V}\\
+    V_L = (0.99 \pm 0.02) \unit{V}
 \end{gather*}
 
 \subsection{Discussion}
@@ -467,14 +479,13 @@ According to Figure 6, the relationship between the k-value and load voltage fol
 especially at lower k-values. Additionally, Figure 7 highlights that the percentage deviations show a more 
 pronounced variation at lower k-values. For instance, at a k-value of 0.5, the percentage deviation was 20.05\%
 for the $1 \unit{k\Omega}$ load and 32.95\% for the $510\unit{\Omega}$ load. 
-These values suggest potential systematic errors, possibly due to human intervention or equipment inconsistencies at lower values.
+When a load resistor is added, the circuit's behavior deviates from ideal conditions. 
+This is due to the internal resistance of the potentiometer forming a voltage divider with the external load resistor.
 
 These deviations are notable but fall within a plausible range given the potential loading effects and measurement uncertainties. 
 As the k-value increased, the percentage deviation decreased, with minimal deviations observed at k = 1.0, 
 where deviations were 0.17\% for the $1 \unit{k\Omega}$ load and 0.30\% for the $510\unit{\Omega}$ load.
-
-Such deviations can be attributed to loading effects, 
-the influence of connection resistance, and inherent limitations in the precision of the multimeter. 
+As k increases, the overall circuit resistance increases, reducing current and the impact of external resistance (e.g. from the contact or the battery).
 Despite these discrepancies, the general trend of the measured values aligns with theoretical expectations. 
 The similarity in the overall behaviour of the experimental and theoretical graphs (Figure 6) 
 confirms that the theoretical model accurately represents the system's behavior, 
@@ -482,41 +493,52 @@ particularly at higher k-values where deviations diminish.
 
 \section{Potentiometer with fixed load current}
 \subsection{Measurement results}
-Table 3 displays the values for $V_{th}$, $V_{L}$, $PD_1$, $PD_2$, and
-$V_{unloaded}$:
+Table 3 presents a detailed comparison of the measured and theoretical voltage values
+for the potentiometer circuit under fixed load conditions. 
+The table examines two distinct load resistances represented as $V_{L1}$ for the $1 \unit{k\Omega}$ load and $V_{L2}$ for the $540 \unit{\Omega}$ load. 
+For each k-value, the table lists the corresponding measured voltages ($V_{L1}$ and $V_{L2}$), theoretical voltage predictions ($V_{L1t}$ and $V_{L2t}$), 
+and the calculated percentage deviations ($PD_1$ and $PD_2$).
+In the case of k = 0.1 and k = 0.2, the desired currents could not be achieved by modifying the decade resistor.
+Thus, the voltage across the load resistor was not measured, labeled as "N/A".
 
 \begin{table}[!ht]
     \centering
     \label{tab:3}
-    \caption{Measured and calculated values for the third experiment}
+    \caption{\centering Measured and theoretical values for the fixed current circuit 
+    with load 1 being the resistance to mantain a $2\unit{mA}$ current and load 2 to 
+    mantain a $4\unit{mA}$ current in terms of parameter k.}
     \begin{tabular}{|cccccccc|} 
     \hline
-    $k$ & \makecell{$V_{unloaded}$ \\ $\unit{V}$} & \makecell{$V_{L_1}$ \\
-    $\unit{V}$} & \makecell{$V_{th_1}$ \\ $\unit{V}$}  & \makecell{$PD_1$ \\
-    $\unit{\%}$}      &\makecell{$V_{L_2}$ \\ $\unit{V}$}  &
-    \makecell{$V_{th_2}$ \\ $\unit{V}$}  & \makecell{$PD_2$ \\ $\unit{\%}$}
+    $k$ & \makecell{$V_{unloaded}$ \\ $\unit{(V)}$} & \makecell{$V_{L1}$ \\
+    $\unit{(V)}$} & \makecell{$V_{L1t}$ \\ $\unit{(V)}$}  & \makecell{$PD_1$ \\
+    $\unit{(\%)}$}      &\makecell{$V_{L2}$ \\ $\unit{(V)}$}  &
+    \makecell{$V_{L2t}$ \\ $\unit{(V)}$}  & \makecell{$PD_2$ \\ $\unit{(\%)}$}
     \\ 
     \hline
-    0.1     & 0.302    & 0.108 & 0.116 & 64.238 & N/A   & N/A     & N/A       \\
-    0.2     & 0.594    & 0.257 & 0.271 & 56.734 & N/A   & N/A     & N/A       \\
-    0.3     & 0.89     & 0.431 & 0.467 & 51.573 & 0.029 & 0.046 & 96.741  \\
-    0.4     & 1.184    & 0.654 & 0.702 & 44.764 & 0.194 & 0.221 & 83.615  \\
+    0.1     & 0.302    & 0.108 & 0.116 & 64.238 & N/A   & -0.065    & N/A     \\
+    0.2     & 0.594    & 0.257 & 0.271 & 56.734 & N/A   & -0.049    & N/A     \\
+    0.3     & 0.89     & 0.431 & 0.467 & 51.573 & 0.029 & 0.046     & 96.741  \\
+    0.4     & 1.184    & 0.654 & 0.702 & 44.764 & 0.194 & 0.221     & 83.615  \\
     \textbf{0.5}     & \textbf{1.481}    & \textbf{0.968} & \textbf{0.979}  & \textbf{34.639} & 0.43  & 0.478  & 70.966  \\
-    0.6     & 1.776    & 1.214 & 1.294 & 31.644 & 0.755 & 0.813 & 57.489  \\
-    0.7     & 2.076    & 1.554 & 1.650 & 25.145 & 1.156 & 1.230 & 44.316  \\
-    0.8     & 2.365    & 1.925 & 2.047 & 18.605 & 1.639 & 1.726 & 30.698  \\
-    0.9     & 2.663    & 2.34  & 2.483 & 12.129 & 2.192 & 2.302 & 17.689  \\
-    1       & 2.957    & 2.786 & 2.959   & 5.783 & 2.838 & 2.959   & 4.024  \\
+    0.6     & 1.776    & 1.214 & 1.294 & 31.644 & 0.755 & 0.813     & 57.489  \\
+    0.7     & 2.076    & 1.554 & 1.650 & 25.145 & 1.156 & 1.230     & 44.316  \\
+    0.8     & 2.365    & 1.925 & 2.047 & 18.605 & 1.639 & 1.726     & 30.698  \\
+    0.9     & 2.663    & 2.34  & 2.483 & 12.129 & 2.192 & 2.302     & 17.689  \\
+    1.0       & 2.957    & 2.786 & 2.959   & 5.783 & 2.838 & 2.959  & 4.024   \\
     \hline
     \end{tabular}
     \end{table}
 \subsection{Graphs}
-Figure 8 represents the load voltages, both theoretical and measured, in terms
-of the k-value:
+Figure 8 illustrates the relationship between the potentiometer's parameter (k) and the corresponding load voltages under fixed current conditions. 
+The graph compares both measured and theoretical voltage values for two distinct current loads, $V_{L1}$ for $2\unit{mA}$ and $V_{L2}$ for $4\unit{mA}$. 
+The unloaded potentiometer voltage ($V_{un}$) is also plotted as a reference.
+The negative theoretical values for the $4 \unit{mA}$ current are not plotted, 
+as they are not physically meaningful for the study of the fixed current relation.
 \begin{figure}[!ht]
     \centering
     \begin{tikzpicture}
-        \begin{axis}[legend pos = north west, legend style={nodes={scale=0.7}}, ymajorgrids = true, domain = 0.1:1, xmin = 0, xlabel = k, xtick = {0, 0.2, 0.4, 0.6, 0.8, 1.0, 1.2}, ymin = 0, ymax = 3.5, ytick = {0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5}, ylabel = Load$ \unit{(V)}$, ignore zero = y, ]
+        \begin{axis}[title={Load voltage as a function of k for fixed current scenarios},
+            legend pos = north west, legend style={nodes={scale=0.7}}, ymajorgrids = true, domain = 0.1:1, xmin = 0, xlabel = k, xtick = {0, 0.2, 0.4, 0.6, 0.8, 1.0, 1.2}, ymin = 0, ymax = 3.5, ytick = {0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5}, ylabel = Load$ \unit{(V)}$, ignore zero = y, ]
         
         %\addplot[black!10!yellow, thick, samples = 100]{1.52*(x^2) + 1.157*x +0.2};
         \addplot  [mark = *, color = black!30!white] coordinates {
@@ -589,17 +611,21 @@ of the k-value:
         \end{axis}
     \end{tikzpicture}
     \label{fig:8}
-    \caption{Loads in terms of k}
+    \caption{\centering Measured and theoretical load voltages ($V_{L1}, V_{L2}$) as a function of the 
+    parameter (k) for fixed current scenarios, $2\unit{mA}$ and $4\unit{mA}$, respectively.}
 \end{figure}
-\newpage
-Figure 9 represents the two percent deviations in terms of the k-value.
+
+Furthermore, Figure 9 illustrates the percentage deviation of the measured voltage for both 
+fixed current scenarios, $2\unit{mA}$ and $4\unit{mA}$ as load 1 and load 2 respectively.
+The deviations for $k=0.1$ and $k=0.2$ are not plotted as they can't be calculated due to the lack of measured values.
 \begin{figure}[!ht]
     \centering
     \begin{tikzpicture}
-        \begin{axis}[legend pos = north east, legend style={nodes={scale=1}},
+        \begin{axis}[title={Percentage deviation as a function of k for fixed current scenarios},
+            legend pos = north east, legend style={nodes={scale=1}},
         ymajorgrids = true, domain = 0.1:1, xmin = 0, xmax = 1, ymin = 0, ymax =
         100, xlabel = k, xtick = {0, 0.2, 0.4, 0.8, 1}, ytick = {0, 10, 20, 30,
-        40, 50, 60, 70, 80,90,100}, ylabel = Percent Deviation(K)]
+        40, 50, 60, 70, 80,90,100}, ylabel = Percentage Deviation(\%)]
         %\addplot[red!30!pink, thick, samples = 100]{107.36*(x^2) - 198.65*x +92.75};
         \addplot[mark = *, color = blue] 
         coordinates {
@@ -634,31 +660,32 @@ Figure 9 represents the two percent deviations in terms of the k-value.
         \end{axis}
     \end{tikzpicture}
     \label{fig:9}
-    \caption{Percent deviation in terms of k}
+    \caption{\centering Percentage deviation in terms of k for load 1 and load 2 
+    in fixed current scenarios, $2\unit{mA}$ and $4\unit{mA}$, respectively.}
 \end{figure}
+\newpage
 \subsection{Calculations}
 Due to the variable resistance of the decade resistor, $R_L$ at $ k = 0.5$ will
 be $480\unit{\Omega}$.
 
-Firstly, using equation 3, the theoretical load can be calculated:
+Firstly, using equation 3, the theoretical load can be calculated as follows:
 \[ V_L = \frac{0.5 \cdot 480}{480 + 0.5(1-0.5)1001} \cdot 3 = 0.979\unit{V}\]
-Using the values highlighted in table 3, the sample error calculations can be made.
-
-Using equations 4 and 5, the calculations for $\Delta R$, and $\Delta V$ are:
+Using the values highlighted in table 3, the sample error calculations can be determined 
+using equations 4 and 5. An example calculation for $\Delta R$, and $\Delta V$ is done for $k = 0.5$:
 \begin{gather*}
     \Delta R_L = \frac{480}{100} + 2LSD = 4.8\unit{\Omega}\\
     \Delta R_P = 10.02\unit{\Omega}\\
     \Delta V_L = \frac{0.08 \cdot 0.968}{100} + 0.008 = 0.01557\unit{V}
 \end{gather*}
-Using equation 6, the error for the theoretical value can be found:
+The error for the theoretical value can be found using equation 6 as shown below:
 \[ \Delta V_{th} = 0.979 \sqrt{\left( \frac{0.01557}{0.968} \right) ^2 + \left(
 \frac{10.02}{1001} \right) ^2 + \left( \frac{4.8}{480} \right) ^2} = 0.021
 \unit{V}\]
 
-Therefore the load values in standard notation are:
+Therefore, the load values in standard notation for $ k = 0.5$ are listed below:
 \begin{gather*}
-    V_{th} = (0.979 \pm 0.021)\unit{V}\\
-    V_L = (0.968 \pm 0.016)\unit{V}
+    V_{Lt} = (0.98 \pm 0.02)\unit{V}\\
+    V_L = (0.97 \pm 0.02)\unit{V}
 \end{gather*}
 \subsection{Discussion}
 In this experiment, a constant current load was analyzed.
@@ -671,10 +698,16 @@ the internal resistance had a greater impact since the external resistances were
 Internal resistance is also likely the cause of the discrepancy in the first current load. 
 However, since the external resistances were larger, the overall effect of internal resistance was less pronounced.
 
+Additionally, low k-values correspond to low resistances, increasing the current. 
+Higher current increases the voltage drop across internal resistances and contact resistances, 
+resulting in larger percentage deviations. This explains why deviations like 64.23\% at $k = 0.1$ were observed.
+
 Furthermore, the percentage deviation discrepancies could be attributed to the circuit construction method. 
 Since the connections were more exposed compared to a traditional circuit, 
 external interference may have skewed the results. 
 This suggests that ensuring better connections and minimizing external interference would enhance measurement accuracy.
+
+
 \section{Conclusion}
 This study explored the relationship between the potentiometer's k-value and the resulting voltage in various circuit configurations. 
 The unloaded potentiometer demonstrated a clear linear correlation, aligning well with theoretical expectations.
