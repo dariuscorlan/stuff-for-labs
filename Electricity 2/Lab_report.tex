@@ -41,7 +41,7 @@ in various circuit configurations.
 \section{Background/Theory}
 A potentiometer is a resistor that has three terminals. Two of the terminals
 constitute the full resistance value, while the third one is a sliding contact.
-Figure 1 displays the different contacts of the potentiometer.
+Figure 1 displays the different contacts of the potentiometer \cite{report}.
 \begin{figure}[!ht]
     \centering
     \begin{minipage}{0.4\textwidth}
@@ -66,7 +66,7 @@ potential difference between terminals 1 and 3 will be determined using equation
 \end{equation} 
 
 When adding a load resistor in parallel to terminals 1 and 3, the voltage across
-them can be calculated using equation\cite{report}:
+them can be calculated using equation 3\cite{report}:
 %refr
 \begin{equation}
     V_{13} = \frac{kR_{L}}{R_{L}+k(1-k)R_P} V
@@ -86,9 +86,8 @@ adjustable resistance for certain measurements.
 \newpage
 \subsection{Experimental Set-Up unloaded potentiometer}
 An unloaded potentiometer circuit comprises a voltage source and a potentiometer.
-Measurementeasurements are taken for both the voltage supplied by the power source
+Measurements are taken for both the voltage supplied by the power source
 and the potential difference established between terminals 1 and 3. 
-
 In the unloaded potentiometer circuit, measurements are conducted incrementally by varying the parameter 
 k from 1 to 0.1. 
 
@@ -166,9 +165,11 @@ experiment.
 \end{figure}
 \section{The Unloaded Potentiometer}
 \subsection{Measurement Results}
-Table 1 presents the measured voltage values $(V_{unloaded})$ corresponding to the different values of 
-the parameter k, alongside the theoretical voltage values $(V_{expected})$ and 
-the associated measurement error $(\Delta V_{unloaded})$ for the unloaded potentiometer circuit.
+Table 1 presents the measured voltage values $(V_{unloaded})$ corresponding to the different values of the parameter $k$, 
+alongside the theoretical voltage values $(V_{expected})$ 
+and the associated measurement error $(\Delta V_{unloaded})$ for the unloaded potentiometer circuit.
+Additionally, the voltage of the battery was measured and obtained a result of $(V_{cell} = 2.959 \pm 0.028)$ V. 
+The calculated error is based on the multimeter's error of reading \cite{noauthor_am-500_2019}.
 \begin{table}[!ht]
     \centering
     \label{tab:1}
@@ -238,15 +239,23 @@ k in the unloaded potentiometer circuit.
 \end{figure}
 
 \subsection{Discussion}
-The main goal of this experiment was to determine the effect of changing the
-k-value of the potentiometer on the voltage load of the varying resistance. When
-looking at the graphical representation of these values seen on figure 3, we see
-a linear relationship between the k-value and the voltage drop on the
-potentiometer.
-
-Analyzing the difference between the measured and expected
-voltage, we see that the measured values are accurate, as the difference between
-them and the expected values falls within the measurement error. 
+The goal of this experiment was to determine the effect of modifying
+the parameter k of the potentiometer on the voltage load. 
+The graphical representation of these values in Figure 5 demonstrates
+the linear relationship between the k-value and the voltage drop across the potentiometer.
+This relationship is consistent with the theoretical formula presented in equation 2.
+The slope of the linear relationship, approximately 2.9596, corresponds
+to the total voltage supplied by the circuit (approximately 2.960V),
+reinforcing the expectation that voltage is directly proportional to the
+k-value in an unloaded potentiometer configuration.
+Analyzing the difference between measured and expected voltage, 
+the results show strong agreement,
+with discrepancies falling within the calculated measurement error. 
+These minor deviations can be attributed to potential inaccuracies
+in measurement or the inherent precision limits of the multimeter.
+Furthemore, the total voltage supplied by the circuit 
+expected from the theoretical formula is strongly related to the one recorded
+by measuring the power source $(V_{cell} = 2.959 \pm 0.028)$, further confirming the accuracy of the data.
 \newpage
 \section{Potentiometer loaded with fixed resistor}
 \subsection{Measurement results}
@@ -430,6 +439,24 @@ Therefore, in standard notation the results for $V_{th}$ and $V_L$ are:
 \end{gather*}
 
 \subsection{Discussion}
+This experiment aimed to analyze the voltage across the potentiometer when loaded with parallel resistors 
+of $1 \unit{k\Omega}$ and $510\unit{\Omega}$. 
+According to Figure 6, the relationship between the k-value and load voltage follows a non-linear trend, 
+especially at lower k-values. Additionally, Figure 7 highlights that the percentage deviations show a more 
+pronounced variation at lower k-values. For instance, at a k-value of 0.5, the percentage deviation was 20.05\%
+for the $1 \unit{k\Omega}$ load and 32.95\% for the $510\unit{\Omega}$ load. 
+These values suggest potential systematic errors, possibly due to human intervention or equipment inconsistencies at lower values.
+
+These deviations are notable but fall within a plausible range given the potential loading effects and measurement uncertainties. 
+As the k-value increased, the percentage deviation decreased, with minimal deviations observed at k = 1.0, 
+where deviations were 0.17\% for the $1 \unit{k\Omega}$ load and 0.30\% for the $510\unit{\Omega}$ load.
+
+Such deviations can be attributed to loading effects, 
+the influence of connection resistance, and inherent limitations in the precision of the multimeter. 
+Despite these discrepancies, the general trend of the measured values aligns with theoretical expectations. 
+The similarity in the overall behaviour of the experimental and theoretical graphs (Figure 6) 
+confirms that the theoretical model accurately represents the system's behavior, 
+particularly at higher k-values where deviations diminish.
 
 \section{Potentiometer with fixed load current}
 \subsection{Measurement results}
@@ -591,22 +618,27 @@ Therefore the load values in standard notation are:
     V_L = (0.968 \pm 0.016)\unit{V}
 \end{gather*}
 \subsection{Discussion}
-Firstly, the values for the fixed 4 mA current did not coincide with the
-theoretical values. This is likely due to the effect the internal resistance of
-the batteries has on the rest of the circuit. Typical batteries have an internal
-resistance of around $0.2\unit{\Omega}$ at room temperature\cite{ir}. Thus, when
-decreasing both the potentiometer's k-value and the decade resistor, the
-internal resistance caused more of an effect, since the external resistances
-were smaller. 
+In this experiment, a constant current load was analyzed.
+Significant deviations from theoretical predictions were observed, especially at lower k-values. 
+Firstly, the values for the fixed 4mA current did not coincide with the theoretical values. 
+This is likely due to the effect of the internal resistance of the batteries on the rest of the circuit. 
+Typical batteries have an internal resistance of around $0.2 \unit{\Omega}$ at room temperature \cite{ir}. 
+Thus, when decreasing both the potentiometer's k-value and the decade resistor, 
+the internal resistance had a greater impact since the external resistances were smaller.
+Internal resistance is also likely the cause of the discrepancy in the first current load. 
+However, since the external resistances were larger, the overall effect of internal resistance was less pronounced.
 
-Internal resistance is also likely the cause of the discrepancy in the first
-current load. However, since the external resistances were bigger, this has less
-of an overall effect.
-
-The percent deviation discrepancies could be attributed to the interference
-of the circuit building method. Since the connections are more exposed than
-on a traditional circuit, interference can skew the results. 
+Furthermore, the percentage deviation discrepancies could be attributed to the circuit construction method. 
+Since the connections were more exposed compared to a traditional circuit, 
+external interference may have skewed the results. 
+This suggests that ensuring better connections and minimizing external interference would enhance measurement accuracy.
 \section{Conclusion}
+This study explored the relationship between the potentiometer's k-value and the resulting voltage in various circuit configurations. 
+The unloaded potentiometer demonstrated a clear linear correlation, aligning well with theoretical expectations.
+When introducing fixed resistors, deviations were noted, particularly at lower k-values, due to loading effects. 
+In the fixed load current experiment, internal battery resistance and circuit construction impacted measurement accuracy. 
+While theoretical predictions provided a solid foundation, practical factors introduced measurable deviations, 
+emphasizing the importance of considering real-world conditions in experimental analysis.
 \section{Bibliography}
 \bibliographystyle{IEEEtran}
 \bibliography{ELECTRICITY_2}
