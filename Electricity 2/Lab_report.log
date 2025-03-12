@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  12 MAR 2025 18:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  12 MAR 2025 19:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -766,54 +766,82 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
-<potterminals.png, id=96, 931.98187pt x 832.61063pt>
+<template.pdf, id=95, 597.55246pt x 845.07718pt>
+File: template.pdf Graphic file (type pdf)
+<use template.pdf>
+Package pdftex.def Info: template.pdf  used on input line 35.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+<template.pdf, id=97, page=1, 597.55246pt x 845.07718pt>
+File: template.pdf Graphic file (type pdf)
+<use template.pdf, page 1>
+Package pdftex.def Info: template.pdf , page1 used on input line 35.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+File: template.pdf Graphic file (type pdf)
+<use template.pdf, page 1>
+Package pdftex.def Info: template.pdf , page1 used on input line 35.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: template.pdf Graphic file (type pdf)
+<use template.pdf, page 1>
+Package pdftex.def Info: template.pdf , page1 used on input line 35.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: template.pdf Graphic file (type pdf)
+<use template.pdf, page 1>
+Package pdftex.def Info: template.pdf , page1 used on input line 35.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+
+
+File: template.pdf Graphic file (type pdf)
+<use template.pdf, page 1>
+Package pdftex.def Info: template.pdf , page1 used on input line 35.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+[1
+
+
+ <./template.pdf>]
+<potterminals.png, id=116, 931.98187pt x 832.61063pt>
 File: potterminals.png Graphic file (type png)
 <use potterminals.png>
 Package pdftex.def Info: potterminals.png  used on input line 48.
 (pdftex.def)             Requested size: 181.18439pt x 161.85658pt.
 
 
-[1
-
-{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./potterminals.png>]
-<Unloaded pot circuit.png, id=118, 427.5975pt x 174.6525pt>
+[2{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./potterminals.png>]
+<Unloaded pot circuit.png, id=137, 427.5975pt x 174.6525pt>
 File: Unloaded pot circuit.png Graphic file (type png)
 <use Unloaded pot circuit.png>
 Package pdftex.def Info: Unloaded pot circuit.png  used on input line 101.
 (pdftex.def)             Requested size: 181.18784pt x 74.00645pt.
-<unloaded pot picture.png, id=121, 265.9536pt x 150.3216pt>
+<unloaded pot picture.png, id=140, 265.9536pt x 150.3216pt>
 File: unloaded pot picture.png Graphic file (type png)
 <use unloaded pot picture.png>
 Package pdftex.def Info: unloaded pot picture.png  used on input line 107.
 (pdftex.def)             Requested size: 181.18784pt x 102.41458pt.
-<loaded pot fixed circuit.png, id=122, 465.23813pt x 158.09062pt>
+<loaded pot fixed circuit.png, id=141, 465.23813pt x 158.09062pt>
 File: loaded pot fixed circuit.png Graphic file (type png)
 <use loaded pot fixed circuit.png>
 Package pdftex.def Info: loaded pot fixed circuit.png  used on input line 124.
 (pdftex.def)             Requested size: 226.48395pt x 76.9609pt.
-<loaded pot fixed pic.png, id=125, 444.15938pt x 332.74312pt>
+<loaded pot fixed pic.png, id=144, 444.15938pt x 332.74312pt>
 File: loaded pot fixed pic.png Graphic file (type png)
 <use loaded pot fixed pic.png>
 Package pdftex.def Info: loaded pot fixed pic.png  used on input line 130.
 (pdftex.def)             Requested size: 181.18784pt x 135.73505pt.
 
 
-[2 <./Unloaded pot circuit.png> <./unloaded pot picture.png> <./loaded pot fixed circuit.png> <./loaded pot fixed pic.png>]
-<fixed current circuit.png, id=137, 441.14813pt x 171.64125pt>
+[3 <./Unloaded pot circuit.png> <./unloaded pot picture.png> <./loaded pot fixed circuit.png> <./loaded pot fixed pic.png>]
+<fixed current circuit.png, id=156, 441.14813pt x 171.64125pt>
 File: fixed current circuit.png Graphic file (type png)
 <use fixed current circuit.png>
 Package pdftex.def Info: fixed current circuit.png  used on input line 153.
 (pdftex.def)             Requested size: 181.18784pt x 70.49644pt.
-<fixed currrent picture.png, id=140, 226.9278pt x 186.4566pt>
+<fixed currrent picture.png, id=159, 226.9278pt x 186.4566pt>
 File: fixed currrent picture.png Graphic file (type png)
 <use fixed currrent picture.png>
 Package pdftex.def Info: fixed currrent picture.png  used on input line 160.
 (pdftex.def)             Requested size: 181.18784pt x 148.87527pt.
 
 
-[3 <./fixed current circuit.png> <./fixed currrent picture.png>]
-
-[4]
+[4 <./fixed current circuit.png> <./fixed currrent picture.png>]
 
 [5]
 
@@ -821,13 +849,15 @@ Package pdftex.def Info: fixed currrent picture.png  used on input line 160.
 
 [7]
 
-[8] (./Lab_report.bbl
+[8]
+
+[9] (./Lab_report.bbl
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `en-us'. Using the pattern for
 ** the default language instead.
 
 
-[9]
+[10]
 ** WARNING: IEEEtran.bst: No hyphenation pattern has been
 ** loaded for the language `en-US'. Using the pattern for
 ** the default language instead.
@@ -839,7 +869,7 @@ Package pdftex.def Info: fixed currrent picture.png  used on input line 160.
 ** the default language instead.
 )
 
-[10] (./Lab_report.aux)
+[11] (./Lab_report.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -848,18 +878,18 @@ Package rerunfilecheck Info: File `Lab_report.out' has not changed.
 (rerunfilecheck)             Checksum: CE6B9065B2802EE81BE170E617DCF9EC;3369.
  ) 
 Here is how much of TeX's memory you used:
- 37020 strings out of 473190
- 876217 string characters out of 5715801
- 1503530 words of memory out of 5000000
- 59634 multiletter control sequences out of 15000+600000
+ 37033 strings out of 473190
+ 876512 string characters out of 5715801
+ 1504627 words of memory out of 5000000
+ 59646 multiletter control sequences out of 15000+600000
  561108 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  103i,20n,107p,797b,2275s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Lab_report.pdf (10 pages, 1328201 bytes).
+Output written on Lab_report.pdf (11 pages, 1429338 bytes).
 PDF statistics:
- 258 PDF objects out of 1000 (max. 8388607)
- 208 compressed objects within 3 object streams
- 56 named destinations out of 1000 (max. 500000)
- 224 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 277 PDF objects out of 1000 (max. 8388607)
+ 221 compressed objects within 3 object streams
+ 57 named destinations out of 1000 (max. 500000)
+ 239 words of extra memory for PDF output out of 10000 (max. 10000000)
 
