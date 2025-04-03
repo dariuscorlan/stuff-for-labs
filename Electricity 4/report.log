@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.14)  3 APR 2025 15:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.14)  3 APR 2025 15:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -711,12 +711,12 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
-<Voltagesource.png, id=22, 194.97844pt x 238.64156pt>
+<Voltagesource.png, id=30, 194.97844pt x 238.64156pt>
 File: Voltagesource.png Graphic file (type png)
 <use Voltagesource.png>
 Package pdftex.def Info: Voltagesource.png  used on input line 53.
 (pdftex.def)             Requested size: 113.24197pt x 138.60153pt.
-<Currentsource.png, id=24, 299.61937pt x 211.54031pt>
+<Currentsource.png, id=32, 299.61937pt x 211.54031pt>
 File: Currentsource.png Graphic file (type png)
 <use Currentsource.png>
 Package pdftex.def Info: Currentsource.png  used on input line 59.
@@ -726,12 +726,12 @@ Package pdftex.def Info: Currentsource.png  used on input line 59.
 [1
 
 {C:/Users/darius/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Voltagesource.png> <./Currentsource.png>]
-<loadcircuit.png, id=36, 313.17pt x 200.24812pt>
+<loadcircuit.png, id=44, 313.17pt x 200.24812pt>
 File: loadcircuit.png Graphic file (type png)
 <use loadcircuit.png>
 Package pdftex.def Info: loadcircuit.png  used on input line 80.
 (pdftex.def)             Requested size: 226.48395pt x 144.82326pt.
-<vi_graph.png, id=37, 389.95688pt x 239.39438pt>
+<vi_graph.png, id=45, 389.95688pt x 239.39438pt>
 File: vi_graph.png Graphic file (type png)
 <use vi_graph.png>
 Package pdftex.def Info: vi_graph.png  used on input line 105.
@@ -751,20 +751,20 @@ LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
  ***********
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: E464922BF3F3980720DAA73C4CABF1E3;610.
+(rerunfilecheck)             Checksum: 17C1CDC49D534D65784665BBC2A6277F;932.
  ) 
 Here is how much of TeX's memory you used:
- 33676 strings out of 473682
- 787048 string characters out of 5718739
+ 33680 strings out of 473682
+ 787098 string characters out of 5718739
  1379354 words of memory out of 5000000
- 56221 multiletter control sequences out of 15000+600000
+ 56223 multiletter control sequences out of 15000+600000
  560032 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  103i,8n,107p,786b,632s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb>
-Output written on report.pdf (3 pages, 162893 bytes).
+Output written on report.pdf (3 pages, 165548 bytes).
 PDF statistics:
- 103 PDF objects out of 1000 (max. 8388607)
- 15 named destinations out of 1000 (max. 500000)
- 65 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 111 PDF objects out of 1000 (max. 8388607)
+ 17 named destinations out of 1000 (max. 500000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
