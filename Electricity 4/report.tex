@@ -1,0 +1,148 @@
+\documentclass[a4paper]{article}
+\usepackage{graphicx}
+\usepackage[margin = 1in]{geometry}
+\usepackage{ragged2e}
+\usepackage[hidelinks, colorlinks = true, citecolor = black, linkcolor = blue]{hyperref}
+\usepackage{parskip}
+\usepackage{cite}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{cellspace}
+\usepackage{makecell}
+\usepackage{mwe}
+\setlength\cellspacetoplimit{4pt}
+\setlength\cellspacebottomlimit{4pt}
+\usepackage{caption} 
+\usepackage{pgfplots}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{pdfpages}
+\newcommand{\inv}{^{\raisebox{.2ex}{$\scriptscriptstyle-1$}}}
+\newcommand{\unit}[1]{~\mathrm{#1}}
+\captionsetup[table]{skip=10pt}
+\renewcommand{\arraystretch}{1.5}
+
+\begin{document}
+\section{Introduction}
+DC power sources are an essential part of circuits. The aim of the following
+experiments is to study the proprieties of these sources. Electromotive force,
+ideal-source current, open-circuit voltage, short-circuit current, and internal
+resistance will be studied for voltage sources.
+
+The behaviour of series and parallel source arrangements will also be studied.
+
+\section{Background/ Theory}
+DC power sources refer to either voltage or current sources of which the output
+does not diminish with time. A source is called an ideal voltage source when the
+output voltage does not change in relation to the load resistance. For current
+sources, the current remains constant regardless of the load resistor. 
+
+In physical applications however, the current or voltage will depend on the load
+resistance. Therefore, power sources will be represented as a combination
+between an ideal source and an internal resistance. For voltage sources, the
+resistance will be connected in series with the ideal source, whereas for
+current sources, the resistor will be connected in parallel. (book)
+
+Figures 1(a) and 1(b) display the aforementioned representation of power
+sources, both for current and voltage sources.(lab text)
+
+\begin{figure}[!ht]
+    \centering
+    \begin{subfigure}{0.5\textwidth}
+        \centering
+        \includegraphics[width = 0.5 \linewidth]{Voltagesource.png}
+        \label{fig:1a}
+        \caption{Schematic representation of voltage source}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+        \centering
+        \includegraphics[width = 0.7\linewidth]{Currentsource.png}        
+        \label{fig:1b}
+        \caption{Schematic representation of current source}
+    \end{subfigure}
+    \label{fig:1}
+    \caption{Schematic representation of power sources}  
+\end{figure}
+
+\subsection{Source characteristics}
+Using source transformation, all power sources can be represented as voltage
+sources with an internal resistance(book). Therefore, going forward, sources
+will be displayed as shown in Figure 1(a). This representation is called the
+voltage-equivalent circuit. By adding a load resistance to the power source, essential characteristics of
+the source can be discovered.
+
+\newpage
+Figure 2 displays the circuit which will be used to determine these
+characteristics(labtext).
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width = 0.5\textwidth]{loadcircuit.png}
+    \label{fig:2}
+    \caption{Simple load circuit of real voltage source}
+\end{figure}
+
+Firstly, the voltage of the ideal source is called the electromotive force,
+$V_{emf}$. By measuring the load current, this voltage can be related to the
+load voltage by observing that the same current passes through the internal
+resistance as well. 
+
+Equation 1 displays the relationship between current, load
+voltage, and electromotive force(labtext).
+
+\begin{equation}
+    V_L = V_{emf} + I_L R_i
+\end{equation}
+
+Since the internal resistance, $R_i$, is constant, the relationship between load
+voltage and current is a linear one. 
+
+Figure 3 displays this relationship for a
+real voltage source such as the one shown in Figure 1(a)(labtext).
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width = 0.5\textwidth]{vi_graph.png}
+    \label{fig:3}
+    \caption{Typical $V_L$ - $I_L$ graph used to determine source characteristics}
+\end{figure}
+
+By determining the slope of the linear relationship between $I_L$ and $V_L$, the
+internal resistance can be found(labtext):
+
+\begin{equation}
+    R_i = -\frac{\Delta V_L}{\Delta I_L}
+\end{equation}
+
+By looking at the x and y intercepts of the graph, both the electromotive force
+and the short circuit current can be found. Therefore, all of the sources
+characteristics can be found by analyzing the Voltage-Current graph.
+
+A relationship between all of the characteristics is found equation 3(labtext):
+
+\begin{equation}
+    I_{sc} = \frac{V_{emf}}{R_i}
+\end{equation}
+
+\subsection{Series and parallel sources}
+By connecting multiple voltage sources in series, higher $V_{emf}$ values can be
+provided. The equivalent internal resistance will be equal to the sum of the
+individual sources internal resistances.
+
+When connecting multiple sources in parallel, the equivalent internal resistance
+will be lowered. The lowering of the internal resistance will be governed by the
+parallel resistance equivalence(labtext):
+
+\begin{equation}
+    R_i = \left( \sum_{j} \frac{1}{R_{i,~j}}\right) \inv
+\end{equation}
+
+Since sources should only be connected in parallel when they have the same
+electromotive force, the equivalent $V_{emf}$ will be equal to that of one
+source(labtext).
+
+\subsection{Maximum power transfer}
+
+\section{Method and materials}
+
+\end{document}
