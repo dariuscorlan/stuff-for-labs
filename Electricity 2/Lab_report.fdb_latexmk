@@ -1,14 +1,26 @@
 # Fdb version 4
+<<<<<<< HEAD
 ["bibtex Lab_report"] 1741800641.68719 "Lab_report.aux" "Lab_report.bbl" "Lab_report" 1741800660.38051 0
   "./ELECTRICITY_2.bib" 1741794769.74708 761 666f8880523680be2d05df6fdde757c0 ""
   "/usr/local/texlive/2025/texmf-dist/bibtex/bst/ieeetran/IEEEtran.bst" 1440712899 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
   "Lab_report.aux" 1741800660.13702 8772 ede254a1b217b7d0d3a5d3827725c741 "pdflatex"
+=======
+["bibtex Lab_report"] 1741804212.51058 "Lab_report.aux" "Lab_report.bbl" "Lab_report" 1741804440.344 0
+  "./ELECTRICITY_2.bib" 1741794769.74708 761 666f8880523680be2d05df6fdde757c0 ""
+  "/usr/local/texlive/2025/texmf-dist/bibtex/bst/ieeetran/IEEEtran.bst" 1440712899 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
+  "Lab_report.aux" 1741804440.10788 8775 a38a0fb135111e5d2bc671cb141804c9 "pdflatex"
+>>>>>>> e4884537f52a5333d19c13432d4189005b1454ec
   (generated)
   "Lab_report.bbl"
   "Lab_report.blg"
   (rewritten before read)
+<<<<<<< HEAD
 ["pdflatex"] 1741800658.67089 "/Users/valeriajacksonsandoval/Developer/stuff-for-labs/Electricity 2/Lab_report.tex" "Lab_report.pdf" "Lab_report" 1741800660.38064 0
   "/Users/valeriajacksonsandoval/Developer/stuff-for-labs/Electricity 2/Lab_report.tex" 1741800658.48772 34206 4d81f98f23b69b27ce5aebde4d379468 ""
+=======
+["pdflatex"] 1741804438.64781 "/Users/valeriajacksonsandoval/Developer/stuff-for-labs/Electricity 2/Lab_report.tex" "Lab_report.pdf" "Lab_report" 1741804440.34413 0
+  "/Users/valeriajacksonsandoval/Developer/stuff-for-labs/Electricity 2/Lab_report.tex" 1741804437.40663 34271 2bb76f4aa9a46699a055063b217ef412 ""
+>>>>>>> e4884537f52a5333d19c13432d4189005b1454ec
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -230,16 +242,27 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1741557640 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
+<<<<<<< HEAD
   "Lab_report.aux" 1741800660.13702 8772 ede254a1b217b7d0d3a5d3827725c741 "pdflatex"
   "Lab_report.bbl" 1741800641.77985 1579 cd73e68db374068fa69fdf507c399293 "bibtex Lab_report"
   "Lab_report.out" 1741800660.1379 3369 ce6b9065b2802ee81be170e617dcf9ec "pdflatex"
   "Lab_report.tex" 1741800658.48772 34206 4d81f98f23b69b27ce5aebde4d379468 ""
+=======
+  "Lab_report.aux" 1741804440.10788 8775 a38a0fb135111e5d2bc671cb141804c9 "pdflatex"
+  "Lab_report.bbl" 1741804212.5991 1579 cd73e68db374068fa69fdf507c399293 "bibtex Lab_report"
+  "Lab_report.out" 1741804440.1089 3369 ce6b9065b2802ee81be170e617dcf9ec "pdflatex"
+  "Lab_report.tex" 1741804437.40663 34271 2bb76f4aa9a46699a055063b217ef412 ""
+>>>>>>> e4884537f52a5333d19c13432d4189005b1454ec
   "Unloaded pot circuit.png" 1741557366.73872 10317 b8c9ae0fa6cd0d49d0f79416b3616cb9 ""
   "fixed current circuit.png" 1741557366.73899 12804 5a396db500d4fe1bed6b97e0b4c8f295 ""
   "fixed currrent picture.png" 1741557366.73927 426452 c6e879455058ad96eaadc09936ceec2e ""
   "loaded pot fixed circuit.png" 1741557366.73954 11790 523427d6a27ebe1a918d944155469066 ""
   "loaded pot fixed pic.png" 1741557366.74024 331250 937cab4c2478f510c233bba14d334ab1 ""
   "potterminals.png" 1741557366.74035 13965 237d1afddc5f1d5f06ce199b963cead4 ""
+<<<<<<< HEAD
+=======
+  "template.pdf" 1741804193.69921 252406 b61194e5989430e8000eb1d3af71aba8 ""
+>>>>>>> e4884537f52a5333d19c13432d4189005b1454ec
   "unloaded pot picture.png" 1741557366.74062 422636 93306e26a8a26892aed3f623517ccc7b ""
   (generated)
   "Lab_report.aux"
