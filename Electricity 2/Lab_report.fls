@@ -373,7 +373,10 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/pdflscape/pdflscape-nometadat
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics/lscape.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/graphics/lscape.sty
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> e4884537f52a5333d19c13432d4189005b1454ec
 INPUT ./template.pdf
 INPUT ./template.pdf
 INPUT ./template.pdf
@@ -385,6 +388,9 @@ INPUT ./template.pdf
 INPUT ./template.pdf
 INPUT ./template.pdf
 INPUT ./template.pdf
+<<<<<<< HEAD
+>>>>>>> e4884537f52a5333d19c13432d4189005b1454ec
+=======
 >>>>>>> e4884537f52a5333d19c13432d4189005b1454ec
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
