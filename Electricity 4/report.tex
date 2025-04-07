@@ -144,5 +144,61 @@ source(labtext).
 \subsection{Maximum power transfer}
 
 \section{Method and materials}
+All circuits in the experiments were assembled using the connection boards. All
+measurements, including voltage and current, were determined using an AM-520
+HVAC mutlimeter. 1.5 V batteries were used as voltage sources. Both a decade
+resistor, and two fixed resistors of $62\unit{\Omega}$ and $150\unit{\Omega}$.
+
+Throughout the experiments, both the load current, $I_L$, and load voltage,
+$V_L$, are measured at every itteration.
+
+\subsection{Experimental Set-up determination of internal resistance}
+The set-up for the first experiment is the same as the one described in Figure
+2, where two different fixed resistors are used for $R_i$. The value of the
+resistors are $62\unit{\Omega}$ and $150\unit{\Omega}$. A decade resistor is
+used to vary the load resistor in order to complete the necessary measurements.
+
+To determine the source characteristics, the following experimental flow is
+established. Firstly the open circuit voltage is determined, thus establishing
+$V_{emf}$. Afterwards the decade resistor's value is adjusted such that a
+certain load current is established. The value of $I_L$ varies between
+$0.5\unit{mA}$ and $5\unit{mA}$ in increments of $0.5\unit{mA}$. After each
+adjustment, both the load voltage and the resistance of the decade resistor is
+noted down.
+
+Figure 4 displays the physical experimental set-up used to gather the
+measurements for single sources. 
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width = 0.4\textwidth, angle = 90]{firstexp.jpeg}
+    \label{fig:4}
+    \caption{Experimental set-up for the first experiment}
+\end{figure}
+
+To measure the effect of combining multiple sources together, the same method
+of measurement is used, whilst having the two different types of sources
+connected, either in parallel, or in series. 
+
+Figures 5(a) and 5(b) show the physical set-up of the combined source circuits.
+
+\begin{figure}[!ht]
+    \centering
+    \begin{subfigure}{0.5\textwidth}
+        \centering
+        \includegraphics[width = 0.6\linewidth, angle = 90]{series.jpeg}
+        \label{fig:5a}
+        \caption{Series sources circuit}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+        \centering
+        \includegraphics[width = 0.6\linewidth, angle = 90]{parallel.jpeg}
+        \label{fig:5b}
+        \caption{Parallel sources circuit}
+    \end{subfigure}
+    \label{fig:5}
+    \caption{Experimental set-ups of the combined sources}
+\end{figure}
+
 
 \end{document}
