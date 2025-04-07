@@ -1,8 +1,8 @@
 # Fdb version 4
-["pdflatex"] 1744039364.1661 "c:/Users/dariu/Documents/YAY/stuff-for-labs/Electricity 4/report.tex" "report.pdf" "report" 1744039365.91211 0
+["pdflatex"] 1744039829.03071 "c:/Users/dariu/Documents/YAY/stuff-for-labs/Electricity 4/report.tex" "report.pdf" "report" 1744039830.82084 0
   "Currentsource.png" 1743877672 15232 041468949c5fd7b4f618f94e1cc4c0d7 ""
   "Voltagesource.png" 1743877672 16341 7186a8ea6c8573995faf953c6804f048 ""
-  "c:/Users/dariu/Documents/YAY/stuff-for-labs/Electricity 4/report.tex" 1744039363 8054 e33291218f29a2ebcd50cd7c4621b55c ""
+  "c:/Users/dariu/Documents/YAY/stuff-for-labs/Electricity 4/report.tex" 1744039828 8058 e956a373f73e96d84294d07438d74972 ""
   "c:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1743869439 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1743868130 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1743868706 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -207,9 +207,9 @@
   "firstexp.jpeg" 1744037681 389604 01762bda9197dc0c79bb74747c243edb ""
   "loadcircuit.png" 1743877672 20902 94383853e583f12a9f2c173007305da5 ""
   "parallel.jpeg" 1744039078 343193 cc98c32beb39fa8cb9d0b95fe1fa639d ""
-  "report.aux" 1744039365 3419 731adc3e6363e222b9e51a7f5ce50aee "pdflatex"
-  "report.out" 1744039365 1284 2820d03ca10461f38c54a30f2f29451c "pdflatex"
-  "report.tex" 1744039363 8054 e33291218f29a2ebcd50cd7c4621b55c ""
+  "report.aux" 1744039830 3419 731adc3e6363e222b9e51a7f5ce50aee "pdflatex"
+  "report.out" 1744039830 1284 2820d03ca10461f38c54a30f2f29451c "pdflatex"
+  "report.tex" 1744039828 8058 e956a373f73e96d84294d07438d74972 ""
   "series.jpeg" 1744039075 408924 ed67bb38b9aedc1d51ea751241ef6308 ""
   "vi_graph.png" 1743877672 17553 82afb190a67031464e60b3a252f47b59 ""
   (generated)
