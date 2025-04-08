@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.5)  7 APR 2025 18:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.5)  8 APR 2025 21:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -618,24 +618,24 @@ File: pppdftex.def 2025/03/12 v0.6f Pdfpages driver for pdfTeX (AM)
 ) (./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
  (c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count359
@@ -689,7 +689,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 25.
+Package hyperref Info: Link coloring ON on input line 29.
 (./report.out) (./report.out)
 \@outlinefile=\write4
 \openout4 = `report.out'.
@@ -697,9 +697,7 @@ Package hyperref Info: Link coloring ON on input line 25.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
-
-Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into your preamble.
- on input line 25.
+Package pgfplots notification 'compat/show suggested version=true': you might benefit from \pgfplotsset{compat=1.18} (current compat level: 1.16).
 
 (c:/texlive/2025/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
@@ -710,79 +708,88 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
-<Voltagesource.png, id=35, 194.97844pt x 238.64156pt>
+<Voltagesource.png, id=55, 194.97844pt x 238.64156pt>
 File: Voltagesource.png Graphic file (type png)
 <use Voltagesource.png>
-Package pdftex.def Info: Voltagesource.png  used on input line 53.
+Package pdftex.def Info: Voltagesource.png  used on input line 57.
 (pdftex.def)             Requested size: 113.24197pt x 138.60153pt.
-<Currentsource.png, id=37, 299.61937pt x 211.54031pt>
+<Currentsource.png, id=57, 299.61937pt x 211.54031pt>
 File: Currentsource.png Graphic file (type png)
 <use Currentsource.png>
-Package pdftex.def Info: Currentsource.png  used on input line 59.
+Package pdftex.def Info: Currentsource.png  used on input line 63.
 (pdftex.def)             Requested size: 158.53807pt x 111.93506pt.
 
 
 [1
 
 {c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Voltagesource.png> <./Currentsource.png>]
-<loadcircuit.png, id=49, 313.17pt x 200.24812pt>
+<loadcircuit.png, id=69, 313.17pt x 200.24812pt>
 File: loadcircuit.png Graphic file (type png)
 <use loadcircuit.png>
-Package pdftex.def Info: loadcircuit.png  used on input line 80.
+Package pdftex.def Info: loadcircuit.png  used on input line 84.
 (pdftex.def)             Requested size: 226.48395pt x 144.82326pt.
-<vi_graph.png, id=50, 389.95688pt x 239.39438pt>
+<vi_graph.png, id=70, 389.95688pt x 239.39438pt>
 File: vi_graph.png Graphic file (type png)
 <use vi_graph.png>
-Package pdftex.def Info: vi_graph.png  used on input line 105.
+Package pdftex.def Info: vi_graph.png  used on input line 109.
 (pdftex.def)             Requested size: 226.48395pt x 139.03877pt.
 
 
 [2 <./loadcircuit.png> <./vi_graph.png>]
-<firstexp.jpeg, id=65, 1541.76pt x 2055.68pt>
+<firstexp.jpeg, id=85, 1541.76pt x 2055.68pt>
 File: firstexp.jpeg Graphic file (type jpg)
 <use firstexp.jpeg>
-Package pdftex.def Info: firstexp.jpeg  used on input line 174.
+Package pdftex.def Info: firstexp.jpeg  used on input line 178.
 (pdftex.def)             Requested size: 181.18439pt x 241.55812pt.
-<series.jpeg, id=66, 1541.76pt x 2055.68pt>
+<series.jpeg, id=86, 1541.76pt x 2055.68pt>
 File: series.jpeg Graphic file (type jpg)
 <use series.jpeg>
-Package pdftex.def Info: series.jpeg  used on input line 189.
+Package pdftex.def Info: series.jpeg  used on input line 193.
 (pdftex.def)             Requested size: 135.89174pt x 181.17642pt.
-<parallel.jpeg, id=67, 1541.76pt x 2055.68pt>
+<parallel.jpeg, id=87, 1541.76pt x 2055.68pt>
 File: parallel.jpeg Graphic file (type jpg)
 <use parallel.jpeg>
-Package pdftex.def Info: parallel.jpeg  used on input line 195.
+Package pdftex.def Info: parallel.jpeg  used on input line 199.
 (pdftex.def)             Requested size: 135.89174pt x 181.17642pt.
 
 
 [3 <./firstexp.jpeg>]
+<powertransf.jpeg, id=97, 1541.76pt x 2055.68pt>
+File: powertransf.jpeg Graphic file (type jpg)
+<use powertransf.jpeg>
+Package pdftex.def Info: powertransf.jpeg  used on input line 221.
+(pdftex.def)             Requested size: 181.18439pt x 241.55812pt.
 
-Package caption Warning: Unused \captionsetup[table] on input line 22.
-See the caption package documentation for explanation.
 
+[4 <./series.jpeg> <./parallel.jpeg> <./powertransf.jpeg>]
 
+[5]
 
-[4 <./series.jpeg> <./parallel.jpeg>] (./report.aux)
+[6]
+
+[7]
+
+[8] (./report.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 2820D03CA10461F38C54A30F2F29451C;1284.
+(rerunfilecheck)             Checksum: 7DF171013D40207B94CE0A8705B918E5;2157.
  ) 
 Here is how much of TeX's memory you used:
- 33721 strings out of 473189
- 779141 string characters out of 5719959
- 1381624 words of memory out of 5000000
- 56433 multiletter control sequences out of 15000+600000
+ 34329 strings out of 473189
+ 795127 string characters out of 5719959
+ 1394624 words of memory out of 5000000
+ 57022 multiletter control sequences out of 15000+600000
  560800 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 103i,10n,107p,782b,632s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb>
-Output written on report.pdf (4 pages, 1303538 bytes).
+ 103i,19n,107p,782b,2219s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on report.pdf (8 pages, 1731313 bytes).
 PDF statistics:
- 127 PDF objects out of 1000 (max. 8388607)
- 91 compressed objects within 1 object stream
- 21 named destinations out of 1000 (max. 500000)
- 104 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 197 PDF objects out of 1000 (max. 8388607)
+ 149 compressed objects within 2 object streams
+ 40 named destinations out of 1000 (max. 500000)
+ 149 words of extra memory for PDF output out of 10000 (max. 10000000)
 
