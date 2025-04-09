@@ -67,7 +67,7 @@ Finally, the brass sample is subjected to the Brinell test.
 \section {Results}
 
 \subsection{Measurements}
-\subsubsection{Vickers}
+\subsubsection{Vickers measurements}
 All of the samples were subjected to a load of $100\unit{kgf}$ and measured with a digital microscope which was able to digitally
 measure the dimensions of the indentation. The results of these measurements is
 displayed in table 1.
@@ -76,20 +76,20 @@ displayed in table 1.
   \centering
   \label{tab:1}
   \caption{Measurement results of Vickers hardness test}
-  \begin{tabular}{|c|cc|} 
-  \hline
+  \begin{tabular}{c|cc} 
+
   Material     & \makecell{$d_1$\\ $\unit{(mm)}$}    & \makecell{$d_2$\\$\unit{(mm)}$}     \\ 
   \hline
-  $Steel_{hardened_1}$   & 0.488 & 0.498  \\
-  $Steel_{hardened_2}$    & 0.5   & 0.515  \\
-  $Steel_{hardened_3}$    & 0.499 & 0.5    \\
-  $Steel_{unhardened_1}$ & 1.09  & 1.118  \\
-  $Steel_{unhardened_2}$  & 1.067 & 1.085  \\
-  $Steel_{unhardened_3}$  & 1.08  & 1.09   \\
-  $Brass_1$        & 1.06  & 1.054  \\
-  $Brass_2$        & 1.061 & 1.048  \\
-  $Brass_3$        & 1.6   & 1.58   \\
-  \hline
+  $\mathrm{Steel_{hardened_1}}$   & 0.488 & 0.498  \\
+  $\mathrm{Steel_{hardened_2}}$    & 0.5   & 0.515  \\
+  $\mathrm{Steel_{hardened_3}}$    & 0.499 & 0.5    \\
+  $\mathrm{Steel_{unhardened_1}}$ & 1.09  & 1.118  \\
+  $\mathrm{Steel_{unhardened_2}}$  & 1.067 & 1.085  \\
+  $\mathrm{Steel_{unhardened_3}}$  & 1.08  & 1.09   \\
+  $\mathrm{Brass_1}$        & 1.06  & 1.054  \\
+  $\mathrm{Brass_2}$        & 1.061 & 1.048  \\
+  $\mathrm{Brass_3}$        & 1.6   & 1.58   \\
+
   \end{tabular}
   \end{table}
 
@@ -100,15 +100,130 @@ hardness, and the results are placed in table 2.
   \centering
   \label{tab:2}
   \caption{Hardness value results of the Vickers test}
-  \begin{tabular}{|c|cccc|} 
+  \begin{tabular}{c|cccc} 
+  Material     & \makecell{$d_{avr}$\\$\unit{(mm)}$}    & \makecell{$HV_{avr}$ \\ $\unit{(-)}$}       & \makecell{$\Delta
+  HV$\\ $\unit{(-)}$}   & \makecell{$HV_{standard ~notation}$ \\ $\unit{(-)}$}  \\ 
   \hline
-  Material     & \makecell{$d_{avr}$\\$\unit{(mm)}$}    & \makecell{$HV$ \\ $\unit{(-)}$}       & \makecell{$\Delta
-  HV$\\ $\unit{(-)}$}   & \makecell{$HV_{standard notation}$ \\ $\unit{(-)}$}  \\ 
-  \hline
-  $Steel_{hardened}$   & 0.5 & 741.33 & 200 & $(741.33 \pm 200)$   \\
-  $Steel_{unhardened}$ & 1.09    & 156.12 & 30 & $(156.12 \pm 30)$   \\
-  $Brass$        & 1.06 & 166.33 & 30 & $(166.33 \pm 30)$   \\
-  \hline
+  $\mathrm{Steel_{hardened}}$   & 0.5 & 741.33 & 200 & $(741.33 \pm 200)$   \\
+  $\mathrm{Steel_{unhardened}}$ & 1.09    & 156.12 & 30 & $(156.12 \pm 30)$   \\
+  $\mathrm{Brass}$        & 1.06 & 166.33 & 30 & $(166.33 \pm 30)$   \\
+
   \end{tabular}
   \end{table}
+
+\subsubsection{Rockwell measurements}
+By using the results of the Vickers hardness test, the kind of Rockwell test
+that needed to be used was determined. For the hardened steel, Rockwell C was
+used, whereas for the brass and the unhardened steel, Rockwell B was used.
+
+\newpage
+The results of the respective tests are arranged in table 3.
+
+\begin{table}[!ht]
+  \centering
+  \label{tab:3}
+  \caption{Rockwell hardness results for both of the steel blocks and brass strip}
+  \begin{tabular}{c|ccc} 
+  Measurement & \makecell{$\mathrm{Steel_{hardened}}$\\$\unit{(HRC)}$} &
+  \makecell{$\mathrm{Steel_{unhardened}}$\\$\unit{(HRB)}$} & \makecell{$\mathrm{Brass}$\\ $\unit{(HRB)}$}  \\ 
+  \hline
+  1           & 67         & 80         & 86     \\
+  2           & 62         & 82         & 86     \\
+  3           & 63         & 81         & 87     \\
+  4           & 61         & 83         & 87     \\
+  5           & 83         & 84         & 88     \\
+  \end{tabular}
+  \end{table}
+
+After taking the average of these values and calculating the error, the final
+results are displayed in table 4.
+
+\begin{table}[!ht]
+  \centering
+  \label{tab:4}
+  \caption{Final result of the Rockwell hardness tests}
+  \begin{tabular}{c|ccc}
+  Material    & \makecell{$HR_{avr}$ \\ $\unit{(-)}$} & \makecell{$\Delta HR$ \\
+  $\unit{(-)}$}  & \makecell{$HR_{standard~notation}$ \\ $\unit{(-)}$}  \\ 
+  \hline
+  $\mathrm{Steel_{hardened}}$   & 63.2  & 2 & $(63.2 \pm 2)$       \\
+  $\mathrm{Steel_{unhardened}}$ & 82    & 1 & $(82 \pm 1)$       \\
+  $\mathrm{Brass}$       & 86.8  & 1 & $(86.8 \pm 1)$      
+  \end{tabular}
+\end{table}
+
+\subsubsection{Rockwell B measurements}
+For both tensile samples, the Rockwell B hardness test was used. The
+measurements are displayed in table 5.
+
+\begin{table}[!ht]
+  \centering
+  \label{tab:5}
+  \caption{All measurement results of the tensile samples}
+  \begin{tabular}{c|cc}
+  Measurement & \makecell{$\mathrm{Sample_{original}}$\\ $\unit{(-)}$} &
+  \makecell{$\mathrm{Sample_{drawn}}$ \\ $\unit{(-)}$}  \\ 
+  \hline
+  1           & 65        & 82         \\
+  2           & 61        & 86         \\
+  3           & 69        & 87         \\
+  4           & 58        & 86         \\
+  5           & 61        & 87        
+  \end{tabular}
+\end{table}
+
+Afterwards, the same steps to calculate the error are done as before, the final
+results being displayed in table 6.
+
+\begin{table}[!ht]
+  \centering
+  \label{tab:6}
+  \caption{Final results of the tensile sample tests}
+  \begin{tabular}{c|ccc}
+  Material & \makecell{$HR_{avr}$\\$\unit{(-)}$} & \makecell{$\Delta HR$ \\
+  $\unit{(-)}$}  & \makecell{$HR_{standard~notation}$ \\ $ \unit{(-)}$}  \\ 
+  \hline
+  $\mathrm{Sample_{drawn}}$ & 85.6  & 2 & $(85.6 \pm 2)$       \\
+  $\mathrm{Sample_{original}}$ & 82    & 1 & $(82 \pm 1)$      
+  \end{tabular}
+\end{table}
+
+\newpage
+\subsubsection{Brinell for brass}
+Firstly to utilize the Brinell hardness test, the main load must be calculated.
+The force is determined to be $60\unit{kgf}$. Afterwards, the results of the
+indentation measurements are noted down in table 7.
+
+\begin{table}[!ht]
+  \centering
+  \label{tab:7}
+  \caption{Indentation results of the Brinell test}
+  \begin{tabular}{c|c}
+  Measurement & \makecell{$d_{indentation}$\\ $\unit{(mm)}$}      \\ 
+  \hline
+  1           & 0.728  \\
+  2           & 0.709  \\
+  3           & 0.719  \\
+  4           & 0.728  \\
+  5           & 0.72  
+  \end{tabular}
+\end{table}
+
+Finally, the final hardness value can be calculated. The results of this
+calculation are shown in table 8.
+
+\begin{table}[!ht]
+  \centering
+  \label{tab:8}
+  \caption{Hardness measurement results of the Brinell test}
+  \begin{tabular}{c|ccc}
+  \makecell{$d_{avr}$ \\ $\unit{(mm)}$}   & \makecell{$HB_{avr}$ \\
+  $\unit{(-)}$}  & \makecell{$\Delta HB$ \\ $\unit{(-)}$} &
+  \makecell{$HB_{standard~notation}$ \\ $\unit{(-)}$}  \\ 
+  \hline
+  0.721 & 150 & 20     & $(150 \pm 20)$    
+  \end{tabular}
+\end{table}
+
+\subsection{Calculations}
 \end{document}
