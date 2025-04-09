@@ -1,0 +1,31 @@
+\documentclass[a4paper]{article}
+\usepackage{graphicx}
+\usepackage[margin = 1in]{geometry}
+\usepackage{ragged2e}
+\usepackage[hidelinks, colorlinks = true, citecolor = black, linkcolor = blue]{hyperref}
+\usepackage{parskip}
+\usepackage{cite}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{cellspace}
+\usepackage{makecell}
+\usepackage{mwe}
+\setlength\cellspacetoplimit{4pt}
+\setlength\cellspacebottomlimit{4pt}
+\usepackage{caption} 
+\usepackage{pgfplots}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{pdfpages}
+\newcommand{\inv}{^{\raisebox{.2ex}{$\scriptscriptstyle-1$}}}
+\newcommand{\unit}[1]{~\mathrm{#1}}
+\captionsetup[table]{skip=10pt}
+\renewcommand{\arraystretch}{1.5}
+\pgfplotsset{compat=1.16}
+\pgfplotsset{ignore zero/.style={%
+  #1ticklabel={\ifdim\tick pt=0pt \else\pgfmathprintnumber{\tick}\fi}
+}}
+
+\begin{document}
+\section{Introduction}
+\end{document}
