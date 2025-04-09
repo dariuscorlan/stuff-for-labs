@@ -7,8 +7,7 @@
 \providecommand{\BIBentrySTDinterwordspacing}{\spaceskip=0pt\relax}
 \providecommand{\BIBentryALTinterwordstretchfactor}{4}
 \providecommand{\BIBentryALTinterwordspacing}{\spaceskip=\fontdimen2\font plus
-\BIBentryALTinterwordstretchfactor\fontdimen3\font minus
-  \fontdimen4\font\relax}
+\BIBentryALTinterwordstretchfactor\fontdimen3\font minus \fontdimen4\font\relax}
 \providecommand{\BIBforeignlanguage}[2]{{%
 \expandafter\ifx\csname l@#1\endcsname\relax
 \typeout{** WARNING: IEEEtran.bst: No hyphenation pattern has been}%
@@ -22,26 +21,24 @@
 \BIBdecl
 
 \bibitem{ASTME140}
-\emph{Standard Hardness Conversion Tables for Metals}, ASTM International, West
-  Conshohocken, PA, 2023.
+\emph{Standard Hardness Conversion Tables for Metals}, ASTM International, West Conshohocken, PA, 2023.
 
 \bibitem{ASTME10}
-\emph{Standard Test Method for Brinell Hardness of Metallic Materials}, ASTM
-  International, West Conshohocken, PA, 2023.
+\emph{Standard Test Method for Brinell Hardness of Metallic Materials}, ASTM International, West Conshohocken, PA, 2023.
 
 \bibitem{ASTME18}
-\emph{Standard Test Methods for Rockwell Hardness of Metallic Materials}, ASTM
-  International, West Conshohocken, PA, 2023.
+\emph{Standard Test Methods for Rockwell Hardness of Metallic Materials}, ASTM International, West Conshohocken, PA, 2023.
 
 \bibitem{LoeckxHardness}
 J.~Loeckx, ``Hardness measurements,'' KU Leuven, Lab Manual, 2024.
 
 \bibitem{DeneyerUncertainty}
-L.~Deneyer and J.~Loeckx, ``Uncertainty analysis,'' KU Leuven, Lab Manual,
-  2024, 1st Semester.
+L.~Deneyer and J.~Loeckx, ``Uncertainty analysis,'' KU Leuven, Lab Manual, 2024, 1st Semester.
+
+\bibitem{DewulfMaterials}
+W.~Dewulf, \emph{Structure, Behaviour and Sustainability of Materials}, KU Leuven, 2023, course notes.
 
 \bibitem{ASTMD2240}
-\emph{Standard Test Method for Rubber Property---Durometer Hardness}, ASTM
-  International, West Conshohocken, PA, 2023.
+\emph{Standard Test Method for Rubber Property---Durometer Hardness}, ASTM International, West Conshohocken, PA, 2023.
 
 \end{thebibliography}
