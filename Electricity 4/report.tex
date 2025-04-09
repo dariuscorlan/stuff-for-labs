@@ -21,6 +21,10 @@
 \newcommand{\unit}[1]{~\mathrm{#1}}
 \captionsetup[table]{skip=10pt}
 \renewcommand{\arraystretch}{1.5}
+\pgfplotsset{compat=1.16}
+\pgfplotsset{ignore zero/.style={%
+  #1ticklabel={\ifdim\tick pt=0pt \else\pgfmathprintnumber{\tick}\fi}
+}}
 
 \begin{document}
 \section{Introduction}
@@ -51,16 +55,16 @@ sources, both for current and voltage sources.(lab text)
     \begin{subfigure}{0.5\textwidth}
         \centering
         \includegraphics[width = 0.5 \linewidth]{Voltagesource.png}
-        \label{fig:1a}
+    \label{fig:1a}
         \caption{Schematic representation of voltage source}
     \end{subfigure}%
     \begin{subfigure}{0.5\textwidth}
         \centering
         \includegraphics[width = 0.7\linewidth]{Currentsource.png}        
-        \label{fig:1b}
+    \label{fig:1b}
         \caption{Schematic representation of current source}
     \end{subfigure}
-    \label{fig:1}
+\label{fig:1}
     \caption{Schematic representation of power sources}  
 \end{figure}
 
@@ -144,5 +148,377 @@ source(labtext).
 \subsection{Maximum power transfer}
 
 \section{Method and materials}
+All circuits in the experiments were assembled using the connection boards. All
+measurements, including voltage and current, were determined using an AM-520
+HVAC mutlimeter. 1.5 V batteries were used as voltage sources. Both a decade
+resistor, and two fixed resistors of $62\unit{\Omega}$ and $150\unit{\Omega}$.
+
+Throughout the experiments, both the load current, $I_L$, and load voltage,
+$V_L$, are measured at every itteration.
+
+\subsection{Experimental Set-up determination of internal resistance}
+The set-up for the first experiment is the same as the one described in Figure
+2, where two different fixed resistors are used for $R_i$. The value of the
+resistors are $62\unit{\Omega}$ and $150\unit{\Omega}$. A decade resistor is
+used to vary the load resistor in order to complete the necessary measurements.
+
+To determine the source characteristics, the following experimental flow is
+established. Firstly the open circuit voltage is determined, thus establishing
+$V_{emf}$. Afterwards the decade resistor's value is adjusted such that a
+certain load current is established. The value of $I_L$ varies between
+$0.5\unit{mA}$ and $5\unit{mA}$ in increments of $0.5\unit{mA}$. After each
+adjustment, both the load voltage and the resistance of the decade resistor is
+noted down.
+
+Figure 4 displays the physical experimental set-up used to gather the
+measurements for single sources. 
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width = 0.4\textwidth, angle = 90]{firstexp.jpeg}
+    \label{fig:4}
+    \caption{Experimental set-up for the first experiment}
+\end{figure}
+
+To measure the effect of combining multiple sources together, the same method
+of measurement is used, whilst having the two different types of sources
+connected, either in parallel, or in series. 
+
+Figures 5(a) and 5(b) show the physical set-up of the combined source circuits.
+
+\begin{figure}[!ht]
+    \centering
+    \begin{subfigure}{0.5\textwidth}
+        \centering
+        \includegraphics[width = 0.6\linewidth, angle = 90]{series.jpeg}
+        \label{fig:5a}
+        \caption{Series sources circuit}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+        \centering
+        \includegraphics[width = 0.6\linewidth, angle = 90]{parallel.jpeg}
+        \label{fig:5b}
+        \caption{Parallel sources circuit}
+    \end{subfigure}
+    \label{fig:5}
+    \caption{Experimental set-ups for the combined sources}
+\end{figure}
+
+\subsection{Experimental set-up maximum power transfer}
+To determine the maximum power transfer, the same set-up as the last experiment
+is used, without the ammeter. For source 1, the value of the load resistor is
+varied between $30\unit{\Omega}$ and $120\unit{\Omega}$ in increments of 10,
+whereas source 2, the value varies between $70\unit{\Omega}$ and
+$250\unit{\Omega}$. The voltage across the load resistor is measured each time.
+Additionally, the resistance of the decade resistor is measured after each
+change.
+
+Figure 6 displays the physical set-up used to determine the maximum power
+transfer of each source.
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width = 0.4\textwidth, angle = 90]{powertransf.jpeg}
+    \label{fig:6}
+    \caption{Experimental set-up of the power transfer experiment}    
+\end{figure}
+
+\newpage
+\section{Determination of internal resistance}
+\subsection{Measurement results}
+After following the experimental flow as described in section 3.1, the determined
+voltages are noted down. Afterwards the fixed resistors used as internal
+resistances are measured using an ohmmeter. These are determined to be
+$61.5\unit{\Omega}$ and $148.2\unit{\Omega}$ respectively. 
+
+The measured load voltage of every source variation and the achieved load
+current are displayed in Table 1.
+
+\begin{table}[!ht]
+    \centering
+    \label{tab:1}
+    \caption{Measurement results used to determine internal resistances}
+    \begin{tabular}{|ccccc|} 
+    \hline
+    \makecell{$I_L$\\$\unit{mA}$} & \makecell{$V_{L_1}$\\$\unit{V}$} &
+    \makecell{$V_{L_2}$\\$\unit{V}$} & \makecell{$V_{L_{ser}}$ \\ $\unit{V}$} &
+    \makecell{$V_{L_{par}}$\\ $\unit{V}$}
+    \\ 
+    \hline
+    0        & 1.49     & 1.49     & 3.004         & 1.496       \\
+    0.5   & 1.459    & 1.415    & 2.897         & 1.475       \\
+    1    & 1.429    & 1.342    & 2.793         & 1.453       \\
+    1.5   & 1.398    & 1.268    & 2.687         & 1.431       \\
+    2    & 1.367    & 1.193    & 2.584         & 1.409       \\
+    2.5   & 1.336    & 1.121    & 2.48          & 1.388       \\
+    3  & 1.305    & 1.047    & 2.375             & 1.366       \\
+    3.5   & 1.275    & 0.974    & 2.271         & 1.344       \\
+    4    & 1.244    & 0.899    & 2.168         & 1.322       \\
+    4.5  & 1.213    & 0.827    & 2.063         & 1.3         \\
+    5    & 1.183    & 0.752    & 1.959         & 1.279       \\
+    \hline
+    \end{tabular}
+    \end{table}
+
+\subsection{Graphs}
+By plotting the load voltage in terms of $I_L$, all of a source's
+characteristics can be determined. 
+
+Figure 7 displays the relationship between load current and voltage for source
+1, having an internal resistance of $61.5\unit{\Omega}$.
+
+
+    \begin{figure}[!ht]
+        \centering
+        \begin{tikzpicture}
+            \begin{axis}[
+                xlabel = {$I_L\unit{(mA)}$},
+                ylabel = {$V_{L_1}\unit{(V)}$},
+                xmin = 0, xmax = 6,
+                ymin = 1, ymax = 1.6,
+                xtick = {0, 1, 2, 3, 4, 5, 6},
+                ytick = {1, 1.2, 1.4, 1.6},
+                ymajorgrids = true,
+                xmajorgrids = true,
+                legend pos = north west,
+                legend style={nodes={scale=0.7}},
+                domain = 0:5,
+            ]
+            
+            \addplot[red, samples = 100, dashed]{-0.0615*x + 1.49};
+            
+            \addplot[only marks, color = red] coordinates {
+                (0,	1.49)
+                (0.5,	1.459)
+                (1,	1.429)
+                (1.5,	1.398)
+                (2,	1.367)
+                (2.5,	1.336)
+                (3,	1.305)
+                (3.5,	1.275)
+                (4,	1.244)
+                (4.5,	1.213)
+                (5,	1.183)
+                
+            };
+            
+            \legend{$V(I_L) = -0.0615x + 1.49$ $R^2 = 1$}
+            
+            \end{axis}
+        \end{tikzpicture}
+        \caption{Load voltage of the first source in terms of load current}
+        \label{fig:7}
+    \end{figure}
+
+\newpage
+Figure 8 shows the relationship between $I_L$ and $V_{L_2}$, source 2 having an
+internal resistance of $148.2\unit{\Omega}$
+
+\begin{figure}[!ht]
+    \centering
+    \begin{tikzpicture}
+        \begin{axis}[
+            xlabel = {$I_L\unit{(mA)}$},
+            ylabel = {$V_{L_2}\unit{(V)}$},
+            xmin = 0, xmax = 6,
+            ymin = 0.6, ymax = 1.6,
+            xtick = {0, 1, 2, 3, 4, 5, 6},
+            ytick = {0.6, 0.8, 1, 1.2, 1.4, 1.6},
+            ymajorgrids = true,
+            xmajorgrids = true,
+            legend pos = north west,
+            legend style={nodes={scale=0.7}},
+            domain = 0:5,
+        ]
+        
+        \addplot[black!20!green, samples = 100, dashed]{-0.14743 * x + 1.4893};
+        
+        \addplot[only marks, color = black!20!green] coordinates {
+            (0,	1.49)
+            (0.5,	1.415)
+            (1,	1.342)
+            (1.5,	1.268)
+            (2,	1.193)
+            (2.5,	1.121)
+            (3,	1.047)
+            (3.5,	0.974)
+            (4,	0.899)
+            (4.5,	0.827)
+            (5,	0.7520)
+        };
+        
+        \legend{$V(I_L) = -0.14743x + 1.489$ $R^2 = 1$}
+        
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Load voltage of the second source in terms of load current}
+    \label{fig:8}
+\end{figure}
+
+Figure 9 displays the voltage current dependency for the series source
+arrangement.
+
+\begin{figure}[!ht]
+    \centering
+    \begin{tikzpicture}
+        \begin{axis}[
+            xlabel = {$I_L\unit{(mA)}$},
+            ylabel = {$V_{L_{ser}}\unit{(V)}$},
+            xmin = 0, xmax = 6,
+            ymin = 1.8, ymax = 3,
+            xtick = {0, 1, 2, 3, 4, 5, 6},
+            ytick = {1.8, 2, 2.2, 2.4, 2.6, 2.8, 3},
+            ymajorgrids = true,
+            xmajorgrids = true,
+            legend pos = north west,
+            legend style={nodes={scale=0.7}},
+            domain = 0:5,
+        ]
+        
+        \addplot[blue, samples = 100, dashed]{-0.20878 * x + 3.0021};
+        
+        \addplot[only marks, color = blue] coordinates {
+            (0,	3.004)
+            (0.5,	2.897)
+            (1,	2.793)
+            (1.5,	2.687)
+            (2,	2.584)
+            (2.5,	2.48)
+            (3,	2.375)
+            (3.5,	2.271)
+            (4,	2.168)
+            (4.5,	2.063)
+            (5,	1.959)
+            
+        };
+        
+        \legend{$V(I_L) = -0.20078x + 3.0021$ $R^2 = 1$}
+        
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Load voltage of the series source arrangement in terms of load current}
+    \label{fig:9}
+\end{figure}
+
+\newpage
+Figure 10 represents the linear relationship between load current and load
+voltage for the parallel source arrangements.
+
+\begin{figure}[!ht]
+    \centering
+    \begin{tikzpicture}
+        \begin{axis}[
+            xlabel = {$I_L\unit{(mA)}$},
+            ylabel = {$V_{L_{ser}}\unit{(V)}$},
+            xmin = 0, xmax = 6,
+            ymin = 1.2, ymax = 1.6,
+            xtick = {0, 1, 2, 3, 4, 5, 6},
+            ytick = {1.2, 1.3, 1.4, 1.5, 1.6},
+            ymajorgrids = true,
+            xmajorgrids = true,
+            legend pos = north west,
+            legend style={nodes={scale=0.7}},
+            domain = 0:5,
+        ]
+        
+        \addplot[orange, samples = 100, dashed]{-0.043569 * x + 1.4965};
+        
+        \addplot[only marks, color = orange] coordinates {
+            (0,	1.496)
+            (0.5,	1.475)
+            (1,	1.453)
+            (1.5,	1.431)
+            (2,	1.409)
+            (2.5,	1.388)
+            (3,	1.366)
+            (3.5,	1.344)
+            (4,	1.322)
+            (4.5,	1.3)
+            (5,	1.279)
+            
+        };
+        
+        \legend{$V(I_L) = -0.043569x + 1.4965$ $R^2 = 1$}
+        
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Load voltage of the parallel source arrangement in terms of load current}
+    \label{fig:10}
+\end{figure}
+\subsection{Calculations}
+By utilizing the equations described in section 2.1, the characteristics of both
+sources can be determined. 
+
+The result of these calculations is displayed in table 2.
+
+
+\begin{table}[!ht]
+    \centering
+    \begin{tabular}{|c|ccc|} 
+    \hline
+             & \makecell{$R_i$\\ $\unit{\Omega}$}     & \makecell{$V_{emf}$\\$\unit{V}$}  & \makecell{$I_{sc}$\\$\unit{mA}$}         \\ 
+    \hline
+    Source 1 & 61.5   & 1.49  & 24.22  \\
+    Source 2 & 147.4 & 1.49  & 10.11  \\
+    Series  & 208.8 & 3     & 14.37  \\
+    Parallel & 43.6 & 1.49 & 34.34  \\
+    \hline
+    \end{tabular}
+    \end{table}
+
+To determine the error of the internal resistance measurements, Microsoft
+Excel's LINEST function is used. This function returns information about linear
+regression of a set of samples. One of these values is the standard error for
+$V_{L}$. This value can be used to calculate the error of the internal
+resistance. This is done by using equation 5.This will also be used to determine the error of $I_{sc}$. 
+
+\begin{equation}
+    \Delta R_i = R_i \frac{\Delta V}{V}
+\end{equation}
+
+Therefore, the following calculations are made:
+\begin{gather*}
+    \Delta R_i = 61.5 \frac{6.5 \cdot 10^{-5}}{1.183} \approx 0.1\unit{\Omega}\\
+    \Delta I_{sc} = 21.22 \frac{6.5\cdot 10^-5}{1.183} \approx 0.01\unit{mA}
+\end{gather*}
+
+Therefore the values of $R_i$ and $I_{sc}$ for source one are:
+\begin{gather*}
+    R_i = (61.5\pm 0.1)\unit{\Omega}\\
+    I_{sc} = (21.22 \pm 0.01)\unit{mA}
+\end{gather*}
+
+However, the error of $V_{emf}$ will be determined using the error of the
+multimeter measurements(mm). This is done using equation 6.
+\begin{equation}
+    \Delta V_{emf} = \frac{V}{100} + 3 LSD
+\end{equation}
+
+By introducing the measured value for source one, the following calculation is
+achieved:
+
+\[ \Delta V_{emf} = \frac{1.49}{100} + 0.003 \approx 0.02 \unit{V}\]
+
+Therefore, the value for electromotive force is:
+\[V_{emf} = (1.49 \pm 0.02)\unit{V}\]
+
+The error of the internal resistance fixed resistors will also be determined by
+using the error of the multimeter. The formula used is shown in equation 7.
+
+\begin{equation}
+    \Delta R = \frac{1.2 \cdot R}{100} + 2LSD
+\end{equation}
+
+The sample calculation for the internal resistance of the first source, $R_{i_1}$, is:
+
+\[\Delta R_{i_1} = \frac{1.2 \cdot 61.5}{100} + 0.002 \approx 0.8\unit{\Omega}\]
+
+Therefore, the values of the measured internal resistances are:
+\begin{gather*}
+    R_{i_1} = (61.5 \pm 0.8)\unit{\Omega}\\
+    R_{i_2} = (148.2 \pm 2)\unit{\Omega}
+\end{gather*}
+
+\subsection{Discussion}
 
 \end{document}
