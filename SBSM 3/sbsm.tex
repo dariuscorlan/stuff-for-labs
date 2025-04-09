@@ -28,4 +28,87 @@
 
 \begin{document}
 \section{Introduction}
+The objective of this experiment is to determine and compare the hardness of
+various metal samples using the Brinell, Vickers, and Rockwell methods. The
+study focuses on evaluating the influence of material treatment such as
+quenching and plastic deformation on hardness. Appropriate loads and indenters
+are applied for each method, and multiple indentations are conducted to ensure
+accuracy.
+
+Results are analyzed using standardized conversion tables to establish correlations between hardness and tensile strength, as well as to assess the suitability of each testing method for different materials and applications.
+
+\section{Background/ Theory}
+
+The hardness of metals is measured via standardized tests, in which a small
+indenter of a defined shape is pressed into the material with a certain force.
+The hardness is then deduced from the dimensions of the indentation remaining
+after the test (Vickers and Brinell methods). In the Rockwell methods, one reads
+the hardness directly on the device on a dial gauge, which actually measures the
+depth of this indentation.
+
+\section{Method \& Materials}
+
+A hardness apparatus is used for the test, in which one mounts the desired
+indenter, and one adjusts the desired force. A pre-load of 10 kgf is manually
+applied to the sample beforehand by turning a wheel, pushing the sample against
+the indenter with a force of 10 kgf. The rest of the measurement is performed
+automatically: via a mechanism, the main load is applied, held for a few
+seconds, and then removed.
+
+5 total samples tested using multiple types of hardness tests \textemdash~two
+C-45 steel blocks, one of them being quenched, a brass strip, and two steel
+tensile samples, one of them having undergone a tensile test. Firstly, the two
+C-45 steel cubes and the brass strip are subjected to the Vickers hardness test.
+Afterwards, all the samples get subjected to the two Rockwell tests. To
+determine which rockwell test would be appropriate, the Vickers rating is used.
+Finally, the brass sample is subjected to the Brinell test. 
+\newpage
+
+\section {Results}
+
+\subsection{Measurements}
+\subsubsection{Vickers}
+All of the samples were subjected to a load of $100\unit{kgf}$ and measured with a digital microscope which was able to digitally
+measure the dimensions of the indentation. The results of these measurements is
+displayed in table 1.
+
+\begin{table}[!ht]
+  \centering
+  \label{tab:1}
+  \caption{Measurement results of Vickers hardness test}
+  \begin{tabular}{|c|cc|} 
+  \hline
+  Material     & \makecell{$d_1$\\ $\unit{(mm)}$}    & \makecell{$d_2$\\$\unit{(mm)}$}     \\ 
+  \hline
+  $Steel_{hardened_1}$   & 0.488 & 0.498  \\
+  $Steel_{hardened_2}$    & 0.5   & 0.515  \\
+  $Steel_{hardened_3}$    & 0.499 & 0.5    \\
+  $Steel_{unhardened_1}$ & 1.09  & 1.118  \\
+  $Steel_{unhardened_2}$  & 1.067 & 1.085  \\
+  $Steel_{unhardened_3}$  & 1.08  & 1.09   \\
+  $Brass_1$        & 1.06  & 1.054  \\
+  $Brass_2$        & 1.061 & 1.048  \\
+  $Brass_3$        & 1.6   & 1.58   \\
+  \hline
+  \end{tabular}
+  \end{table}
+
+Afterwards, the necessary calculations are done to determine the Vickers
+hardness, and the results are placed in table 2.
+
+\begin{table}[!ht]
+  \centering
+  \label{tab:2}
+  \caption{Hardness value results of the Vickers test}
+  \begin{tabular}{|c|cccc|} 
+  \hline
+  Material     & \makecell{$d_{avr}$\\$\unit{(mm)}$}    & \makecell{$HV$ \\ $\unit{(-)}$}       & \makecell{$\Delta
+  HV$\\ $\unit{(-)}$}   & \makecell{$HV_{standard notation}$ \\ $\unit{(-)}$}  \\ 
+  \hline
+  $Steel_{hardened}$   & 0.5 & 741.33 & 200 & $(741.33 \pm 200)$   \\
+  $Steel_{unhardened}$ & 1.09    & 156.12 & 30 & $(156.12 \pm 30)$   \\
+  $Brass$        & 1.06 & 166.33 & 30 & $(166.33 \pm 30)$   \\
+  \hline
+  \end{tabular}
+  \end{table}
 \end{document}

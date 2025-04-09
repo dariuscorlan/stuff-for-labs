@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.14)  9 APR 2025 17:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.14)  9 APR 2025 17:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/darius/Documents/VSCODE/stuff-for-labs/Electricity 4/report.tex"
-(c:/Users/darius/Documents/VSCODE/stuff-for-labs/Electricity 4/report.tex
+**"c:/Users/darius/Documents/VSCODE/stuff-for-labs/Electricity 4/report1.tex"
+(c:/Users/darius/Documents/VSCODE/stuff-for-labs/Electricity 4/report1.tex
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
 (C:\Users\darius\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -616,8 +616,8 @@ File: pppdftex.def 2024/10/28 v0.6c Pdfpages driver for pdfTeX (AM)
 \AM@lof@heading=\toks49
 \c@AM@survey=\count358
 \AM@templatesizebox=\box70
-) (report.aux)
-\openout1 = `report.aux'.
+) (report1.aux)
+\openout1 = `report1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
@@ -691,26 +691,105 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring ON on input line 29.
+(report1.out) (report1.out)
 \@outlinefile=\write4
-\openout4 = `report.out'.
+\openout4 = `report1.out'.
 
-c:/Users/darius/Documents/VSCODE/stuff-for-labs/Electricity 4/report.tex:29: I can't write on file `report.pdf'.
-(Press Enter to retry, or Control-C to exit; default file extension is `.pdf')
-Please type another file name for output
-c:/Users/darius/Documents/VSCODE/stuff-for-labs/Electricity 4/report.tex:29: Emergency stop.
-<to be read again> 
-                   \edef 
-l.29 \begin{document}
-                     
-*** (job aborted, file error in nonstop mode)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 
- 
+Package pgfplots notification 'compat/show suggested version=true': you might benefit from \pgfplotsset{compat=1.18} (current compat level: 1.16).
+
+(C:\Users\darius\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+ (C:\Users\darius\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
+ (C:\Users\darius\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
+<Voltagesource.png, id=58, 194.97844pt x 238.64156pt>
+File: Voltagesource.png Graphic file (type png)
+<use Voltagesource.png>
+Package pdftex.def Info: Voltagesource.png  used on input line 57.
+(pdftex.def)             Requested size: 113.24197pt x 138.60153pt.
+<Currentsource.png, id=60, 299.61937pt x 211.54031pt>
+File: Currentsource.png Graphic file (type png)
+<use Currentsource.png>
+Package pdftex.def Info: Currentsource.png  used on input line 63.
+(pdftex.def)             Requested size: 158.53807pt x 111.93506pt.
+
+
+[1
+
+{C:/Users/darius/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Voltagesource.png> <./Currentsource.png>]
+<loadcircuit.png, id=72, 313.17pt x 200.24812pt>
+File: loadcircuit.png Graphic file (type png)
+<use loadcircuit.png>
+Package pdftex.def Info: loadcircuit.png  used on input line 84.
+(pdftex.def)             Requested size: 226.48395pt x 144.82326pt.
+<vi_graph.png, id=73, 389.95688pt x 239.39438pt>
+File: vi_graph.png Graphic file (type png)
+<use vi_graph.png>
+Package pdftex.def Info: vi_graph.png  used on input line 109.
+(pdftex.def)             Requested size: 226.48395pt x 139.03877pt.
+
+
+[2 <./loadcircuit.png> <./vi_graph.png>]
+<firstexp.jpeg, id=88, 1541.76pt x 2055.68pt>
+File: firstexp.jpeg Graphic file (type jpg)
+<use firstexp.jpeg>
+Package pdftex.def Info: firstexp.jpeg  used on input line 178.
+(pdftex.def)             Requested size: 181.18439pt x 241.55812pt.
+<series.jpeg, id=89, 1541.76pt x 2055.68pt>
+File: series.jpeg Graphic file (type jpg)
+<use series.jpeg>
+Package pdftex.def Info: series.jpeg  used on input line 193.
+(pdftex.def)             Requested size: 135.89174pt x 181.17642pt.
+<parallel.jpeg, id=90, 1541.76pt x 2055.68pt>
+File: parallel.jpeg Graphic file (type jpg)
+<use parallel.jpeg>
+Package pdftex.def Info: parallel.jpeg  used on input line 199.
+(pdftex.def)             Requested size: 135.89174pt x 181.17642pt.
+
+
+[3 <./firstexp.jpeg>]
+<powertransf.jpeg, id=100, 1541.76pt x 2055.68pt>
+File: powertransf.jpeg Graphic file (type jpg)
+<use powertransf.jpeg>
+Package pdftex.def Info: powertransf.jpeg  used on input line 221.
+(pdftex.def)             Requested size: 181.18439pt x 241.55812pt.
+
+
+[4 <./series.jpeg> <./parallel.jpeg> <./powertransf.jpeg>]
+
+[5]
+
+[6]
+
+[7]
+
+[8] (report1.aux)
+ ***********
+LaTeX2e <2024-11-01>
+L3 programming layer <2024-11-02>
+ ***********
+Package rerunfilecheck Info: File `report1.out' has not changed.
+(rerunfilecheck)             Checksum: 723585B7DEB45105DD3669706C8C0B03;2265.
+ ) 
 Here is how much of TeX's memory you used:
- 33478 strings out of 473682
- 782518 string characters out of 5718739
- 1369354 words of memory out of 5000000
- 56060 multiletter control sequences out of 15000+600000
- 558069 words of font info for 36 fonts, out of 8000000 for 9000
+ 34322 strings out of 473682
+ 803659 string characters out of 5718739
+ 1393355 words of memory out of 5000000
+ 56841 multiletter control sequences out of 15000+600000
+ 560032 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 103i,0n,107p,786b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
-c:/Users/darius/Documents/VSCODE/stuff-for-labs/Electricity 4/report.tex:29:  ==> Fatal error occurred, no output PDF file produced!
+ 103i,19n,107p,787b,2219s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on report1.pdf (8 pages, 1749134 bytes).
+PDF statistics:
+ 198 PDF objects out of 1000 (max. 8388607)
+ 41 named destinations out of 1000 (max. 500000)
+ 157 words of extra memory for PDF output out of 10000 (max. 10000000)
+
