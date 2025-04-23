@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1745418323.39193 "c:/Users/darius/Documents/VSCODE/stuff-for-labs/Electricity 4/report1.tex" "report1.pdf" "report1" 1745418325.28471 0
+["pdflatex"] 1745418375.56143 "c:/Users/darius/Documents/VSCODE/stuff-for-labs/Electricity 4/report1.tex" "report1.pdf" "report1" 1745418377.51914 0
   "C:/Users/darius/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1745411452 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/darius/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1731619399 11987390 71e2d3d7efd698dae723734090a57724 ""
   "C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -208,14 +208,14 @@
   "C:/Users/darius/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "Currentsource.png" 1743684413 15232 041468949c5fd7b4f618f94e1cc4c0d7 ""
   "Voltagesource.png" 1743684295 16341 7186a8ea6c8573995faf953c6804f048 ""
-  "c:/Users/darius/Documents/VSCODE/stuff-for-labs/Electricity 4/report1.tex" 1745418322 27751 ac8e7f24b74ca91cd808bb413d83354e ""
+  "c:/Users/darius/Documents/VSCODE/stuff-for-labs/Electricity 4/report1.tex" 1745418375 27753 2c927585ad6e7e736585e5e939376285 ""
   "firstexp.jpeg" 1744211115 389604 01762bda9197dc0c79bb74747c243edb ""
   "loadcircuit.png" 1743685167 20902 94383853e583f12a9f2c173007305da5 ""
   "parallel.jpeg" 1744211115 343193 cc98c32beb39fa8cb9d0b95fe1fa639d ""
   "powertransf.jpeg" 1744211115 379307 6852dd50adc065d13f19df288a1f8ed3 ""
-  "report1.aux" 1745418325 8176 fe03b2b608c65d8bd58cb6a2448f915d "pdflatex"
-  "report1.out" 1745418325 2895 c2a33d39c8686ce75027a688102ef9b2 "pdflatex"
-  "report1.tex" 1745418322 27751 ac8e7f24b74ca91cd808bb413d83354e ""
+  "report1.aux" 1745418377 8176 fe03b2b608c65d8bd58cb6a2448f915d "pdflatex"
+  "report1.out" 1745418377 2895 c2a33d39c8686ce75027a688102ef9b2 "pdflatex"
+  "report1.tex" 1745418375 27753 2c927585ad6e7e736585e5e939376285 ""
   "series.jpeg" 1744211115 408924 ed67bb38b9aedc1d51ea751241ef6308 ""
   "vi_graph.png" 1743685843 17553 82afb190a67031464e60b3a252f47b59 ""
   (generated)
