@@ -29,6 +29,7 @@
 }}
 
 \begin{document}
+\includepdf[pages = {1}]{template.pdf}
 \section{Introduction}
 DC power sources are an essential part of circuits. The aim of the following
 experiments is to study the proprieties of these sources. Electromotive force,
@@ -47,11 +48,10 @@ In physical applications however, the current or voltage will depend on the load
 resistance. Therefore, power sources will be represented as a combination
 between an ideal source and an internal resistance. For voltage sources, the
 resistance will be connected in series with the ideal source, whereas for
-current sources, the resistor will be connected in parallel. (book)
+current sources, the resistor will be connected in parallel\cite{alexander2017}. 
 
 Figures 1(a) and 1(b) display the aforementioned representation of power
-sources, both for current and voltage sources.(lab text)
-
+sources, both for current and voltage sources\cite{lab}.
 \begin{figure}[!ht]
     \centering
     \begin{subfigure}{0.5\textwidth}
@@ -72,14 +72,14 @@ sources, both for current and voltage sources.(lab text)
 
 \subsection{Source characteristics}
 Using source transformation, all power sources can be represented as voltage
-sources with an internal resistance(book). Therefore, going forward, sources
+sources with an internal resistance\cite{alexander2017}. Therefore, going forward, sources
 will be displayed as shown in Figure 1(a). This representation is called the
 voltage-equivalent circuit. By adding a load resistance to the power source, essential characteristics of
 the source can be discovered.
 
 \newpage
 Figure 2 displays the circuit which will be used to determine these
-characteristics(labtext).
+characteristics\cite{lab}.
 
 \begin{figure}[!ht]
     \centering
@@ -94,7 +94,7 @@ load voltage by observing that the same current passes through the internal
 resistance as well. 
 
 Equation 1 displays the relationship between current, load
-voltage, and electromotive force(labtext).
+voltage, and electromotive force\cite{lab}.
 
 \begin{equation}
     V_L = V_{emf} + I_L R_i
@@ -104,7 +104,7 @@ Since the internal resistance, $R_i$, is constant, the relationship between load
 voltage and current is a linear one. 
 
 Figure 3 displays this relationship for a
-real voltage source such as the one shown in Figure 1(a)(labtext).
+real voltage source such as the one shown in Figure 1(a)\cite{lab}.
 
 \begin{figure}[!ht]
     \centering
@@ -114,7 +114,7 @@ real voltage source such as the one shown in Figure 1(a)(labtext).
 \end{figure}
 
 By determining the slope of the linear relationship between $I_L$ and $V_L$, the
-internal resistance can be found(labtext):
+internal resistance can be found\cite{lab}:
 
 \begin{equation}
     R_i = -\frac{\Delta V_L}{\Delta I_L}
@@ -124,7 +124,7 @@ By looking at the x and y intercepts of the graph, both the electromotive force
 and the short circuit current can be found. Therefore, all of the sources
 characteristics can be found by analyzing the Voltage-Current graph.
 
-A relationship between all of the characteristics is found equation 3(labtext):
+A relationship between all of the characteristics is found equation 3\cite{lab}:
 
 \begin{equation}
     I_{sc} = \frac{V_{emf}}{R_i}
@@ -137,7 +137,7 @@ individual sources internal resistances.
 
 When connecting multiple sources in parallel, the equivalent internal resistance
 will be lowered. The lowering of the internal resistance will be governed by the
-parallel resistance equivalence(labtext):
+parallel resistance equivalence\cite{alexander2017}:
 
 \begin{equation}
     R_i = \left( \sum_{j} \frac{1}{R_{i,~j}}\right) \inv
@@ -145,7 +145,7 @@ parallel resistance equivalence(labtext):
 
 Since sources should only be connected in parallel when they have the same
 electromotive force, the equivalent $V_{emf}$ will be equal to that of one
-source(labtext).
+source\cite{lab}.
 
 \subsection{Maximum power transfer}
 
@@ -168,7 +168,7 @@ contribute to power transfer, the maximal point will occur when:
 
 Even so, it is important to mention that, since the power dissipated through the
 load resistor will be equal to the power on the internal resistance, the
-efficiency of the circuit will only reach $50\%$.(labtext)
+efficiency of the circuit will only reach $50\%$.\cite{lab}
 \section{Method and materials}
 We assembled all of the circuits using the provided circuit building system. We
 measured everything, including voltage and current, using an AM-520
@@ -247,7 +247,6 @@ transfer of each source.
     \caption{Experimental set-up of the power transfer experiment}    
 \end{figure}
 
-\newpage
 \section{Determination of internal resistance}
 \subsection{Measurement results}
 After following the experimental flow as described in section 3.1, the determined
@@ -283,7 +282,7 @@ current are displayed in Table 1.
     \hline
     \end{tabular}
     \end{table}
-
+\newpage
 \subsection{Graphs}
 By plotting the load voltage in terms of $I_L$, all of a source's
 characteristics can be determined. 
@@ -334,7 +333,6 @@ Figure 7 displays the relationship between load current and voltage for source
         \label{fig:7}
     \end{figure}
 
-\newpage
 Figure 8 shows the relationship between $I_L$ and $V_{L_2}$, source 2 having an
 internal resistance of $148.2\unit{\Omega}$
 
@@ -379,6 +377,7 @@ internal resistance of $148.2\unit{\Omega}$
     \label{fig:8}
 \end{figure}
 
+\newpage
 Figure 9 displays the voltage current dependency for the series source
 arrangement.
 
@@ -424,7 +423,6 @@ arrangement.
     \label{fig:9}
 \end{figure}
 
-\newpage
 Figure 10 represents the linear relationship between load current and load
 voltage for the parallel source arrangements.
 
@@ -469,6 +467,7 @@ voltage for the parallel source arrangements.
     \caption{Load voltage of the parallel source arrangement in terms of load current}
     \label{fig:10}
 \end{figure}
+\newpage
 \subsection{Calculations}
 By utilizing the equations described in section 2.1, the characteristics of both
 sources can be determined. 
@@ -496,7 +495,7 @@ To determine the error of the internal resistance measurements, Microsoft
 Excel's LINEST function is used. This function returns information about linear
 regression of a set of samples. One of these values is the standard error for
 $V_{L}$. It is important to mention that all the error values will be rounded
-up to one significant figure, as instructed in the uncertainty analysis manual(unc). This value can be used to calculate the error of the internal
+up to one significant figure, as instructed in the uncertainty analysis manual\cite{DeneyerUncertainty}. This value can be used to calculate the error of the internal
 resistance. This is done by using equation 5. This will also be used to determine the
 error of $I_{sc}$. 
 
@@ -517,7 +516,7 @@ Therefore the values of $R_i$ and $I_{sc}$ for source one are:
 \end{gather*}
 
 However, the error of $V_{emf}$ will be determined using the error of the
-multimeter measurements(mm). This is done using equation 6.
+multimeter measurements\cite{multim}. This is done using equation 6.
 \begin{equation}
     \Delta V_{emf} = \frac{V}{100} + 3 LSD
 \end{equation}
@@ -570,7 +569,6 @@ have an internal resistance of around $0.5 \unit{\Omega}$ at room temperature
 the resistance of the fixed resistors. Therefore, we cannot conclude how much of
 a role the real internal resistance played.
 
-\newpage
 \section{Maximum power transfer}
 \subsection{Measurement results}
 After following the experimental flow as described in section 3.2, the measured
@@ -599,6 +597,7 @@ source 1 the results are displayed in Table 3.
     \end{tabular}
     \end{table}
 
+    \newpage
 Table 4 displays the resulting values for the second source. However, it is
 important to mention that since the third data point does not follow the
 expected behaviour, it will be considered an outlier.
@@ -625,7 +624,6 @@ expected behaviour, it will be considered an outlier.
     \end{tabular}
     \tikz[remember picture] \draw[overlay] ([yshift=.35em]pic cs:start) -- ([yshift=.35em]pic cs:end);
     \end{table}
-\newpage
 \subsection{Graphs}
 By plotting the power dissipated on the load resistor as a function of the load
 resistance, the maximum power transfer can be easily seen. However, since the
@@ -711,6 +709,7 @@ The same graph can also be made for the second source, this is shown in figure
     \caption{Power in terms of load resistance for the second source}
     \label{fig:12}
 \end{figure}
+\newpage
 \subsection{Calculations}
 To determine the error of the maximum power dissipation for the first source,
 the following error propagation formula has to be used:
@@ -719,7 +718,6 @@ the following error propagation formula has to be used:
     \Delta P_L = P_L\sqrt{\left(\frac{\Delta R_L}{R_L}\right) ^2 + \left( \frac{\Delta V_L}{V_L}\right) ^2}
 \end{equation}
 
-\newpage
 Thus, both the error of $V_L$ and $R_L$ have to be determined. This will be done
 by using equation 8 and 9, respectively. The calculation for $V_L$, using
 equation 8, is:
@@ -739,5 +737,53 @@ Therefore, the maximum power dissipation for the first source is:
 \[P_{max} = (8.93 \pm 0.40)\unit{mW}\]
 
 \subsection{Discussion}
+Firstly, by analyzing figures 11 and 12, one can observe that the power
+dissipation does not exactly follow the expected parabolic shape. This is likely
+due to the means of constructing the circuit, as the unseen means of connecting
+the elements could add unexpected resistance. That being said, the maximal power
+result is as expected, with it occurring when the load resistance is closest to
+the internal resistance. 
 
+It is important to mention that the third data point for the second source has
+been excluded and considered an outlier. The unusual value is likely attributed
+to an improper connection of either the voltmeter or the battery. Therefore, to
+analyze the behaviour of power transfer, this data point has to be ignored.
+
+\section{Conclusion}
+This experiment was successful in determining the characteristics of DC power
+sources. The analyzed characteristics were their internal resistances,
+electromotive forces, power transfer efficiency. Different source arrangements
+were also analyzed. 
+
+For the internal resistances, it is found that the calculated internal
+resistances corresponded to the measured values:
+\begin{itemize}
+    \item Source 1: $(61.5 \pm 0.1)\unit{\Omega}$ (calc.) vs. $(61.5 \pm
+    0.8)\unit{\Omega}$ (measured)
+    \item Source 2: $(147.4 \pm 0.1)\Omega$ (calc.) vs. $(148.2 \pm
+    2)\unit{\Omega}$ (measured)
+\end{itemize}
+The theoretical predictions for the series ($R_{i,series} = 208.8\unit{\Omega}$)
+and parallel ($R_{i,parallel} = 43.6\unit{\Omega}$) arrangements was also
+validated.
+
+$V_{emf}$ of the source arrangements also falls in accordance with the
+theoretical background:
+\begin{itemize}
+    \item $V_{emf}$ for the parallel arrangement is equal to that of one source.
+    \item $V_{emf}$ for the series arrangement is double that of one source.
+\end{itemize}
+
+For the maximum power transfer experiment, the peak power dissipation was
+achieved when $R_L \approx R_i$. However, the graph deviated from the expected
+parabolic relationship. This is attributed to the contact resistances in circuit
+assembly.
+
+All results adhered to the theoretical predictions made by the fundamental
+circuit laws. However, certain deviations were observed. These are attributed to
+both user error and systematic errors.
+
+\section{Bibliography}
+\bibliographystyle{IEEEtran}
+\bibliography{bib}
 \end{document}
