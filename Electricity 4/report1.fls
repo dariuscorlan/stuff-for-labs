@@ -32,6 +32,9 @@ INPUT C:\Users\darius\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.
 INPUT C:\Users\darius\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
 INPUT C:\Users\darius\AppData\Local\Programs\MiKTeX\tex\latex\ragged2e\ragged2e.sty
 INPUT C:\Users\darius\AppData\Local\Programs\MiKTeX\tex\latex\ragged2e\ragged2e.sty
+INPUT C:\Users\darius\AppData\Local\Programs\MiKTeX\tex\latex\ulem\ulem.sty
+INPUT C:\Users\darius\AppData\Local\Programs\MiKTeX\tex\latex\ulem\ulem.sty
+INPUT C:\Users\darius\AppData\Local\Programs\MiKTeX\fonts\tfm\public\latex-fonts\lasy6.tfm
 INPUT C:\Users\darius\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref.sty
 INPUT C:\Users\darius\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref.sty
 INPUT C:\Users\darius\AppData\Local\Programs\MiKTeX\tex\latex\kvsetkeys\kvsetkeys.sty
@@ -308,6 +311,10 @@ INPUT C:\Users\darius\AppData\Local\Programs\MiKTeX\tex\latex\eso-pic\eso-pic.st
 INPUT C:\Users\darius\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\pppdftex.def
 INPUT C:\Users\darius\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\pppdftex.def
 INPUT C:\Users\darius\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\pppdftex.def
+INPUT C:\Users\darius\AppData\Local\Programs\MiKTeX\tex\latex\tikzmark\tikzlibrarytikzmark.code.tex
+INPUT C:\Users\darius\AppData\Local\Programs\MiKTeX\tex\latex\tikzmark\tikzlibrarytikzmark.code.tex
+INPUT C:\Users\darius\AppData\Local\Programs\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
+INPUT C:\Users\darius\AppData\Local\Programs\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
 INPUT .\report1.aux
 INPUT .\report1.aux
 INPUT report1.aux
