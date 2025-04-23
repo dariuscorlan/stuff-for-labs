@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.14)  9 APR 2025 17:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.14)  23 APR 2025 14:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -709,12 +709,12 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
-<Voltagesource.png, id=58, 194.97844pt x 238.64156pt>
+<Voltagesource.png, id=66, 194.97844pt x 238.64156pt>
 File: Voltagesource.png Graphic file (type png)
 <use Voltagesource.png>
 Package pdftex.def Info: Voltagesource.png  used on input line 57.
 (pdftex.def)             Requested size: 113.24197pt x 138.60153pt.
-<Currentsource.png, id=60, 299.61937pt x 211.54031pt>
+<Currentsource.png, id=68, 299.61937pt x 211.54031pt>
 File: Currentsource.png Graphic file (type png)
 <use Currentsource.png>
 Package pdftex.def Info: Currentsource.png  used on input line 63.
@@ -724,12 +724,12 @@ Package pdftex.def Info: Currentsource.png  used on input line 63.
 [1
 
 {C:/Users/darius/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Voltagesource.png> <./Currentsource.png>]
-<loadcircuit.png, id=72, 313.17pt x 200.24812pt>
+<loadcircuit.png, id=80, 313.17pt x 200.24812pt>
 File: loadcircuit.png Graphic file (type png)
 <use loadcircuit.png>
 Package pdftex.def Info: loadcircuit.png  used on input line 84.
 (pdftex.def)             Requested size: 226.48395pt x 144.82326pt.
-<vi_graph.png, id=73, 389.95688pt x 239.39438pt>
+<vi_graph.png, id=81, 389.95688pt x 239.39438pt>
 File: vi_graph.png Graphic file (type png)
 <use vi_graph.png>
 Package pdftex.def Info: vi_graph.png  used on input line 109.
@@ -737,59 +737,63 @@ Package pdftex.def Info: vi_graph.png  used on input line 109.
 
 
 [2 <./loadcircuit.png> <./vi_graph.png>]
-<firstexp.jpeg, id=88, 1541.76pt x 2055.68pt>
+
+[3]
+<firstexp.jpeg, id=107, 1541.76pt x 2055.68pt>
 File: firstexp.jpeg Graphic file (type jpg)
 <use firstexp.jpeg>
-Package pdftex.def Info: firstexp.jpeg  used on input line 178.
+Package pdftex.def Info: firstexp.jpeg  used on input line 200.
 (pdftex.def)             Requested size: 181.18439pt x 241.55812pt.
-<series.jpeg, id=89, 1541.76pt x 2055.68pt>
+<series.jpeg, id=108, 1541.76pt x 2055.68pt>
 File: series.jpeg Graphic file (type jpg)
 <use series.jpeg>
-Package pdftex.def Info: series.jpeg  used on input line 193.
+Package pdftex.def Info: series.jpeg  used on input line 214.
 (pdftex.def)             Requested size: 135.89174pt x 181.17642pt.
-<parallel.jpeg, id=90, 1541.76pt x 2055.68pt>
+<parallel.jpeg, id=109, 1541.76pt x 2055.68pt>
 File: parallel.jpeg Graphic file (type jpg)
 <use parallel.jpeg>
-Package pdftex.def Info: parallel.jpeg  used on input line 199.
+Package pdftex.def Info: parallel.jpeg  used on input line 220.
 (pdftex.def)             Requested size: 135.89174pt x 181.17642pt.
 
 
-[3 <./firstexp.jpeg>]
-<powertransf.jpeg, id=100, 1541.76pt x 2055.68pt>
+[4 <./firstexp.jpeg> <./series.jpeg> <./parallel.jpeg>]
+<powertransf.jpeg, id=116, 1541.76pt x 2055.68pt>
 File: powertransf.jpeg Graphic file (type jpg)
 <use powertransf.jpeg>
-Package pdftex.def Info: powertransf.jpeg  used on input line 221.
+Package pdftex.def Info: powertransf.jpeg  used on input line 243.
 (pdftex.def)             Requested size: 181.18439pt x 241.55812pt.
 
 
-[4 <./series.jpeg> <./parallel.jpeg> <./powertransf.jpeg>]
-
-[5]
+[5 <./powertransf.jpeg>]
 
 [6]
 
 [7]
 
-[8] (report1.aux)
+[8]
+
+[9]
+
+[10] (report1.aux)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
  ***********
 Package rerunfilecheck Info: File `report1.out' has not changed.
-(rerunfilecheck)             Checksum: 723585B7DEB45105DD3669706C8C0B03;2265.
+(rerunfilecheck)             Checksum: 384031704F074EF8FA491DAD5F2B7255;2581.
  ) 
 Here is how much of TeX's memory you used:
- 34322 strings out of 473682
- 803659 string characters out of 5718739
- 1393355 words of memory out of 5000000
- 56841 multiletter control sequences out of 15000+600000
+ 34333 strings out of 473682
+ 803772 string characters out of 5718739
+ 1392355 words of memory out of 5000000
+ 56845 multiletter control sequences out of 15000+600000
  560032 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  103i,19n,107p,787b,2219s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/darius/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on report1.pdf (8 pages, 1749134 bytes).
+Output written on report1.pdf (10 pages, 1755828 bytes).
 PDF statistics:
- 198 PDF objects out of 1000 (max. 8388607)
- 41 named destinations out of 1000 (max. 500000)
- 157 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 218 PDF objects out of 1000 (max. 8388607)
+ 48 named destinations out of 1000 (max. 500000)
+ 173 words of extra memory for PDF output out of 10000 (max. 10000000)
 
